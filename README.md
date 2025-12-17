@@ -17,4 +17,4 @@ Solved the following Java problems to strengthen Core Java fundamentals:
 
 ## 📌 Java Solutions
 All Core Java LeetCode solutions can be found here:  
-👉 [View Solutions](https://github.com/sankalp7060/BridgeLabz-Training)
+👉 [View Solutions](https://github.com/sankalp7060/BridgeLabz-Training/tree/core-java-practice/core-java-practice/leet-code-practice)
