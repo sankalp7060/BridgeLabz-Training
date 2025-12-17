@@ -16,5 +16,32 @@ Solved the following Java problems to strengthen Core Java fundamentals:
 - ✅ Valid Parenthesis  
 
 ## 📌 Java Solutions
-All Core Java LeetCode solutions can be found here:  
+All Core Java coding questions solutions can be found here:  
 👉 [View Solutions](https://github.com/sankalp7060/BridgeLabz-Training/tree/core-java-practice/core-java-practice/leet-code-practice)
+
+---
+
+## 📅 Day 2 – December 17, 2025
+
+### 🔧 Git, Git Bash & Configuration
+- Learned about Git and Git Bash and their roles in version control  
+- Configured Git on the local system (username, email, and basic settings)  
+- Practiced using Git Bash commands for repository management  
+- Understood how to identify, troubleshoot, and resolve common Git errors and warnings  
+
+### 💻 Core Java – Programming Elements Practice
+Solved the following Java problems to strengthen Core Java fundamentals/Programming elements:
+- ✅ Add two numbers
+- ✅ Area of circles
+- ✅ Average of three numbers
+- ✅ Celsius to fahrenheit
+- ✅ Kilometers to Miles
+- ✅ Perimeter of Rectangles
+- ✅ Power Calculation
+- ✅Simple Interest
+- ✅ Volume of Cylinder
+- ✅ Welcome to BridgeLabz
+
+## 📌 Java Solutions
+All programming elements questions solutions can be found here:  
+👉 [View Solutions](https://github.com/sankalp7060/BridgeLabz-Training/tree/core-java-practice/core-java-practice/gcr-codebase/programming-elements)
