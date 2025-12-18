@@ -3,11 +3,11 @@
 ## 🔧 Git & GitHub
 - Set up a fresh GitHub repository and linked it to VS Code  
 - Used core Git commands like `git add`, `git commit`, and `git push` for version control  
-- Created and worked across different branches such as `main` and `core-java-practice`  
+- Created and worked across different branches such as `main` and `core-csharp-practice`  
 - Gained a clear understanding of commits, code pushing, and overall project directory structure  
 
 ## 💻 Core C# – Coding Questions Practice
-Solved the following Java problems to strengthen Core Java fundamentals:
+Solved the following C# problems to strengthen Core C# fundamentals:
 
 - ✅ Palindrome Number
 - ✅ Remove Duplicates 
@@ -16,7 +16,7 @@ Solved the following Java problems to strengthen Core Java fundamentals:
 - ✅ Valid Parenthesis  
 
 ## 📌 C# Question Solutions
-All Core Java coding questions solutions can be found here:  
+All Core C# coding questions solutions can be found here:  
 👉 [View Solutions](https://github.com/sankalp7060/BridgeLabz-Training/tree/core-csharp-practice/core-csharp-practice/leet-code-practice)
 
 ---
@@ -30,7 +30,7 @@ All Core Java coding questions solutions can be found here:
 - Understood how to identify, troubleshoot, and resolve common Git errors and warnings  
 
 ### 💻 Core C# – Programming Elements Practice
-Solved the following Java problems to strengthen Core Java fundamentals/Programming elements:
+Solved the following C# problems to strengthen Core C# fundamentals/Programming elements:
 - ✅ Add two numbers
 - ✅ Area of circles
 - ✅ Average of three numbers
@@ -38,10 +38,10 @@ Solved the following Java problems to strengthen Core Java fundamentals/Programm
 - ✅ Kilometers to Miles
 - ✅ Perimeter of Rectangles
 - ✅ Power Calculation
-- ✅Simple Interest
+- ✅ Simple Interest
 - ✅ Volume of Cylinder
 - ✅ Welcome to BridgeLabz
 
-## 📌 Java Solutions
+## 📌 C# Solutions
 All programming elements questions solutions can be found here:  
 👉 [View Solutions](https://github.com/sankalp7060/BridgeLabz-Training/tree/core-csharp-practice/core-csharp-practice/gcr-codebase/programming-elements)
