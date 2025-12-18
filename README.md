@@ -9,10 +9,10 @@
 ## 💻 Core C# – Coding Questions Practice
 Solved the following C# problems to strengthen Core C# fundamentals:
 
-- ✅ Palindrome Number
-- ✅ Remove Duplicates 
-- ✅ Roman To Integers 
-- ✅ Square Root 
+- ✅ Palindrome Number  
+- ✅ Remove Duplicates  
+- ✅ Roman To Integers  
+- ✅ Square Root  
 - ✅ Valid Parenthesis  
 
 ## 📌 C# Question Solutions
@@ -31,17 +31,32 @@ All Core C# coding questions solutions can be found here:
 
 ### 💻 Core C# – Programming Elements Practice
 Solved the following C# problems to strengthen Core C# fundamentals/Programming elements:
-- ✅ Add two numbers
-- ✅ Area of circles
-- ✅ Average of three numbers
-- ✅ Celsius to fahrenheit
-- ✅ Kilometers to Miles
-- ✅ Perimeter of Rectangles
-- ✅ Power Calculation
-- ✅ Simple Interest
-- ✅ Volume of Cylinder
-- ✅ Welcome to BridgeLabz
+
+- ✅ Add two numbers  
+- ✅ Area of Circle  
+- ✅ Average of three numbers  
+- ✅ Celsius to Fahrenheit  
+- ✅ Kilometers to Miles  
+- ✅ Perimeter of Rectangles  
+- ✅ Power Calculation  
+- ✅ Simple Interest  
+- ✅ Volume of Cylinder  
+- ✅ Welcome to BridgeLabz  
 
 ## 📌 C# Solutions
 All programming elements questions solutions can be found here:  
 👉 [View Solutions](https://github.com/sankalp7060/BridgeLabz-Training/tree/core-csharp-practice/core-csharp-practice/gcr-codebase/programming-elements)
+
+---
+
+## 📅 Day 3 – December 18, 2025
+
+### 🖥️ Setup & Tools
+- Installed **Notepad++** and **.NET SDK** and configured them on the system  
+- Installed **VS Code Community Edition** for development  
+
+### 📚 Learning & Fundamentals
+- Learned the differences between **Java vs .NET** and **Java vs C#**  
+- Wrote the **Hello World program** in C#  
+- Learned **naming conventions** in C#  
+- Went through the **training guidelines** to understand best practices and workflow  
