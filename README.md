@@ -1,62 +1,68 @@
-# 📅 Day 1 – December 16, 2025
+# 📅 BridgeLabz Training Progress – C#
 
-## 🔧 Git & GitHub
-- Set up a fresh GitHub repository and linked it to VS Code  
-- Used core Git commands like `git add`, `git commit`, and `git push` for version control  
-- Created and worked across different branches such as `main` and `core-csharp-practice`  
-- Gained a clear understanding of commits, code pushing, and overall project directory structure  
+---
 
-## 💻 Core C# – Coding Questions Practice
-Solved the following C# problems to strengthen Core C# fundamentals:
+## 📅 Day 1 – December 16, 2025
+**Topics of the Day:**  
+- Git & GitHub – Learn basic commands and branch management  
+- Core C# Coding Questions – Practice fundamental problems  
 
-- ✅ Palindrome Number  
-- ✅ Remove Duplicates  
-- ✅ Roman To Integers  
-- ✅ Square Root  
-- ✅ Valid Parenthesis  
+**Today's Work:**  
+- Set up GitHub repository and linked it with VS Code  
+- Practiced `git add`, `git commit`, `git push`  
+- Worked on branches `main` and `core-csharp-practice`  
+- Solved C# problems: Palindrome Number, Remove Duplicates, Roman To Integers, Square Root, Valid Parenthesis  
 
-## 📌 C# Question Solutions
-All Core C# coding questions solutions can be found here:  
-👉 [View Solutions](https://github.com/sankalp7060/BridgeLabz-Training/tree/core-csharp-practice/core-csharp-practice/leet-code-practice)
+**What's Next:**  
+- Continue C# problem-solving and deepen understanding of Git operations  
 
 ---
 
 ## 📅 Day 2 – December 17, 2025
+**Topics of the Day:**  
+- Git, Git Bash & Configuration – Configure Git and troubleshoot errors  
+- Core C# Programming Elements – Practice basic programming problems  
 
-### 🔧 Git, Git Bash & Configuration
-- Learned about Git and Git Bash and their roles in version control  
-- Configured Git on the local system (username, email, and basic settings)  
-- Practiced using Git Bash commands for repository management  
-- Understood how to identify, troubleshoot, and resolve common Git errors and warnings  
+**Today's Work:**  
+- Configured Git on local system and practiced Git Bash commands  
+- Solved 10 C# programming element questions including Add two numbers, Area of Circle, Average of three numbers, Celsius to Fahrenheit, Kilometers to Miles, Perimeter of Rectangles, Power Calculation, Simple Interest, Volume of Cylinder, Welcome to BridgeLabz  
 
-### 💻 Core C# – Programming Elements Practice
-Solved the following C# problems to strengthen Core C# fundamentals/Programming elements:
-
-- ✅ Add two numbers  
-- ✅ Area of Circle  
-- ✅ Average of three numbers  
-- ✅ Celsius to Fahrenheit  
-- ✅ Kilometers to Miles  
-- ✅ Perimeter of Rectangles  
-- ✅ Power Calculation  
-- ✅ Simple Interest  
-- ✅ Volume of Cylinder  
-- ✅ Welcome to BridgeLabz  
-
-## 📌 C# Solutions
-All programming elements questions solutions can be found here:  
-👉 [View Solutions](https://github.com/sankalp7060/BridgeLabz-Training/tree/core-csharp-practice/core-csharp-practice/gcr-codebase/programming-elements)
+**What's Next:**  
+- Continue with advanced C# fundamentals and practice real-life coding problems  
 
 ---
 
 ## 📅 Day 3 – December 18, 2025
+**Topics of the Day:**  
+- Setup & Tools – Install Notepad++, .NET SDK, VS Code Community Edition  
+- Learning & Fundamentals – Differences between Java/.NET/C#, Naming Conventions, Hello World  
 
-### 🖥️ Setup & Tools
-- Installed **Notepad++** and **.NET SDK** and configured them on the system  
-- Installed **VS Code Community Edition** for development  
+**Today's Work:**  
+- Installed Notepad++, .NET SDK, and VS Code  
+- Learned differences between Java vs .NET and Java vs C#  
+- Wrote Hello World program in C#  
+- Learned C# naming conventions  
+- Reviewed training guidelines for best practices  
 
-### 📚 Learning & Fundamentals
-- Learned the differences between **Java vs .NET** and **Java vs C#**  
-- Wrote the **Hello World program** in C#  
-- Learned **naming conventions** in C#  
-- Went through the **training guidelines** to understand best practices and workflow  
+**What's Next:**  
+- Start learning operators, access modifiers, and memory management in C#  
+
+---
+
+## 📅 Day 4 – December 19, 2025
+**Topics of the Day:**  
+- C# Operators – Practice operator problems  
+- Access Modifiers – Learn usage and scope  
+- C# Memory – Understand memory allocation  
+- Real-life Coding Questions – Apply operators in practical scenarios  
+
+**Today's Work:**  
+- Practiced C# operators through coding questions  
+- Studied access modifiers and their scope  
+- Learned about C# memory management  
+- Solved real-life coding questions using operators  
+
+**What's Next:**  
+- Practice real-life problems using access modifiers  
+- Learn control flow statements and conditionals in C#  
+
