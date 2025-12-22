@@ -107,7 +107,7 @@
 
 ---
 
-## 📅 Day 5 – December 20, 2025
+## 📅 Day 6 – December 22, 2025
 
 ### 🧩 Topics of the Day
 - 🔀 **Control Flow Statements** – Conditional execution  
