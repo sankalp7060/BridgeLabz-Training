@@ -106,3 +106,22 @@
 - Deepen understanding of conditions and decision-making logic  
 
 ---
+
+## 📅 Day 5 – December 20, 2025
+
+### 🧩 Topics of the Day
+- 🔀 **Control Flow Statements** – Conditional execution  
+- 🔁 **Jump Statements** – `break`, `continue`, `goto`  
+- 🔄 **Switch Case** – Multi-branch decision making  
+
+### ✅ Today's Work
+- Solved real-life based problems using control flow statements  
+- Practiced number-based programs such as **Armstrong Number** and similar problems  
+- Built a **calculator program** using different control flow techniques  
+- Solved multiple coding questions involving `if-else`, `switch-case`, and jump statements  
+
+### ⏭️ What's Next
+- Start learning **Arrays** in C#  
+- Get introduced to **OOPs concepts** and their real-life applications  
+
+---
