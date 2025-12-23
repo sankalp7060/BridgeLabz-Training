@@ -125,3 +125,22 @@
 - Get introduced to **OOPs concepts** and their real-life applications  
 
 ---
+
+## 📅 Day 7 – December 23, 2025
+
+### 🧩 Topics of the Day
+- 📦 **Arrays in C#** – Understanding and implementing 1D and 2D arrays  
+- 🧪 **Array-based Problem Solving** – Logical thinking using arrays  
+- 🗣️ **Review & Feedback** – Evaluating learning progress so far  
+
+### ✅ Today's Work
+- Learned the concept of **arrays in C#**, including declaration, initialization, and traversal  
+- Solved multiple levels of problems based on **1D arrays** such as searching, iteration, and basic manipulations  
+- Worked on **2D array problems**, focusing on row–column traversal and logic building  
+- Reviewed all the topics covered so far and provided constructive feedback to the trainee to improve understanding and performance  
+
+### ⏭️ What's Next
+- Start learning **methods in C#**  
+- Practice writing reusable code and understand parameter passing and return types  
+
+---
