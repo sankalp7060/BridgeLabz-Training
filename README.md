@@ -144,3 +144,22 @@
 - Practice writing reusable code and understand parameter passing and return types  
 
 ---
+
+## 📅 Day 8 – December 24, 2025
+
+### 🧩 Topics of the Day
+- 🛠️ **Methods in C#** – Declaration, definition, and calling of methods  
+- 🧩 **Problem Solving with Methods** – Applying methods to different levels of problems  
+- 💻 **LeetCode & Scenario-based Questions** – Practicing real-life problem scenarios  
+
+### ✅ Today's Work
+- Learned the concept of **methods in C#**, including parameters, return types, and scope  
+- Solved multiple levels of problems using methods, improving code reusability and readability  
+- Practiced **LeetCode problems** using methods to strengthen problem-solving skills  
+- Solved scenario-based coding questions to apply methods in real-life situations  
+
+### ⏭️ What's Next
+- Start working on **strings in C#**, including different operations and built-in string methods  
+- Practice solving problems using string manipulation techniques  
+
+---
