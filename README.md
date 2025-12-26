@@ -163,3 +163,24 @@
 - Practice solving problems using string manipulation techniques  
 
 ---
+
+## 📅 Day 9 – December 26, 2025
+
+### 🧩 Topics of the Day
+- 🔤 **Strings in C#** – Understanding string types and immutability  
+- 🧰 **String Built-in Methods** – Using predefined string functions  
+- ⏰ **DateTime in C#** – Working with date and time operations  
+- 🎮 **Scenario-based Project** – Applying all learned concepts  
+
+### ✅ Today's Work
+- Learned about **strings in C#**, including their types and characteristics  
+- Practiced various **built-in string methods** and solved multiple string-based problems  
+- Explored **DateTime built-in functions** in C# and solved questions based on date and time operations  
+- Built a **scenario-based game**, applying concepts such as control flow, arrays, methods, strings, and DateTime learned so far  
+
+### ⏭️ What's Next
+- Strengthen problem-solving skills with advanced scenarios  
+- Start exploring deeper **OOPs concepts** and their real-world applications  
+
+---
+
