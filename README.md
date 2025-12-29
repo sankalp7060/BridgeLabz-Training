@@ -184,3 +184,21 @@
 
 ---
 
+## 📅 Day 10 – December 29, 2025
+
+### 🧩 Topics of the Day
+- 🏗️ **Object-Oriented Programming (OOPs)** – Introduction to classes and objects  
+- 🔄 **Scenario-based Problem Solving** – Applying OOP concepts in real-world examples  
+- ⚙️ **Static & Instance Members** – Understanding and using static vs instance variables and methods  
+
+### ✅ Today's Work
+- Started **OOPs concepts** by learning about classes and objects in C#  
+- Solved multiple **scenario-based problems** using classes and objects  
+- Practiced using **static and instance members** specifically in different problems  
+- Applied OOPs principles to improve code structure and reusability in problem-solving  
+
+### ⏭️ What's Next
+- Continue exploring **OOPs concepts** including encapsulation, inheritance, and polymorphism  
+- Solve advanced real-life problems using OOP techniques  
+
+---
