@@ -221,3 +221,29 @@
 - Continue solving advanced real-life problems using OOP concepts  
 
 ---
+
+## 📂 Folder Structure (Branch-wise)
+
+```
+BridgeLabz-SIPP-Training/
+│
+├── core-csharp-practice/
+│ ├── gcr-codebase/
+│ │ ├── csharp-arrays/
+│ │ ├── csharp-control-flows/
+│ │ ├── csharp-methods/
+│ │ ├── csharp-programming-elements/
+│ │ ├── csharp-strings/
+│ │ ├── extra-csharp-builtinfunctions/
+│ │ ├── extra-csharp-strings/
+│ │ ├── programming-elements/
+│ ├── leet-code-practice/
+│ └── scenario-based/
+│
+├── OOPs/
+│ ├── gcr-codebase/
+│ │ ├── csharp-classes-objects/
+│ │ ├── csharp-constructors/
+│ ├── leet-code-practice/
+│ └── scenario-based/
+```
