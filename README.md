@@ -202,3 +202,22 @@
 - Solve advanced real-life problems using OOP techniques  
 
 ---
+
+## 📅 Day 11 – December 30, 2025
+
+### 🧩 Topics of the Day
+- 📚 **Scenario-based Projects** – Role-based Quiz App and Library Management System  
+- 🏗️ **Constructors in C#** – Learning and applying constructors in real-life problems  
+- 🔐 **Role-based Login System** – Implementing access control in applications  
+
+### ✅ Today's Work
+- Developed a **Quiz App** where teachers can select questions and students can attempt them  
+- Built a **Library Book System** with all core features implemented  
+- Learned and practiced **constructors in C#**, solving real-life problems using them  
+- Implemented **role-based login system** in scenario-based projects  
+
+### ⏭️ What's Next
+- Explore **Pillars of OOPs** – Encapsulation, Inheritance, Polymorphism, and Abstraction  
+- Continue solving advanced real-life problems using OOP concepts  
+
+---
