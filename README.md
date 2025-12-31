@@ -222,6 +222,27 @@
 
 ---
 
+## 📅 Day 12 – December 31, 2025
+
+### 🧩 Topics of the Day
+- 🧠 **OOPs Concepts** – Deepening understanding of object-oriented programming  
+- 🔑 **this, static, sealed Keywords** – Usage and real-world applications  
+- 🏦 **Scenario-based Applications** – Applying OOPs concepts practically  
+
+### ✅ Today's Work
+- Continued the **OOPs journey** and strengthened core object-oriented concepts  
+- Learned and applied **this**, **static**, and **sealed** keywords in C#  
+- Solved multiple **real-world problems** based on these concepts  
+- Built a **Bank Management System** using OOP principles  
+- Created **Mathematical Operation Testing** as a scenario-based application  
+- Developed an **Invoice Generator for Freelancers** applying OOP concepts  
+
+### ⏭️ What's Next
+- Start learning the **Pillars of OOPs**  
+- Implement Encapsulation, Inheritance, Polymorphism, and Abstraction in real-life projects  
+
+---
+
 ## 📂 Folder Structure (Branch-wise)
 
 ```
@@ -244,6 +265,10 @@ BridgeLabz-SIPP-Training/
 │ ├── gcr-codebase/
 │ │ ├── csharp-classes-objects/
 │ │ ├── csharp-constructors/
+│ │ ├── csharp-this-static-sealed/
 │ ├── leet-code-practice/
-│ └── scenario-based/
+│ ├── scenario-based/
+│ │ ├── bank-management/
+│ │ ├── freelancers/
+│ │ ├── mathematical-operations/
 ```
