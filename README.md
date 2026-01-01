@@ -243,6 +243,26 @@
 
 ---
 
+## 📅 Day 13 – January 1, 2026
+
+### 🧩 Topics of the Day
+- 🧩 **Scenario-based Problem Solving** – Applying design thinking  
+- 🧱 **Object Modeling** – Structuring real-world problems  
+- 📐 **Class Diagrams** – Representing classes and relationships  
+- 🔄 **Sequence Diagrams** – Understanding object interactions  
+
+### ✅ Today's Work
+- Solved **scenario-based questions** to strengthen design and logical thinking  
+- Learned **object modeling** concepts for real-world problem representation  
+- Designed and solved problems using **class diagrams**  
+- Practiced **sequence diagrams** to understand object interactions and workflows  
+
+### ⏭️ What's Next
+- Start learning **Encapsulation** in OOPs  
+- Apply encapsulation concepts in real-life C# scenarios  
+
+---
+
 ## 📂 Folder Structure (Branch-wise)
 
 ```
@@ -265,10 +285,12 @@ BridgeLabz-SIPP-Training/
 │ ├── gcr-codebase/
 │ │ ├── csharp-classes-objects/
 │ │ ├── csharp-constructors/
+│ │ ├── csharp-object-oriented-design
 │ │ ├── csharp-this-static-sealed/
 │ ├── leet-code-practice/
 │ ├── scenario-based/
 │ │ ├── bank-management/
 │ │ ├── freelancers/
+│ │ ├── campus-cafeteria/
 │ │ ├── mathematical-operations/
 ```
