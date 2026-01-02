@@ -263,6 +263,26 @@
 
 ---
 
+## 📅 Day 14 – January 2, 2026
+
+### 🧩 Topics of the Day
+- 🌳 **Inheritance in C#** – Understanding base and derived classes  
+- 🛠️ **Types of Inheritance** – Single, multilevel, and hierarchical inheritance  
+- 🎯 **Scenario-based Applications** – Practical examples using inheritance  
+
+### ✅ Today's Work
+- Learned and implemented **inheritance** concepts in C#  
+- Solved problems on **different types of inheritance** (single, multilevel, hierarchical)  
+- Created scenario-based applications:
+  - **Bus Route Tracker** – Managing distances and stops  
+  - **Festival Lucky Draw** – Implementing logic for gifts based on conditions  
+
+### ⏭️ What's Next
+- Move to the next **pillar of OOPs**  
+- Apply new concepts in practical C# scenarios  
+
+---
+
 ## 📂 Folder Structure (Branch-wise)
 
 ```
