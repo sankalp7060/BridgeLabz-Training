@@ -283,6 +283,22 @@
 
 ---
 
+## 📅 Day 15 – January 3, 2026
+
+### 🧩 Topics of the Day
+- 🔁 **OOPs Revision** – Reviewing concepts covered so far  
+- 🧠 **Practice & Reinforcement** – Strengthening understanding through problems  
+
+### ✅ Today's Work
+- Revised all **OOPs concepts** learned till now  
+- Practiced multiple questions to reinforce core ideas and clear doubts  
+
+### ⏭️ What's Next
+- Start learning **Polymorphism**  
+- Explore method overloading, overriding, and real-world use cases  
+
+---
+
 ## 📂 Folder Structure (Branch-wise)
 
 ```
