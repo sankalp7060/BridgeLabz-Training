@@ -299,6 +299,26 @@
 
 ---
 
+## 📅 Day 16 – January 5, 2026
+
+### 🧩 Topics of the Day
+- 🔐 **Encapsulation** – Hiding internal data and exposing access via methods  
+- 🛡️ **Abstraction** – Simplifying complex systems by exposing only essential features  
+- 🔄 **Polymorphism** – Method overloading, method overriding, and runtime vs compile-time polymorphism  
+- 📦 **Abstract Classes & Interfaces** – Defining contracts and reusable code structures  
+- 🌍 **Real-life Problem Solving** – Applying OOP pillars to practical scenarios  
+
+### ✅ Today's Work
+- Learned and practiced **encapsulation, abstraction, polymorphism, abstract classes, and interfaces**  
+- Solved real-life problems applying these OOP concepts  
+- Completed **two scenario-based questions** using the above pillars  
+
+### ⏭️ What's Next
+- Start learning **Data Structures & Algorithms (DSA)**  
+- Focus on arrays, linked lists, and basic problem-solving in DSA  
+
+---
+
 ## 📂 Folder Structure (Branch-wise)
 
 ```
@@ -322,15 +342,17 @@ BridgeLabz-SIPP-Training/
 │ │ ├── csharp-inheritance/
 │ │ ├── csharp-classes-objects/
 │ │ ├── csharp-constructors/
+│ │ ├── csharp-encapsulation-polymorphism-abstraction/
 │ │ ├── csharp-object-oriented-design
 │ │ ├── csharp-this-static-sealed/
 │ ├── leet-code-practice/
 │ ├── scenario-based/
+│ │ ├── bank-management/
 │ │ ├── bus-route-tracker/
-│ │ ├── festival-lucky-draw/
-│ │ ├── bank-management/
-│ │ ├── bank-management/
-│ │ ├── freelancers/
 │ │ ├── campus-cafeteria/
+│ │ ├── festival-lucky-draw/
+│ │ ├── freelancers/
+│ │ ├── hospital-patient-management-system/
 │ │ ├── mathematical-operations/
+│ │ ├── vehicle-Rental-System/
 ```
