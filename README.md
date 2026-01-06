@@ -319,6 +319,24 @@
 
 ---
 
+## 📅 Day 17 – January 6, 2026
+
+### 🧩 Topics of the Day
+- 🔁 **Revision of OOP Concepts** – Comprehensive recap of all topics covered so far  
+- 🧠 **Scenario-based Problem Solving** – Applying concepts to real-life cases  
+- 🗣️ **Review & Feedback Session** – Discussing progress and improvements  
+
+### ✅ Today's Work
+- Revised all previously covered **OOP concepts** in detail  
+- Solved multiple **scenario-based problems** to reinforce understanding  
+- Gave a complete **learning review and feedback** to the mentor  
+
+### ⏭️ What's Next
+- Begin **Data Structures & Algorithms (DSA)**  
+- Start with foundational topics and problem-solving techniques  
+
+---
+
 ## 📂 Folder Structure (Branch-wise)
 
 ```
