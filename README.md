@@ -337,6 +337,25 @@
 
 ---
 
+## 📅 Day 18 – January 7, 2026
+
+### 🧩 Topics of the Day
+- 🔗 **Linked List in DSA** – Introduction and types (Singly, Doubly, Circular)  
+- ⚙️ **Linked List Operations** – Insertion, deletion, traversal, and search  
+- 🧠 **Problem Solving** – Applying linked lists to real-life scenarios  
+
+### ✅ Today's Work
+- Learned **linked lists** and their different types in detail  
+- Implemented various **linked list operations** for each type  
+- Solved **real-life based problems** using linked lists  
+- Completed one **scenario-based question** using linked list concepts  
+
+### ⏭️ What's Next
+- Start **Stack and Queue** in DSA  
+- Practice implementation and real-life problem scenarios  
+
+---
+
 ## 📂 Folder Structure (Branch-wise)
 
 ```
@@ -355,7 +374,7 @@ BridgeLabz-SIPP-Training/
 │ ├── leet-code-practice/
 │ └── scenario-based/
 │
-├── OOPs/
+├── oops-csharp-practice/
 │ ├── gcr-codebase/
 │ │ ├── csharp-inheritance/
 │ │ ├── csharp-classes-objects/
@@ -366,11 +385,21 @@ BridgeLabz-SIPP-Training/
 │ ├── leet-code-practice/
 │ ├── scenario-based/
 │ │ ├── bank-management/
+│ │ ├── bird-sanctuary-system/
 │ │ ├── bus-route-tracker/
+│ │ ├── call-log-manager/
 │ │ ├── campus-cafeteria/
+│ │ ├── employee-wage-management/
 │ │ ├── festival-lucky-draw/
 │ │ ├── freelancers/
 │ │ ├── hospital-patient-management-system/
 │ │ ├── mathematical-operations/
 │ │ ├── vehicle-Rental-System/
+│
+├── dsa-csharp-practice/
+│ ├── gcr-codebase/
+│ │ ├── csharp-linkedlist/
+│ ├── leet-code-practice/
+│ ├── scenario-based/
+
 ```
