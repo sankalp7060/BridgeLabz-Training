@@ -4,4 +4,5 @@ public interface IEmployee
     void CheckEmployeeAttendance();
     void CalculateDailyWage();
     void AddPartTimeEmployee();
+    void CalculateMonthlyWage();
 }

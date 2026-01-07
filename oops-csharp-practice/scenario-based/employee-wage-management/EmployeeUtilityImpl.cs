@@ -73,4 +73,16 @@ public class EmployeeUtilityImpl : IEmployee
         Console.WriteLine("Part-Time Employee added successfully!");
         Console.WriteLine("Part-Time Daily Wage: " + dailyWage);
     }
+
+    public void CalculateMonthlyWage()
+    {
+        int wagePerHour = 20;
+        int fullDayHour = 8;
+        int workingDays = 20;
+
+        int dailyWage = wagePerHour * fullDayHour;
+        int monthlyWage = dailyWage * workingDays;
+
+        Console.WriteLine("Monthly Employee Wage (assuming 20 working days): " + monthlyWage);
+    }
 }

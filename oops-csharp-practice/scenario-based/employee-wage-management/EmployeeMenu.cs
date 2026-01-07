@@ -20,7 +20,8 @@ public class EmployeeMenu
             Console.WriteLine("2. Check Employee Attendance");
             Console.WriteLine("3. Calculate Daily Employee Wage");
             Console.WriteLine("4. Add Part-Time Employee");
-            Console.WriteLine("5. Exit");
+            Console.WriteLine("5. Calculate Monthly Employee Wage");
+            Console.WriteLine("6. Exit");
             Console.Write("Enter your choice: ");
 
             int choice;
@@ -49,8 +50,11 @@ public class EmployeeMenu
                 case 4:
                     employeeUtility.AddPartTimeEmployee();
                     break;
-
                 case 5:
+                    employeeUtility.CalculateMonthlyWage();
+                    break;
+
+                case 6:
                     Console.WriteLine("Exiting Employee Wage System...");
                     exit = true;
                     break;
