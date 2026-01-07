@@ -48,4 +48,29 @@ public class EmployeeUtilityImpl : IEmployee
 
         Console.WriteLine("Daily Employee Wage: " + dailyWage);
     }
+
+    public void AddPartTimeEmployee()
+    {
+        if (count >= employees.Length)
+        {
+            Console.WriteLine("Employee storage full!");
+            return;
+        }
+
+        Console.Write("Enter Part-Time Employee ID: ");
+        int id = int.Parse(Console.ReadLine());
+
+        Console.Write("Enter Part-Time Employee Name: ");
+        string name = Console.ReadLine();
+
+        int partTimeHour = 8;
+        int wagePerHour = 20;
+        double dailyWage = partTimeHour * wagePerHour;
+
+        employees[count] = new Employee(id, name, dailyWage);
+        count++;
+
+        Console.WriteLine("Part-Time Employee added successfully!");
+        Console.WriteLine("Part-Time Daily Wage: " + dailyWage);
+    }
 }

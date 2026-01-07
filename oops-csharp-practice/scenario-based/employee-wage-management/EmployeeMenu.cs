@@ -14,6 +14,7 @@ public class EmployeeMenu
         Console.WriteLine("1. Add Employee");
         Console.WriteLine("2. Check Employee Attendance");
         Console.WriteLine("3. Calculate Daily Employee Wage");
+        Console.WriteLine("4. Add Part-Time Employee");
         Console.Write("Enter choice: ");
 
         int choice = int.Parse(Console.ReadLine());
@@ -30,6 +31,10 @@ public class EmployeeMenu
 
             case 3:
                 employeeUtility.CalculateDailyWage();
+                break;
+
+            case 4:
+                employeeUtility.AddPartTimeEmployee();
                 break;
 
             default:
