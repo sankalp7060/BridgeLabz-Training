@@ -27,4 +27,19 @@ public class EmployeeUtilityImpl : IEmployee
 
         Console.WriteLine("Employee added successfully!");
     }
+
+    public void CheckEmployeeAttendance()
+    {
+        Random random = new Random();
+        int attendance = random.Next(0, 2);
+
+        if (attendance == 1)
+        {
+            Console.WriteLine("Employee is Present");
+        }
+        else
+        {
+            Console.WriteLine("Employee is Absent");
+        }
+    }
 }

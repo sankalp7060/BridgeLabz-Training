@@ -12,6 +12,7 @@ public class EmployeeMenu
     public void ShowMenu()
     {
         Console.WriteLine("1. Add Employee");
+        Console.WriteLine("2. Check Employee Attendance");
         Console.Write("Enter choice: ");
 
         int choice = int.Parse(Console.ReadLine());
@@ -21,6 +22,11 @@ public class EmployeeMenu
             case 1:
                 employeeUtility.AddEmployee();
                 break;
+
+            case 2:
+                employeeUtility.CheckEmployeeAttendance();
+                break;
+
             default:
                 Console.WriteLine("Invalid choice");
                 break;
