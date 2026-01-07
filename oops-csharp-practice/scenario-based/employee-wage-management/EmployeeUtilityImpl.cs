@@ -34,12 +34,18 @@ public class EmployeeUtilityImpl : IEmployee
         int attendance = random.Next(0, 2);
 
         if (attendance == 1)
-        {
             Console.WriteLine("Employee is Present");
-        }
         else
-        {
             Console.WriteLine("Employee is Absent");
-        }
+    }
+
+    public void CalculateDailyWage()
+    {
+        int wagePerHour = 20;
+        int fullDayHour = 8;
+
+        int dailyWage = wagePerHour * fullDayHour;
+
+        Console.WriteLine("Daily Employee Wage: " + dailyWage);
     }
 }
