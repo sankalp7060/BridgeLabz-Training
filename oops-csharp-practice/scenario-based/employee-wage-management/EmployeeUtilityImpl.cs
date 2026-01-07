@@ -85,4 +85,47 @@ public class EmployeeUtilityImpl : IEmployee
 
         Console.WriteLine("Monthly Employee Wage (assuming 20 working days): " + monthlyWage);
     }
+
+    public void CalculateWagesTillCondition()
+    {
+        int wagePerHour = 20;
+        int fullDayHour = 8;
+        int partTimeHour = 8;
+
+        int totalHours = 0;
+        int totalDays = 0;
+        int maxHours = 100;
+        int maxDays = 20;
+
+        Random random = new Random();
+
+        Console.WriteLine(
+            "Calculating wages till total hours (100) or total days (20) is reached...\n"
+        );
+
+        while (totalHours < maxHours && totalDays < maxDays)
+        {
+            totalDays++;
+            int empType = random.Next(0, 2);
+            int hoursWorked = (empType == 1) ? fullDayHour : partTimeHour;
+
+            if (totalHours + hoursWorked > maxHours)
+            {
+                hoursWorked = maxHours - totalHours;
+            }
+
+            totalHours += hoursWorked;
+            int dailyWage = hoursWorked * wagePerHour;
+
+            string type = (empType == 1) ? "Full-Time" : "Part-Time";
+            Console.WriteLine(
+                $"Day {totalDays}: {type} Hours Worked = {hoursWorked}, Daily Wage = {dailyWage}"
+            );
+        }
+
+        int totalWage = totalHours * wagePerHour;
+        Console.WriteLine($"\nTotal Days Worked: {totalDays}");
+        Console.WriteLine($"Total Hours Worked: {totalHours}");
+        Console.WriteLine($"Total Wage for the Month: {totalWage}");
+    }
 }

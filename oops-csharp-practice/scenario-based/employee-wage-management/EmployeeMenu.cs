@@ -21,7 +21,8 @@ public class EmployeeMenu
             Console.WriteLine("3. Calculate Daily Employee Wage");
             Console.WriteLine("4. Add Part-Time Employee");
             Console.WriteLine("5. Calculate Monthly Employee Wage");
-            Console.WriteLine("6. Exit");
+            Console.WriteLine("6. Calculate Wages Till Total Hours/Days Condition");
+            Console.WriteLine("7. Exit");
             Console.Write("Enter your choice: ");
 
             int choice;
@@ -53,8 +54,11 @@ public class EmployeeMenu
                 case 5:
                     employeeUtility.CalculateMonthlyWage();
                     break;
-
                 case 6:
+                    employeeUtility.CalculateWagesTillCondition();
+                    break;
+
+                case 7:
                     Console.WriteLine("Exiting Employee Wage System...");
                     exit = true;
                     break;
