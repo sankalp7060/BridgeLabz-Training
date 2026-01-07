@@ -11,35 +11,54 @@ public class EmployeeMenu
 
     public void ShowMenu()
     {
-        Console.WriteLine("1. Add Employee");
-        Console.WriteLine("2. Check Employee Attendance");
-        Console.WriteLine("3. Calculate Daily Employee Wage");
-        Console.WriteLine("4. Add Part-Time Employee");
-        Console.Write("Enter choice: ");
+        bool exit = false;
 
-        int choice = int.Parse(Console.ReadLine());
-
-        switch (choice)
+        while (!exit)
         {
-            case 1:
-                employeeUtility.AddEmployee();
-                break;
+            Console.WriteLine("\n====== Employee Wage System Menu ======");
+            Console.WriteLine("1. Add Employee");
+            Console.WriteLine("2. Check Employee Attendance");
+            Console.WriteLine("3. Calculate Daily Employee Wage");
+            Console.WriteLine("4. Add Part-Time Employee");
+            Console.WriteLine("5. Exit");
+            Console.Write("Enter your choice: ");
 
-            case 2:
-                employeeUtility.CheckEmployeeAttendance();
-                break;
+            int choice;
+            bool isValid = int.TryParse(Console.ReadLine(), out choice);
 
-            case 3:
-                employeeUtility.CalculateDailyWage();
-                break;
+            if (!isValid)
+            {
+                Console.WriteLine("Invalid input! Please enter a number.");
+                continue;
+            }
 
-            case 4:
-                employeeUtility.AddPartTimeEmployee();
-                break;
+            switch (choice)
+            {
+                case 1:
+                    employeeUtility.AddEmployee();
+                    break;
 
-            default:
-                Console.WriteLine("Invalid choice");
-                break;
+                case 2:
+                    employeeUtility.CheckEmployeeAttendance();
+                    break;
+
+                case 3:
+                    employeeUtility.CalculateDailyWage();
+                    break;
+
+                case 4:
+                    employeeUtility.AddPartTimeEmployee();
+                    break;
+
+                case 5:
+                    Console.WriteLine("Exiting Employee Wage System...");
+                    exit = true;
+                    break;
+
+                default:
+                    Console.WriteLine("Invalid choice! Please select a valid option.");
+                    break;
+            }
         }
     }
 }
