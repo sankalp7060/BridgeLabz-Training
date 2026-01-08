@@ -356,6 +356,26 @@
 
 ---
 
+## 📅 Day 19 – January 8, 2026
+
+### 🧩 Topics of the Day
+- 📚 **Stack** – Concepts and operations  
+- 🚦 **Queue** – Types and working mechanism  
+- 🗂️ **HashMap & Hashing** – Key-value storage and hashing concepts  
+- 🏠 **Mini Project** – Smart Home Appliance System  
+
+### ✅ Today's Work
+- Learned **stack, queue, hashmap, and hashing** concepts in DSA  
+- Implemented and solved multiple problems based on **stack and queue operations**  
+- Practiced **hashmap usage and hashing logic** through coding problems  
+- Built a **Smart Home Appliance System** applying learned DSA and OOP concepts  
+
+### ⏭️ What's Next
+- Continue advancing in **DSA concepts**  
+- Solve more complex data-structure-based problems  
+
+---
+
 ## 📂 Folder Structure (Branch-wise)
 
 ```
@@ -394,11 +414,13 @@ BridgeLabz-SIPP-Training/
 │ │ ├── freelancers/
 │ │ ├── hospital-patient-management-system/
 │ │ ├── mathematical-operations/
+│ │ ├── smart-home-automation-system/
 │ │ ├── vehicle-Rental-System/
 │
 ├── dsa-csharp-practice/
 │ ├── gcr-codebase/
 │ │ ├── csharp-linkedlist/
+│ │ ├── csharp-stack-queue-hashmap/
 │ ├── leet-code-practice/
 │ ├── scenario-based/
 
