@@ -376,6 +376,23 @@
 
 ---
 
+## 📅 Day 20 – January 9, 2026
+
+### 🧩 Topics of the Day
+- 🧮 **Sorting Algorithms** – Understanding different sorting techniques  
+- 🏧 **Scenario-based Applications** – Real-life problem implementation  
+
+### ✅ Today's Work
+- Built an **ATM Dispenser** scenario-based program  
+- Developed a **Fitness Tracker App** as a real-life scenario  
+- Learned about different **sorting algorithms** and implemented them in code  
+
+### ⏭️ What's Next
+- Learn **runtime analysis**  
+- Study **asymptotic notations** (Big O, Big Ω, Big Θ)  
+
+---
+
 ## 📂 Folder Structure (Branch-wise)
 
 ```
@@ -404,6 +421,7 @@ BridgeLabz-SIPP-Training/
 │ │ ├── csharp-this-static-sealed/
 │ ├── leet-code-practice/
 │ ├── scenario-based/
+│ │ ├── atm-dispenser/
 │ │ ├── bank-management/
 │ │ ├── bird-sanctuary-system/
 │ │ ├── bus-route-tracker/
@@ -411,6 +429,7 @@ BridgeLabz-SIPP-Training/
 │ │ ├── campus-cafeteria/
 │ │ ├── employee-wage-management/
 │ │ ├── festival-lucky-draw/
+│ │ ├── fitness-tracker/
 │ │ ├── freelancers/
 │ │ ├── hospital-patient-management-system/
 │ │ ├── mathematical-operations/
@@ -420,6 +439,7 @@ BridgeLabz-SIPP-Training/
 ├── dsa-csharp-practice/
 │ ├── gcr-codebase/
 │ │ ├── csharp-linkedlist/
+│ │ ├── csharp-sorting-algorithms/
 │ │ ├── csharp-stack-queue-hashmap/
 │ ├── leet-code-practice/
 │ ├── scenario-based/
