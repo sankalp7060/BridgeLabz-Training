@@ -393,6 +393,45 @@
 
 ---
 
+## 📅 Day 21 – January 10, 2026
+
+### 🧩 Topics of the Day
+- 📚 **Weekly Revision** – Recap all DSA topics covered this week  
+- 🧮 **LeetCode Array Problems** – Practice array-based coding challenges  
+
+### ✅ Today's Work
+- Reviewed all the DSA topics learned so far this week  
+- Solved multiple **LeetCode problems on arrays** to strengthen problem-solving skills  
+
+### ⏭️ What's Next
+- Start **searching algorithms in arrays**  
+- Learn to use **BufferedReader** for input handling in C#  
+
+---
+
+## 📅 Day 22 – January 12, 2026
+
+### 🧩 Topics of the Day
+- 🔍 **Searching Algorithms** – Linear Search and Binary Search  
+- 💬 **String vs StringBuilder** – Differences and use-cases  
+- 🖥️ **BufferedReader in C#** – Efficient input handling  
+- 🌍 **Scenario-based Problems** – Real-life applications  
+
+### ✅ Today's Work
+- Practiced **linear search and binary search** algorithms  
+- Learned the differences between **String and StringBuilder** in C#  
+- Explored **BufferedReader** for reading input efficiently  
+- Solved **three scenario-based problems**:  
+  - LoanBuddy – Loan Approval Automation  
+  - Metal Factory Pipe Cutting  
+  - Custom Furniture Manufacturing  
+
+### ⏭️ What's Next
+- Learn **time and space complexity analysis** for algorithms  
+- Apply complexity concepts to optimize DSA solutions  
+
+---
+
 ## 📂 Folder Structure (Branch-wise)
 
 ```
@@ -427,17 +466,21 @@ BridgeLabz-SIPP-Training/
 │ │ ├── bus-route-tracker/
 │ │ ├── call-log-manager/
 │ │ ├── campus-cafeteria/
+│ │ ├── custom-furniture-manufacturing
 │ │ ├── employee-wage-management/
 │ │ ├── festival-lucky-draw/
 │ │ ├── fitness-tracker/
 │ │ ├── freelancers/
 │ │ ├── hospital-patient-management-system/
+│ │ ├── loan-approval-automation
 │ │ ├── mathematical-operations/
+│ │ ├── metal-factory-pipe-cutting
 │ │ ├── smart-home-automation-system/
 │ │ ├── vehicle-Rental-System/
 │
 ├── dsa-csharp-practice/
 │ ├── gcr-codebase/
+│ │ ├── csharp-linear-binary-search
 │ │ ├── csharp-linkedlist/
 │ │ ├── csharp-sorting-algorithms/
 │ │ ├── csharp-stack-queue-hashmap/
