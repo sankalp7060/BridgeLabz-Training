@@ -432,6 +432,27 @@
 
 ---
 
+## 📅 Day 23 – January 13, 2026
+
+### 🧩 Topics of the Day
+- ⏱️ **Run-time Analysis** – Understanding algorithm efficiency  
+- 📊 **Time Complexity Comparison** – Comparing different algorithms  
+- 🌍 **Scenario-based Problems** – Applying analysis in real-life projects  
+- 💻 **LeetCode Practice** – Solving programming challenges  
+
+### ✅ Today's Work
+- Learned **run-time analysis** of various algorithms and compared their **time complexities**  
+- Solved **two scenario-based projects**:  
+  - BookBuddy – Digital Bookshelf App  
+  - CinemaTime – Movie Schedule Manager  
+- Practiced multiple **LeetCode problems** to strengthen algorithmic thinking  
+
+### ⏭️ What's Next
+- Start learning **tree concepts** in Data Structures  
+- Implement tree traversal and related problems  
+
+---
+
 ## 📂 Folder Structure (Branch-wise)
 
 ```
@@ -480,11 +501,14 @@ BridgeLabz-SIPP-Training/
 │
 ├── dsa-csharp-practice/
 │ ├── gcr-codebase/
+│ │ ├── csharp-algorithms-runtime-analysis
 │ │ ├── csharp-linear-binary-search
 │ │ ├── csharp-linkedlist/
 │ │ ├── csharp-sorting-algorithms/
 │ │ ├── csharp-stack-queue-hashmap/
 │ ├── leet-code-practice/
 │ ├── scenario-based/
+│ │ ├── digital-bookshelf-app
+│ │ ├── movie-schedule-manager
 
 ```
