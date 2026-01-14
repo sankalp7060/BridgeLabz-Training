@@ -1,9 +1,15 @@
 using System;
 
-class AddressBookUtility : IAddressBook
+class AddressBookUtility : IContact
 {
     private Contact[] contacts = new Contact[100];
-    private int count;
+    private int count = 0;
+    public string BookName { get; private set; }
+
+    public AddressBookUtility(string bookName)
+    {
+        BookName = bookName;
+    }
 
     public void AddContact()
     {

@@ -1,7 +1,5 @@
 public interface IAddressBook
 {
-    void AddContact();
-    void EditContact();
-    void DeleteContact();
-    void AddMultipleContact();
+    void AddBook();
+    void ListBook();
 }
