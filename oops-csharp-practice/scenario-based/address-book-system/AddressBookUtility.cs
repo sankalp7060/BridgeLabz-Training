@@ -115,4 +115,19 @@ class AddressBookUtility : IAddressBook
             }
         }
     }
+
+    public void AddMultipleContact()
+    {
+        while (true)
+        {
+            AddContact();
+            Console.WriteLine("Press ENTER to exit");
+            var key = Console.ReadKey();
+            if (key.Key == ConsoleKey.Enter)
+            {
+                break;
+            }
+            Console.WriteLine();
+        }
+    }
 }
