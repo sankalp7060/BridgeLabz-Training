@@ -214,4 +214,30 @@ class ContactUtility : IContact
             Console.WriteLine($"[{BookName}] No persons found in state: {state}");
         }
     }
+
+    public int CountByCity(string city)
+    {
+        int cityCount = 0;
+        for (int i = 0; i < count; i++)
+        {
+            if (contacts[i].City.Equals(city, StringComparison.OrdinalIgnoreCase))
+            {
+                cityCount++;
+            }
+        }
+        return cityCount;
+    }
+
+    public int CountByCity(string city)
+    {
+        int stateCount = 0;
+        for (int i = 0; i < count; i++)
+        {
+            if (contacts[i].State.Equals(state, StringComparison.OrdinalIgnoreCase))
+            {
+                stateCount++;
+            }
+        }
+        return stateCount;
+    }
 }

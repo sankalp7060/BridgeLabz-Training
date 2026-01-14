@@ -5,6 +5,8 @@ public interface IContact
     void DeleteContact();
     void AddMultipleContact();
     bool SearchContact(string city, string state);
-    void ViewPersonsByCity();
-    void ViewPersonsByState();
+    void ViewPersonsByCity(string city);
+    void ViewPersonsByState(string state);
+    int CountByCity(string city);
+    int CountByState(string state);
 }

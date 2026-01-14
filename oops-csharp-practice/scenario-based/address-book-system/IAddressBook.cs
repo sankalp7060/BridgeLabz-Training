@@ -4,4 +4,5 @@ public interface IAddressBook
     void ListBook();
     void SearchPersonAcrossBooks();
     void ViewPersonsAcrossBooks();
+    void CountPersonsAcrossBooks();
 }
