@@ -43,4 +43,45 @@ class AddressBookUtility : IAddressBook
         count++;
         Console.WriteLine("Contact created successfully!");
     }
+
+    public void EditContact()
+    {
+        Console.WriteLine("Editing a contact...");
+
+        Console.Write("Enter the Phone Number of the contact to edit: ");
+        string phone = Console.ReadLine();
+        for (int i = 0; i < count; i++)
+        {
+            if (contacts[i].PhoneNumber == phone)
+            {
+                Console.WriteLine("Editing contact...");
+
+                Console.Write("New First Name: ");
+                contacts[i].FirstName = Console.ReadLine();
+
+                Console.Write("New Last Name: ");
+                contacts[i].LastName = Console.ReadLine();
+
+                Console.Write("New Address: ");
+                contacts[i].Address = Console.ReadLine();
+
+                Console.Write("New City: ");
+                contacts[i].City = Console.ReadLine();
+
+                Console.Write("New State: ");
+                contacts[i].State = Console.ReadLine();
+
+                Console.Write("New Zip: ");
+                contacts[i].Zip = Console.ReadLine();
+
+                Console.Write("New Email: ");
+                contacts[i].Email = Console.ReadLine();
+
+                Console.WriteLine("Contact updated successfully!");
+                return;
+            }
+        }
+
+        Console.WriteLine("Contact not found with this Phone Number.");
+    }
 }
