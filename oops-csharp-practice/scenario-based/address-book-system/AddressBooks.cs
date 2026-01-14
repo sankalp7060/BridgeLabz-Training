@@ -43,4 +43,38 @@ class AddressBooks : IAddressBook{
             Console.WriteLine("No matching person found.");
         }
     }
+    public void ViewPersonsAcrossBooks()
+    {
+        Console.WriteLine("View by:\n1. City\n2. State");
+        string choice = Console.ReadLine();
+
+        if (choice == "1")
+        {
+            Console.Write("Enter City: ");
+            string city = Console.ReadLine();
+
+            Console.WriteLine($"\nPersons in City: {city}");
+
+            for (int i = 0; i < count; i++)
+            {
+                addressBooks[i].ViewPersonsByCity(city);
+            }
+        }
+        else if (choice == "2")
+        {
+            Console.Write("Enter State: ");
+            string state = Console.ReadLine();
+
+            Console.WriteLine($"\nPersons in State: {state}");
+
+            for (int i = 0; i < count; i++)
+            {
+                addressBooks[i].ViewPersonsByState(state);
+            }
+        }
+        else
+        {
+            Console.WriteLine("Invalid choice!");
+        }
+    }
 }

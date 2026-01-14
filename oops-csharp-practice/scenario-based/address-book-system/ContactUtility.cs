@@ -172,4 +172,46 @@ class ContactUtility : IContact
         }
         return found;
     }
+
+    public void ViewPersonsByCity(string city)
+    {
+        bool found = false;
+
+        for (int i = 0; i < count; i++)
+        {
+            if (contacts[i].City.Equals(city, StringComparison.OrdinalIgnoreCase))
+            {
+                Console.WriteLine(
+                    $"[{BookName}] {contacts[i].FirstName} {contacts[i].LastName} | {contacts[i].PhoneNumber}"
+                );
+                found = true;
+            }
+        }
+
+        if (!found)
+        {
+            Console.WriteLine($"[{BookName}] No persons found in city: {city}");
+        }
+    }
+
+    public void ViewPersonsByState(string state)
+    {
+        bool found = false;
+
+        for (int i = 0; i < count; i++)
+        {
+            if (contacts[i].State.Equals(state, StringComparison.OrdinalIgnoreCase))
+            {
+                Console.WriteLine(
+                    $"[{BookName}] {contacts[i].FirstName} {contacts[i].LastName} | {contacts[i].PhoneNumber}"
+                );
+                found = true;
+            }
+        }
+
+        if (!found)
+        {
+            Console.WriteLine($"[{BookName}] No persons found in state: {state}");
+        }
+    }
 }
