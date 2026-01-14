@@ -240,4 +240,36 @@ class ContactUtility : IContact
         }
         return stateCount;
     }
+
+    public void SortContactsByName()
+    {
+        if (count <= 1)
+        {
+            Console.WriteLine("Not enough contacts to sort.");
+            return;
+        }
+        for (int i = 0; i < count - 1; i++)
+        {
+            for (int j = 0; j < count - i - 1; j++)
+            {
+                int firstNameCompare = string.Compare(
+                    contacts[j].FirstName,
+                    contacts[j + 1].FirstName,
+                    StringComparison.OrdinalIgnoreCase
+                );
+                int lastNameCompare = string.Compare(
+                    contacts[j].LastName,
+                    contacts[j + 1].LastName,
+                    StringComparison.OrdinalIgnoreCase
+                );
+                if (firstNameCompare > 0 || (firstNameCompare == 0 && lastNameCompare > 0))
+                {
+                    Contact t = contacts[j];
+                    contacts[j] = contacts[j + 1];
+                    contacts[j + 1] = t;
+                }
+            }
+        }
+        Console.WriteLine("Contacts sorted alphabetically by name.");
+    }
 }

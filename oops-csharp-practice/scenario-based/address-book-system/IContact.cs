@@ -9,4 +9,5 @@ public interface IContact
     void ViewPersonsByState(string state);
     int CountByCity(string city);
     int CountByState(string state);
+    void SortContactsByName();
 }
