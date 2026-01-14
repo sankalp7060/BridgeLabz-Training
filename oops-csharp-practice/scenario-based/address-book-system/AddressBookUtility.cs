@@ -45,6 +45,17 @@ class AddressBookUtility : IContact
         Console.Write("Email: ");
         string email = Console.ReadLine();
 
+        for (int i = 0; i < count; i++)
+        {
+            if (contacts[i].PhoneNumber == phone)
+            {
+                Console.WriteLine(
+                    "Duplicate entry! Phone number already exists in this Address Book."
+                );
+                return;
+            }
+        }
+
         contacts[count] = new Contact(firstName, lastName, address, city, state, zip, phone, email);
         count++;
         Console.WriteLine("Contact created successfully!");
