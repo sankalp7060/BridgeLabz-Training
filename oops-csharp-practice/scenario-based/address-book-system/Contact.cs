@@ -15,7 +15,7 @@ class Contact
         string address,
         string city,
         string state,
-        string state,
+        string zip,
         string phoneNumber,
         string email
     )

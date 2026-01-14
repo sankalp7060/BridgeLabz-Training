@@ -228,7 +228,7 @@ class ContactUtility : IContact
         return cityCount;
     }
 
-    public int CountByCity(string city)
+    public int CountByState(string state)
     {
         int stateCount = 0;
         for (int i = 0; i < count; i++)

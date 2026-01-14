@@ -1,34 +1,44 @@
 using System;
 
-class AddressBooks : IAddressBook{
-    private AddressBookUtility[] books = new AddressBookUtility[10];
-    private count = 0;
-    public void AddBook(){
-        if (count >= addressBooks.Length)
-            {
-                Console.WriteLine("Cannot add more Address Books.");
-                return;
-            }
+class AddressBooks : IAddressBook
+{
+    private ContactUtility[] books = new ContactUtility[10];
+    private int count = 0;
+
+    public void AddBook()
+    {
+        if (count >= books.Length)
+        {
+            Console.WriteLine("Cannot add more Address Books.");
+            return;
+        }
         Console.WriteLine("Enter the name for a new address book:- ");
         string name = Console.ReadLine();
 
-        for(int i = 0;i<count;i++){
-            if(books[i].BookName.Equals(name,StringComparison.OrdinalIgnoreCase)){
+        for (int i = 0; i < count; i++)
+        {
+            if (books[i].BookName.Equals(name, StringComparison.OrdinalIgnoreCase))
+            {
                 Console.WriteLine("Address Book with this name is already exist.");
                 return;
             }
         }
-        books[count]= new AddressBookUtility(name);
+        books[count] = new ContactUtility(name);
         count++;
         Console.WriteLine($"Address Book '{name}' added successfully!");
     }
-    public void ListBook(){
+
+    public void ListBook()
+    {
         Console.WriteLine("All address books:- ");
-        for(int i=0;i<count;i++){
+        for (int i = 0; i < count; i++)
+        {
             Console.WriteLine(books[i].BookName);
         }
     }
-    public void SearchPersonAcrossBooks(){
+
+    public void SearchPersonAcrossBooks()
+    {
         Console.WriteLine("Enter the city name:- ");
         string city = Console.ReadLine();
         Console.WriteLine("Enter the state name:- ");
@@ -36,13 +46,16 @@ class AddressBooks : IAddressBook{
         Console.WriteLine("\nSearch Results:");
         bool found = false;
 
-        for(int i=0;i<count;i++){
-            found = address[i].SearchContact(city,state) || found;
+        for (int i = 0; i < count; i++)
+        {
+            found = books[i].SearchContact(city, state) || found;
         }
-        if(!found){
+        if (!found)
+        {
             Console.WriteLine("No matching person found.");
         }
     }
+
     public void ViewPersonsAcrossBooks()
     {
         Console.WriteLine("View by:\n1. City\n2. State");
@@ -57,7 +70,7 @@ class AddressBooks : IAddressBook{
 
             for (int i = 0; i < count; i++)
             {
-                addressBooks[i].ViewPersonsByCity(city);
+                books[i].ViewPersonsByCity(city);
             }
         }
         else if (choice == "2")
@@ -69,7 +82,7 @@ class AddressBooks : IAddressBook{
 
             for (int i = 0; i < count; i++)
             {
-                addressBooks[i].ViewPersonsByState(state);
+                books[i].ViewPersonsByState(state);
             }
         }
         else
@@ -77,7 +90,9 @@ class AddressBooks : IAddressBook{
             Console.WriteLine("Invalid choice!");
         }
     }
-    public void CountPersonsAcrossBooks(){
+
+    public void CountPersonsAcrossBooks()
+    {
         Console.WriteLine("View by:\n1. City\n2. State");
         string choice = Console.ReadLine();
 
@@ -92,7 +107,7 @@ class AddressBooks : IAddressBook{
 
             for (int i = 0; i < count; i++)
             {
-                totalCount += addressBooks[i].CountByCity(city);
+                totalCount += books[i].CountByCity(city);
             }
             Console.WriteLine($"\nTotal persons in city '{city}': {totalCount}");
         }
@@ -105,7 +120,7 @@ class AddressBooks : IAddressBook{
 
             for (int i = 0; i < count; i++)
             {
-                totalCount += addressBooks[i].CountByState(state);
+                totalCount += books[i].CountByState(state);
             }
             Console.WriteLine($"\nTotal persons in state '{state}': {totalCount}");
         }
@@ -113,5 +128,44 @@ class AddressBooks : IAddressBook{
         {
             Console.WriteLine("Invalid choice!");
         }
+    }
+
+    public void EditContactInBook()
+    {
+        var book = SelectBook();
+        if (book != null)
+            book.EditContact();
+    }
+
+    public void DeleteContactInBook()
+    {
+        var book = SelectBook();
+        if (book != null)
+            book.DeleteContact();
+    }
+
+    public void AddMultipleContactsToBook()
+    {
+        var book = SelectBook();
+        if (book != null)
+            book.AddMultipleContact();
+    }
+
+    public void SortContactsInBook()
+    {
+        var book = SelectBook();
+        if (book != null)
+            book.SortContactsByName();
+    }
+
+    private ContactUtility SelectBook()
+    {
+        Console.Write("Enter Address Book Name: ");
+        string name = Console.ReadLine();
+        for (int i = 0; i < count; i++)
+            if (books[i].BookName.Equals(name, StringComparison.OrdinalIgnoreCase))
+                return books[i];
+        Console.WriteLine("Address Book not found!");
+        return null;
     }
 }
