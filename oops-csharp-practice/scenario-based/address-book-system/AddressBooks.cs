@@ -13,7 +13,7 @@ class AddressBooks : IAddressBook{
         string name = Console.ReadLine();
 
         for(int i = 0;i<count;i++){
-            if(books[i].BookName.Equals(name,StringComparison.OrdinalIgnoreCase)>=0){
+            if(books[i].BookName.Equals(name,StringComparison.OrdinalIgnoreCase)){
                 Console.WriteLine("Address Book with this name is already exist.");
                 return;
             }
@@ -26,6 +26,21 @@ class AddressBooks : IAddressBook{
         Console.WriteLine("All address books:- ");
         for(int i=0;i<count;i++){
             Console.WriteLine(books[i].BookName);
+        }
+    }
+    public void SearchPersonAcrossBooks(){
+        Console.WriteLine("Enter the city name:- ");
+        string city = Console.ReadLine();
+        Console.WriteLine("Enter the state name:- ");
+        string state = Console.ReadLine();
+        Console.WriteLine("\nSearch Results:");
+        bool found = false;
+
+        for(int i=0;i<count;i++){
+            found = address[i].SearchContact(city,state) || found;
+        }
+        if(!found){
+            Console.WriteLine("No matching person found.");
         }
     }
 }

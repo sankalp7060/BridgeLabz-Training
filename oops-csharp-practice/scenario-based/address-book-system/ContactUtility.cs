@@ -1,12 +1,12 @@
 using System;
 
-class AddressBookUtility : IContact
+class ContactUtility : IContact
 {
     private Contact[] contacts = new Contact[100];
     private int count = 0;
     public string BookName { get; private set; }
 
-    public AddressBookUtility(string bookName)
+    public ContactUtility(string bookName)
     {
         BookName = bookName;
     }
@@ -146,5 +146,30 @@ class AddressBookUtility : IContact
             }
             Console.WriteLine();
         }
+    }
+
+    public bool SearchContact(string city, string state)
+    {
+        bool found = false;
+        for (int i = 0; i < count; i++)
+        {
+            if (
+                (
+                    !string.IsNullOrEmpty(city)
+                    && contacts[i].City.Equals(city, StringComparison.OrdinalIgnoreCase)
+                )
+                || (
+                    !string.IsNullOrEmpty(state)
+                    && contacts[i].State.Equals(state, StringComparison.OrdinalIgnoreCase)
+                )
+            )
+            {
+                Console.WriteLine(
+                    $"[{BookName}] {contacts[i].FirstName} {contacts[i].LastName} | {contacts[i].City}, {contacts[i].State} | {contacts[i].PhoneNumber}"
+                );
+                found = true;
+            }
+        }
+        return found;
     }
 }
