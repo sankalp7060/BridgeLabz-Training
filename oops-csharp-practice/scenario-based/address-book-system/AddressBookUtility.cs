@@ -46,18 +46,20 @@ class AddressBookUtility : IAddressBook
 
     public void EditContact()
     {
-        Console.WriteLine("Editing a contact...");
+        Console.Write("Enter the First Name of the contact to edit: ");
+        string name = Console.ReadLine();
 
-        Console.Write("Enter the Phone Number of the contact to edit: ");
+        Console.Write("Enter the Phone Number of the contact: ");
         string phone = Console.ReadLine();
+
         for (int i = 0; i < count; i++)
         {
-            if (contacts[i].PhoneNumber == phone)
+            if (
+                contacts[i].FirstName.Equals(name, StringComparison.OrdinalIgnoreCase)
+                && contacts[i].PhoneNumber == phone
+            )
             {
                 Console.WriteLine("Editing contact...");
-
-                Console.Write("New First Name: ");
-                contacts[i].FirstName = Console.ReadLine();
 
                 Console.Write("New Last Name: ");
                 contacts[i].LastName = Console.ReadLine();
@@ -74,6 +76,9 @@ class AddressBookUtility : IAddressBook
                 Console.Write("New Zip: ");
                 contacts[i].Zip = Console.ReadLine();
 
+                Console.Write("New Phone Number: ");
+                contacts[i].PhoneNumber = Console.ReadLine();
+
                 Console.Write("New Email: ");
                 contacts[i].Email = Console.ReadLine();
 
@@ -82,6 +87,32 @@ class AddressBookUtility : IAddressBook
             }
         }
 
-        Console.WriteLine("Contact not found with this Phone Number.");
+        Console.WriteLine("Contact not found.");
+    }
+
+    public void DeleteContact()
+    {
+        Console.Write("Enter the First Name of the contact to delete: ");
+        string name = Console.ReadLine();
+
+        Console.Write("Enter the Phone Number of the contact: ");
+        string phone = Console.ReadLine();
+        for (int i = 0; i < count; i++)
+        {
+            if (
+                contacts[i].FirstName.Equals(name, StringComparison.OrdinalIgnoreCase)
+                && contacts[i].PhoneNumber == phone
+            )
+            {
+                for (int j = i; j < count - 1; j++)
+                {
+                    contacts[j] = contacts[j + 1];
+                }
+                contacts[count - 1] = null;
+                count--;
+                Console.WriteLine("Contact deleted successfully!");
+                return;
+            }
+        }
     }
 }
