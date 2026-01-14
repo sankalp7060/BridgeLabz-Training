@@ -453,6 +453,26 @@
 
 ---
 
+## 📅 Day 24 – January 14, 2026
+
+### 🧩 Topics of the Day
+- 📚 **Address Book System** – Building a full console-based address book  
+- 🔧 **Features Implementation** – Adding, editing, deleting, searching, viewing, counting, and sorting contacts  
+- 🖥️ **Menu-Driven Interface** – Easy interaction with multiple address books  
+- 💻 **LeetCode Practice** – Solving programming problems  
+
+### ✅ Today's Work
+- Developed a **complete console-based Address Book System** supporting multiple address books and contacts  
+- Implemented functionalities for **adding, editing, deleting, searching, viewing, counting, and sorting contacts**  
+- Enabled **menu-driven interaction** for managing personal and multiple address books  
+- Solved **LeetCode problems** to enhance coding skills  
+
+### ⏭️ What's Next
+- Add more features and **refactor the Address Book System**  
+- Continue solving LeetCode problems for practice  
+
+---
+
 ## 📂 Folder Structure (Branch-wise)
 
 ```
@@ -481,6 +501,7 @@ BridgeLabz-SIPP-Training/
 │ │ ├── csharp-this-static-sealed/
 │ ├── leet-code-practice/
 │ ├── scenario-based/
+│ │ ├── address-book-system
 │ │ ├── atm-dispenser/
 │ │ ├── bank-management/
 │ │ ├── bird-sanctuary-system/
