@@ -473,6 +473,24 @@
 
 ---
 
+## 📅 Day 25 – January 15, 2026
+
+### 🧩 Topics of the Day
+- 🔄 **Weekly Revision** – Reviewed all topics covered this week  
+- 🎯 **Scenario-Based Practice** – Applied concepts in real-life problems  
+- 📚 **Address Book System Enhancement** – Added more features  
+
+### ✅ Today's Work
+- Revised all topics covered this week to strengthen understanding  
+- Solved **scenario-based problems**, including **Tab History Manager**  
+- Enhanced the **Address Book System** by adding new features and improving usability  
+
+### ⏭️ What's Next
+- Move forward in **DSA concepts**  
+- Solve problems related to **trees, graphs, and advanced data structures**  
+
+---
+
 ## 📂 Folder Structure (Branch-wise)
 
 ```
@@ -531,5 +549,6 @@ BridgeLabz-SIPP-Training/
 │ ├── scenario-based/
 │ │ ├── digital-bookshelf-app
 │ │ ├── movie-schedule-manager
+│ │ ├── tab-history-manager
 
 ```
