@@ -491,6 +491,23 @@
 
 ---
 
+## 📅 Day 26 – January 16, 2026
+
+### 🧩 Topics of the Day
+- 🧠 **Advanced DSA Practice** – Applying multiple data structures together  
+- 🔗 **Linked Lists** – Working with singly and circular linked lists  
+- 📊 **HashMap & Queue** – Custom implementation and usage  
+
+### ✅ Today's Work
+- Solved **scenario-based problems** including **Library-Organiz-Story** and **Traffic Manager**  
+- Implemented **custom data structures** such as singly linked list, circular linked list, HashMap, and Queue  
+- Applied multiple DSA concepts together to build complete scenario-based solutions  
+
+### ⏭️ What's Next
+- Continue advancing in **DSA concepts**  
+- Move forward in our DSA journey solved some real life problems on sorting/searching
+--
+
 ## 📂 Folder Structure (Branch-wise)
 
 ```
@@ -548,7 +565,9 @@ BridgeLabz-SIPP-Training/
 │ ├── leet-code-practice/
 │ ├── scenario-based/
 │ │ ├── digital-bookshelf-app
+│ │ ├── library-organiz-story
 │ │ ├── movie-schedule-manager
 │ │ ├── tab-history-manager
+│ │ ├── traffic-manager
 
 ```
