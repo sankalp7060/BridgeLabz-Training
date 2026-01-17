@@ -506,7 +506,25 @@
 ### ⏭️ What's Next
 - Continue advancing in **DSA concepts**  
 - Move forward in our DSA journey solved some real life problems on sorting/searching
---
+
+---
+
+## 📅 Day 27 – January 17, 2026
+
+### 🧩 Topics of the Day
+- 🔃 **Sorting Algorithms** – Applying sorting techniques in real-world scenarios  
+- 🧠 **DSA Revision** – Revisiting concepts covered so far  
+
+### ✅ Today's Work
+- Built **Fitness Tracker App** scenario using sorting algorithms for data organization and analysis  
+- Implemented **Flash Dealz App** scenario to sort products based on discounts and priority  
+- Revised all important **DSA and OOPS concepts** covered up to today  
+
+### ⏭️ What's Next
+- Start learning the **C# Collections Framework**  
+- Practice built-in collections and compare them with custom data structures  
+
+---
 
 ## 📂 Folder Structure (Branch-wise)
 
@@ -565,6 +583,8 @@ BridgeLabz-SIPP-Training/
 │ ├── leet-code-practice/
 │ ├── scenario-based/
 │ │ ├── digital-bookshelf-app
+│ │ ├── fitness-tracker-app
+│ │ ├── flash-dealz-app
 │ │ ├── library-organiz-story
 │ │ ├── movie-schedule-manager
 │ │ ├── tab-history-manager
