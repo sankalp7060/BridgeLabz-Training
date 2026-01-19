@@ -19,7 +19,8 @@ public class SoftwareEngineer : JobRole
 {
     public int CodingScore { get; set; }
 
-    public SoftwareEngineer(string name, int score) : base(name)
+    public SoftwareEngineer(string name, int score)
+        : base(name)
     {
         CodingScore = score;
     }
@@ -35,7 +36,8 @@ public class DataScientist : JobRole
 {
     public int MLScore { get; set; }
 
-    public DataScientist(string name, int score) : base(name)
+    public DataScientist(string name, int score)
+        : base(name)
     {
         MLScore = score;
     }
@@ -47,7 +49,8 @@ public class DataScientist : JobRole
 }
 
 // Generic Resume Processor
-public class Resume<T> where T : JobRole
+public class Resume<T>
+    where T : JobRole
 {
     private List<T> candidates = new List<T>();
 
@@ -70,7 +73,8 @@ public class Resume<T> where T : JobRole
 // Generic Screening Utility
 public static class ResumeAnalyzer
 {
-    public static void ValidateResume<T>(T candidate) where T : JobRole
+    public static void ValidateResume<T>(T candidate)
+        where T : JobRole
     {
         Console.WriteLine($"Resume validated for {candidate.CandidateName}");
     }
