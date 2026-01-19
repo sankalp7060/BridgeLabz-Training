@@ -526,6 +526,23 @@
 
 ---
 
+## 📅 Day 28 – January 19, 2026
+
+### 🧩 Topics of the Day
+- 📊 **OOPS + DSA Review** – Revising core programming and data structure concepts  
+- 🧬 **Generics in C#** – Writing type-safe and reusable code  
+
+### ✅ Today's Work
+- Gave a comprehensive **review of OOPS and DSA topics** to strengthen conceptual understanding  
+- Learned the fundamentals of **Generics in C#** and their real-world usage  
+- Solved scenario-based projects including **Parcel Management System** and **Online Exam System** using generics  
+
+### ⏭️ What's Next
+- Move forward with the **C# Collections Framework**  
+- Explore built-in collection classes and their performance characteristics  
+
+---
+
 ## 📂 Folder Structure (Branch-wise)
 
 ```
@@ -582,12 +599,20 @@ BridgeLabz-SIPP-Training/
 │ │ ├── csharp-stack-queue-hashmap/
 │ ├── leet-code-practice/
 │ ├── scenario-based/
+│ │ ├── delivery-chain-management
 │ │ ├── digital-bookshelf-app
 │ │ ├── fitness-tracker-app
 │ │ ├── flash-dealz-app
 │ │ ├── library-organiz-story
 │ │ ├── movie-schedule-manager
+│ │ ├── online-exam-system
 │ │ ├── tab-history-manager
 │ │ ├── traffic-manager
+│
+├── collections-csharp-practice/
+│ ├── gcr-codebase/
+│ │ ├── csharp-generics/
+│ ├── leet-code-practice/
+│ ├── scenario-based/
 
 ```
