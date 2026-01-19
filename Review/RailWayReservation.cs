@@ -25,7 +25,7 @@ public class Passenger
         Passenger p = obj as Passenger;
         if (p == null)
             return false;
-        return this.Id == p.Id;
+        return Id == p.Id;
     }
 
     public override int GetHashCode()
@@ -78,7 +78,6 @@ public class CustomLL
             Node t = head;
             while (t.Next != null)
                 t = t.Next;
-
             t.Next = node;
         }
 
@@ -121,7 +120,6 @@ public class CustomLL
         {
             if (t.Data.Equals(p))
                 return true;
-
             t = t.Next;
         }
 
@@ -196,7 +194,6 @@ public class CustomQ
         {
             if (t.Data.Equals(p))
                 return true;
-
             t = t.Next;
         }
 
@@ -257,7 +254,6 @@ public class CustomMap
             return false;
 
         int index = Hash(entry.TrainNo);
-
         MapNode head = table[index];
 
         if (head == null)
@@ -273,10 +269,8 @@ public class CustomMap
         {
             if (current.Data.TrainNo == entry.TrainNo)
                 return false;
-
             if (current.Next == null)
                 break;
-
             current = current.Next;
         }
 
@@ -288,14 +282,12 @@ public class CustomMap
     public TrainEntry Get(int trainNo)
     {
         int index = Hash(trainNo);
-
         MapNode current = table[index];
 
         while (current != null)
         {
             if (current.Data.TrainNo == trainNo)
                 return current.Data;
-
             current = current.Next;
         }
 
@@ -330,24 +322,42 @@ public class CustomMap
     }
 }
 
-public class RailwayManager : ITrainManager
+public abstract class BaseTrainManager
 {
-    private CustomMap trains = new CustomMap();
+    protected CustomMap trains = new CustomMap();
 
-    public void AddTrain(int trainNo, int coachCapacity)
+    protected void AddTrainBase(int trainNo, int coachCapacity)
     {
         TrainEntry entry = new TrainEntry(trainNo, coachCapacity);
         trains.Put(entry);
     }
 
-    public void RemoveTrain(int trainNo)
+    protected void RemoveTrainBase(int trainNo)
     {
         trains.Remove(trainNo);
     }
 
+    protected TrainEntry GetTrain(int trainNo)
+    {
+        return trains.Get(trainNo);
+    }
+}
+
+public class RailwayManager : BaseTrainManager, ITrainManager
+{
+    public void AddTrain(int trainNo, int coachCapacity)
+    {
+        AddTrainBase(trainNo, coachCapacity);
+    }
+
+    public void RemoveTrain(int trainNo)
+    {
+        RemoveTrainBase(trainNo);
+    }
+
     public void BookSeat(int trainNo, Passenger p)
     {
-        TrainEntry train = trains.Get(trainNo);
+        TrainEntry train = GetTrain(trainNo);
 
         if (train == null)
             return;
@@ -372,7 +382,7 @@ public class RailwayManager : ITrainManager
 
     public void CancelSeat(int trainNo, Passenger p)
     {
-        TrainEntry train = trains.Get(trainNo);
+        TrainEntry train = GetTrain(trainNo);
 
         if (train == null)
             return;
@@ -395,7 +405,7 @@ public class RailwayManager : ITrainManager
 
     public void DisplaySeats(int trainNo)
     {
-        TrainEntry train = trains.Get(trainNo);
+        TrainEntry train = GetTrain(trainNo);
 
         if (train == null)
             return;
