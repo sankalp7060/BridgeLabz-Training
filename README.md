@@ -543,6 +543,24 @@
 
 ---
 
+## 📅 Day 29 – January 20, 2026
+
+### 🧩 Topics of the Day
+- 📚 **C# Collections** – Learning different collection types and their usage  
+- 🔄 **Backtracking Algorithm** – Understanding recursive problem-solving techniques  
+- 🧩 **Scenario-based Problem Solving** – Applying concepts to real-world applications  
+
+### ✅ Today's Work
+- Explored and practiced **all major C# collections** (List, Dictionary, HashSet, Queue, Stack, etc.) by solving multiple problems  
+- Learned and implemented **backtracking algorithms** and solved related problems  
+- Solved scenario-based projects: **Aadhar Numbers Sorting** and **Password Cracker Simulator**  
+
+### ⏭️ What's Next
+- Continue advancing in **C# Collections Framework**  
+- Deepen understanding and practice of **backtracking algorithms**  
+
+---
+
 ## 📂 Folder Structure (Branch-wise)
 
 ```
@@ -599,18 +617,21 @@ BridgeLabz-SIPP-Training/
 │ │ ├── csharp-stack-queue-hashmap/
 │ ├── leet-code-practice/
 │ ├── scenario-based/
-│ │ ├── delivery-chain-management
-│ │ ├── digital-bookshelf-app
-│ │ ├── fitness-tracker-app
-│ │ ├── flash-dealz-app
-│ │ ├── library-organiz-story
-│ │ ├── movie-schedule-manager
-│ │ ├── online-exam-system
-│ │ ├── tab-history-manager
-│ │ ├── traffic-manager
+│ │ ├── aadhar-numbers-sorting/
+│ │ ├── delivery-chain-management/
+│ │ ├── digital-bookshelf-app/
+│ │ ├── fitness-tracker-app/
+│ │ ├── flash-dealz-app/
+│ │ ├── library-organiz-story/
+│ │ ├── movie-schedule-manager/
+│ │ ├── online-exam-system/
+│ │ ├── password-cracker-simulator/
+│ │ ├── tab-history-manager/
+│ │ ├── traffic-manager/
 │
 ├── collections-csharp-practice/
 │ ├── gcr-codebase/
+│ │ ├── csharp-collections/
 │ │ ├── csharp-generics/
 │ ├── leet-code-practice/
 │ ├── scenario-based/
