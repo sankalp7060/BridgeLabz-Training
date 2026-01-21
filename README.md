@@ -561,6 +561,21 @@
 
 ---
 
+## 📅 Day 30 – January 21, 2026
+
+### 🧩 Topics of the Day
+- 💧 **C# Streams** – Reading, writing, and processing data efficiently  
+- 🧩 **Scenario-based Problem Solving** – Applying streams in real-world situations  
+
+### ✅ Today's Work
+- Learned and practiced **C# streams** by solving multiple problems  
+- Completed scenario-based projects: **Supermarket Billing Queue** and **Rank Sheet Generator**  
+
+### ⏭️ What's Next
+- Start learning **Exception Handling in C#**  
+
+---
+
 ## 📂 Folder Structure (Branch-wise)
 
 ```
@@ -625,7 +640,9 @@ BridgeLabz-SIPP-Training/
 │ │ ├── library-organiz-story/
 │ │ ├── movie-schedule-manager/
 │ │ ├── online-exam-system/
+│ │ ├── parcel-tracker/
 │ │ ├── password-cracker-simulator/
+│ │ ├── rank-sheet-generator/
 │ │ ├── tab-history-manager/
 │ │ ├── traffic-manager/
 │
@@ -633,7 +650,9 @@ BridgeLabz-SIPP-Training/
 │ ├── gcr-codebase/
 │ │ ├── csharp-collections/
 │ │ ├── csharp-generics/
+│ │ ├── csharp-streams/
 │ ├── leet-code-practice/
 │ ├── scenario-based/
+│ │ ├── supermarket-billing-queue/
 
 ```
