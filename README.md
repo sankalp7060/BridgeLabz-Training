@@ -576,6 +576,21 @@
 
 ---
 
+## 📅 Day 31 – January 22, 2026
+
+### 🧩 Topics of the Day
+- ⚠️ **Exception Handling in C#** – Handling runtime errors and improving program reliability  
+- 📚 **Concept Revision Session** – Collections, Generics, Streams, and Exception Handling  
+
+### ✅ Today's Work
+- Learned and practiced **exception handling concepts** such as try-catch, finally, and custom exceptions  
+- Attended an in-depth revision lecture on **Collections, Generics, Streams, and Exception Handling** to strengthen core understanding  
+
+### ⏭️ What's Next
+- Start learning **Testing in C#** and explore unit testing concepts  
+
+---
+
 ## 📂 Folder Structure (Branch-wise)
 
 ```
@@ -649,6 +664,7 @@ BridgeLabz-SIPP-Training/
 ├── collections-csharp-practice/
 │ ├── gcr-codebase/
 │ │ ├── csharp-collections/
+│ │ ├── csharp-exceptions/
 │ │ ├── csharp-generics/
 │ │ ├── csharp-streams/
 │ ├── leet-code-practice/
