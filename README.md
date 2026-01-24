@@ -591,6 +591,36 @@
 
 ---
 
+## 📅 Day 32 – January 23, 2026
+
+### 🧩 Topics of the Day
+- 🔄 **Weekly Revision** – Streams, Collections, Generics, and Exception Handling  
+- 🧠 **Practical Problem Solving** – Applying concepts through coding exercises  
+
+### ✅ Today's Work
+- Revised all major topics covered this week including **Streams, Collections, Generics, and Exception Handling**  
+- Solved multiple coding problems to strengthen understanding and improve practical implementation skills  
+
+### ⏭️ What's Next
+- Start learning **Annotations and Reflection in C#**  
+
+---
+
+## 📅 Day 33 – January 24, 2026
+
+### 🧩 Topics of the Day
+- ⚠️ **Custom Exceptions** – Creating and handling user-defined exceptions  
+- 🏷️ **Annotations** – Understanding attributes and their usage in C#  
+
+### ✅ Today's Work
+- Learned how to create and use **custom exceptions** for better error handling and application control  
+- Explored **annotations (attributes)** in C# and practiced applying them in programs  
+
+### ⏭️ What's Next
+- Start working with **Reflection, Regular Expressions (Regex), and NUnit Testing**  
+
+---
+
 ## 📂 Folder Structure (Branch-wise)
 
 ```
