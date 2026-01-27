@@ -621,6 +621,25 @@
 
 ---
 
+## 📅 Day 34 – January 27, 2026
+
+### 🧩 Topics of the Day
+- 🔍 **Regular Expressions (Regex)** – Pattern matching and text validation  
+- 🏷️ **Annotations** – Applying attributes in real scenarios  
+- 🪞 **Reflection** – Inspecting and manipulating metadata at runtime  
+- 🧪 **Unit Testing** – NUnit and MSTest for verifying code functionality  
+
+### ✅ Today's Work
+- Solved multiple **problems using Regex, annotations, reflection, and unit testing**  
+- Completed **two scenario-based projects**:  
+  - **HealthCheckPro** – API validation system  
+  - **EventTracker** – Event management system  
+
+### ⏭️ What's Next
+- Start learning **File I/O programming** and work on input/output operations in C#  
+
+---
+
 ## 📂 Folder Structure (Branch-wise)
 
 ```
@@ -693,12 +712,18 @@ BridgeLabz-SIPP-Training/
 │
 ├── collections-csharp-practice/
 │ ├── gcr-codebase/
+│ │ ├── csharp-annotations/
 │ │ ├── csharp-collections/
 │ │ ├── csharp-exceptions/
 │ │ ├── csharp-generics/
+│ │ ├── csharp-nunit/
+│ │ ├── csharp-reflection/
+│ │ ├── csharp-regex/
 │ │ ├── csharp-streams/
 │ ├── leet-code-practice/
 │ ├── scenario-based/
 │ │ ├── supermarket-billing-queue/
+│ │ ├── event-tracker/
+│ │ ├── health-check-pro/
 
 ```
