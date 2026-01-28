@@ -640,6 +640,24 @@
 
 ---
 
+## 📅 Day 35 – January 28, 2026
+
+### 🧩 Topics of the Day
+- 📂 **File I/O Programming in C#** – Reading from and writing to files  
+- 🛠️ **Practical File Handling** – Working with streams and file operations  
+- 🧪 **Scenario-based Applications** – Applying I/O concepts in real use cases  
+
+### ✅ Today's Work
+- Started learning **File I/O programming** in C# and solved multiple problems based on file handling concepts  
+- Implemented **real-world scenarios** using I/O operations:  
+  - **Aero-Vigil** – Aviation data handling and monitoring system  
+  - **Validations on Bank Account** – File-based validation and record management system  
+
+### ⏭️ What's Next
+- Begin learning **Design Patterns** and understand their real-world implementation in software development  
+
+---
+
 ## 📂 Folder Structure (Branch-wise)
 
 ```
@@ -722,8 +740,16 @@ BridgeLabz-SIPP-Training/
 │ │ ├── csharp-streams/
 │ ├── leet-code-practice/
 │ ├── scenario-based/
+│ │ ├── aero-vigil/
 │ │ ├── supermarket-billing-queue/
 │ │ ├── event-tracker/
 │ │ ├── health-check-pro/
+│ │ ├── validations-on-bank-account/
+│
+├── ioprogramming-csharp-practice/
+│ ├── gcr-codebase/
+│ │ ├── csharp-datahandling/
+│ ├── leet-code-practice/
+│ ├── scenario-based/
 
 ```
