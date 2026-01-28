@@ -1,0 +1,12 @@
+C:\BridgeLabz-Training\collections-csharp-practice\scenario-based\validations-on-bank-account\Code\bin\Debug\net8.0\Code.deps.json
+C:\BridgeLabz-Training\collections-csharp-practice\scenario-based\validations-on-bank-account\Code\bin\Debug\net8.0\Code.dll
+C:\BridgeLabz-Training\collections-csharp-practice\scenario-based\validations-on-bank-account\Code\bin\Debug\net8.0\Code.pdb
+C:\BridgeLabz-Training\collections-csharp-practice\scenario-based\validations-on-bank-account\Code\obj\Debug\net8.0\Code.GeneratedMSBuildEditorConfig.editorconfig
+C:\BridgeLabz-Training\collections-csharp-practice\scenario-based\validations-on-bank-account\Code\obj\Debug\net8.0\Code.AssemblyInfoInputs.cache
+C:\BridgeLabz-Training\collections-csharp-practice\scenario-based\validations-on-bank-account\Code\obj\Debug\net8.0\Code.AssemblyInfo.cs
+C:\BridgeLabz-Training\collections-csharp-practice\scenario-based\validations-on-bank-account\Code\obj\Debug\net8.0\Code.csproj.CoreCompileInputs.cache
+C:\BridgeLabz-Training\collections-csharp-practice\scenario-based\validations-on-bank-account\Code\obj\Debug\net8.0\Code.sourcelink.json
+C:\BridgeLabz-Training\collections-csharp-practice\scenario-based\validations-on-bank-account\Code\obj\Debug\net8.0\Code.dll
+C:\BridgeLabz-Training\collections-csharp-practice\scenario-based\validations-on-bank-account\Code\obj\Debug\net8.0\refint\Code.dll
+C:\BridgeLabz-Training\collections-csharp-practice\scenario-based\validations-on-bank-account\Code\obj\Debug\net8.0\Code.pdb
+C:\BridgeLabz-Training\collections-csharp-practice\scenario-based\validations-on-bank-account\Code\obj\Debug\net8.0\ref\Code.dll
