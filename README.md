@@ -658,6 +658,24 @@
 
 ---
 
+## 📅 Day 36 – January 29, 2026
+
+### 🧩 Topics of the Day
+- 🌊 **Scenario-based Applications** – Real-world project implementation  
+- 📄 **JSON Data Handling** – Understanding structure and basic operations  
+- 🔗 **Data Integration** – Working with structured data formats  
+
+### ✅ Today's Work
+- Developed and worked on two scenario-based applications:  
+  - **Ocean-Fleet-App** – Marine fleet data management and performance tracking system  
+  - **Stream-Buzz** – Streaming platform analytics and data processing application  
+- Learned about **JSON data format**, its structure, and basic usage for data storage and exchange  
+
+### ⏭️ What's Next
+- Practice advanced **JSON data processing** and solve problems related to JSON parsing and manipulation  
+
+---
+
 ## 📂 Folder Structure (Branch-wise)
 
 ```
@@ -741,9 +759,11 @@ BridgeLabz-SIPP-Training/
 │ ├── leet-code-practice/
 │ ├── scenario-based/
 │ │ ├── aero-vigil/
-│ │ ├── supermarket-billing-queue/
 │ │ ├── event-tracker/
 │ │ ├── health-check-pro/
+│ │ ├── ocean-fleet-app/
+│ │ ├── stream-buzz/
+│ │ ├── supermarket-billing-queue/
 │ │ ├── validations-on-bank-account/
 │
 ├── ioprogramming-csharp-practice/
