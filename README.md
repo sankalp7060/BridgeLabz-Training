@@ -676,6 +676,36 @@
 
 ---
 
+## 📅 Day 37 – January 30, 2026
+
+### 🧩 Topics of the Day
+- 📚 **Weekly Revision** – Review of topics covered this week  
+- 🚚 **Scenario-based Problem Solving** – Applying concepts in real-world context  
+
+### ✅ Today's Work
+- Revised all the topics learned this week  
+- Solved a scenario-based problem: **Lexical Logistics** – Implemented real-world logistics solution using learned concepts  
+
+### ⏭️ What's Next
+- Solve problems on **JSON data processing** and manipulation  
+
+---
+
+## 📅 Day 38 – January 31, 2026
+
+### 🧩 Topics of the Day
+- 📄 **JSON Data Handling** – Reading, writing, and processing JSON in C#  
+- 🚛 **Scenario-based Project** – Applying concepts to real-world systems  
+
+### ✅ Today's Work
+- Solved problems on **JSON data handling**  
+- Completed a scenario-based project: **Future Logistics Billing System** – Implemented billing and transport management features using JSON data  
+
+### ⏭️ What's Next
+- Solve more **JSON-based problems** and **scenario-based projects** to strengthen real-world application skills  
+
+---
+
 ## 📂 Folder Structure (Branch-wise)
 
 ```
@@ -760,7 +790,9 @@ BridgeLabz-SIPP-Training/
 │ ├── scenario-based/
 │ │ ├── aero-vigil/
 │ │ ├── event-tracker/
+│ │ ├── future-logistics-billing-system/
 │ │ ├── health-check-pro/
+│ │ ├── lexical-twist/
 │ │ ├── ocean-fleet-app/
 │ │ ├── stream-buzz/
 │ │ ├── supermarket-billing-queue/
@@ -769,6 +801,7 @@ BridgeLabz-SIPP-Training/
 ├── ioprogramming-csharp-practice/
 │ ├── gcr-codebase/
 │ │ ├── csharp-datahandling/
+│ │ ├── csharp-json/
 │ ├── leet-code-practice/
 │ ├── scenario-based/
 
