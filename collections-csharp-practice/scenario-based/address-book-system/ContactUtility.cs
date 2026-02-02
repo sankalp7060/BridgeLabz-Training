@@ -1,5 +1,6 @@
 using System;
 using System.IO;
+using System.Text;
 
 class ContactUtility : IContact
 {
@@ -11,8 +12,8 @@ class ContactUtility : IContact
     public ContactUtility(string bookName)
     {
         BookName = bookName;
-        filePath = $"{BookName}.txt"; // Each address book will have its own file
-        LoadFromFile(); // Load contacts from file on initialization
+        filePath = $"{BookName}.csv"; // CSV file for this Address Book
+        LoadFromCSV(); // Load contacts from CSV on initialization
     }
 
     public void AddContact()
@@ -49,7 +50,7 @@ class ContactUtility : IContact
         Console.Write("Email: ");
         string email = Console.ReadLine();
 
-        // Check for duplicate phone
+        // Check duplicate phone
         for (int i = 0; i < count; i++)
         {
             if (contacts[i].PhoneNumber == phone)
@@ -62,7 +63,7 @@ class ContactUtility : IContact
         contacts[count] = new Contact(firstName, lastName, address, city, state, zip, phone, email);
         count++;
         Console.WriteLine("Contact created successfully!");
-        SaveToFile(); // Save after adding
+        SaveToCSV(); // Save immediately
     }
 
     public void EditContact()
@@ -94,7 +95,7 @@ class ContactUtility : IContact
                 Console.Write("New Email: ");
                 contacts[i].Email = Console.ReadLine();
                 Console.WriteLine("Contact updated successfully!");
-                SaveToFile();
+                SaveToCSV();
                 return;
             }
         }
@@ -121,21 +122,21 @@ class ContactUtility : IContact
                 contacts[count - 1] = null;
                 count--;
                 Console.WriteLine("Contact deleted successfully!");
-                SaveToFile();
+                SaveToCSV();
                 return;
             }
         }
+
         Console.WriteLine("Contact not found.");
     }
 
-    // Add Multiple Contacts
     public void AddMultipleContact()
     {
         while (true)
         {
             AddContact();
             Console.WriteLine(
-                "Press ENTER to exit adding multiple contacts, any other key to continue."
+                "Press ENTER to stop adding multiple contacts, any other key to continue."
             );
             var key = Console.ReadKey();
             if (key.Key == ConsoleKey.Enter)
@@ -144,29 +145,32 @@ class ContactUtility : IContact
         }
     }
 
-    // File I/O Methods
-    private void SaveToFile()
+    // ---------------- CSV Methods ----------------
+    private void SaveToCSV()
     {
-        using (StreamWriter sw = new StreamWriter(filePath))
+        using (StreamWriter sw = new StreamWriter(filePath, false, Encoding.UTF8))
         {
+            // Write header
+            sw.WriteLine("FirstName,LastName,Address,City,State,Zip,PhoneNumber,Email");
+
             for (int i = 0; i < count; i++)
             {
                 sw.WriteLine(
-                    $"{contacts[i].FirstName}|{contacts[i].LastName}|{contacts[i].Address}|{contacts[i].City}|{contacts[i].State}|{contacts[i].Zip}|{contacts[i].PhoneNumber}|{contacts[i].Email}"
+                    $"{contacts[i].FirstName},{contacts[i].LastName},{contacts[i].Address},{contacts[i].City},{contacts[i].State},{contacts[i].Zip},{contacts[i].PhoneNumber},{contacts[i].Email}"
                 );
             }
         }
     }
 
-    private void LoadFromFile()
+    private void LoadFromCSV()
     {
         if (!File.Exists(filePath))
             return;
 
         string[] lines = File.ReadAllLines(filePath);
-        foreach (var line in lines)
+        for (int i = 1; i < lines.Length; i++) // skip header
         {
-            string[] parts = line.Split('|');
+            string[] parts = lines[i].Split(',');
             if (parts.Length == 8)
             {
                 contacts[count++] = new Contact(
