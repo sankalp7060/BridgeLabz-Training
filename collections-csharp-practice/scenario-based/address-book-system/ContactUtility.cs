@@ -4,7 +4,7 @@ using System.IO;
 using System.Text;
 
 class ContactUtility<T>
-    where T : IContactEntity
+    where T : Contact
 {
     private List<T> contacts = new List<T>();
     public string BookName { get; private set; }
@@ -14,55 +14,83 @@ class ContactUtility<T>
     {
         BookName = bookName;
         filePath = $"{BookName}.csv";
-        LoadFromCSV();
+        try
+        {
+            LoadFromCSV();
+        }
+        catch (Exception ex)
+        {
+            Console.WriteLine($"Error loading contacts from CSV: {ex.Message}");
+        }
     }
 
     public void AddContact(Func<T> createContact)
     {
-        T contact = createContact();
-
-        foreach (var c in contacts)
+        try
         {
-            if (c.PhoneNumber == contact.PhoneNumber)
-            {
-                Console.WriteLine("Duplicate entry! Phone number already exists.");
-                return;
-            }
-        }
+            T contact = createContact();
 
-        contacts.Add(contact);
-        Console.WriteLine("Contact added successfully!");
-        SaveToCSV();
+            foreach (var c in contacts)
+            {
+                if (c.PhoneNumber == contact.PhoneNumber)
+                {
+                    Console.WriteLine("Duplicate entry! Phone number already exists.");
+                    return;
+                }
+            }
+
+            contacts.Add(contact);
+            Console.WriteLine("Contact created successfully!");
+            SaveToCSV();
+        }
+        catch (Exception ex)
+        {
+            Console.WriteLine($"Error adding contact: {ex.Message}");
+        }
     }
 
     public void EditContact(Func<T, bool> predicate, Action<T> editAction)
     {
-        foreach (var c in contacts)
+        try
         {
-            if (predicate(c))
+            for (int i = 0; i < contacts.Count; i++)
             {
-                editAction(c);
-                Console.WriteLine("Contact updated successfully!");
-                SaveToCSV();
-                return;
+                if (predicate(contacts[i]))
+                {
+                    editAction(contacts[i]);
+                    Console.WriteLine("Contact updated successfully!");
+                    SaveToCSV();
+                    return;
+                }
             }
+            Console.WriteLine("Contact not found.");
         }
-        Console.WriteLine("Contact not found.");
+        catch (Exception ex)
+        {
+            Console.WriteLine($"Error editing contact: {ex.Message}");
+        }
     }
 
     public void DeleteContact(Func<T, bool> predicate)
     {
-        for (int i = 0; i < contacts.Count; i++)
+        try
         {
-            if (predicate(contacts[i]))
+            for (int i = 0; i < contacts.Count; i++)
             {
-                contacts.RemoveAt(i);
-                Console.WriteLine("Contact deleted successfully!");
-                SaveToCSV();
-                return;
+                if (predicate(contacts[i]))
+                {
+                    contacts.RemoveAt(i);
+                    Console.WriteLine("Contact deleted successfully!");
+                    SaveToCSV();
+                    return;
+                }
             }
+            Console.WriteLine("Contact not found.");
         }
-        Console.WriteLine("Contact not found.");
+        catch (Exception ex)
+        {
+            Console.WriteLine($"Error deleting contact: {ex.Message}");
+        }
     }
 
     public void AddMultipleContact(Func<T> createContact)
@@ -80,11 +108,11 @@ class ContactUtility<T>
         }
     }
 
-    // ---------------- CSV Methods ----------------
     private void SaveToCSV()
     {
-        using (StreamWriter sw = new StreamWriter(filePath, false, Encoding.UTF8))
+        try
         {
+            using StreamWriter sw = new StreamWriter(filePath, false, Encoding.UTF8);
             sw.WriteLine("FirstName,LastName,Address,City,State,Zip,PhoneNumber,Email");
             foreach (var c in contacts)
             {
@@ -93,6 +121,10 @@ class ContactUtility<T>
                 );
             }
         }
+        catch (Exception ex)
+        {
+            Console.WriteLine($"Error saving to CSV: {ex.Message}");
+        }
     }
 
     private void LoadFromCSV()
@@ -100,143 +132,225 @@ class ContactUtility<T>
         if (!File.Exists(filePath))
             return;
 
-        string[] lines = File.ReadAllLines(filePath);
-        for (int i = 1; i < lines.Length; i++)
+        try
         {
-            string[] parts = lines[i].Split(',');
-            if (parts.Length == 8)
+            string[] lines = File.ReadAllLines(filePath);
+            for (int i = 1; i < lines.Length; i++)
             {
-                T c = (T)
-                    Activator.CreateInstance(
-                        typeof(T),
-                        parts[0],
-                        parts[1],
-                        parts[2],
-                        parts[3],
-                        parts[4],
-                        parts[5],
-                        parts[6],
-                        parts[7]
+                string[] parts = lines[i].Split(',');
+                if (parts.Length == 8)
+                {
+                    contacts.Add(
+                        (T)
+                            Activator.CreateInstance(
+                                typeof(T),
+                                parts[0],
+                                parts[1],
+                                parts[2],
+                                parts[3],
+                                parts[4],
+                                parts[5],
+                                parts[6],
+                                parts[7]
+                            )
                     );
-                contacts.Add(c);
+                }
             }
+        }
+        catch (Exception ex)
+        {
+            Console.WriteLine($"Error reading CSV: {ex.Message}");
         }
     }
 
-    // ---------------- Search / View ----------------
+    // ---------------- Existing Methods ----------------
     public bool SearchContact(string city, string state)
     {
-        bool found = false;
-        foreach (var c in contacts)
+        try
         {
-            if (
-                (
-                    !string.IsNullOrEmpty(city)
-                    && c.City.Equals(city, StringComparison.OrdinalIgnoreCase)
-                )
-                || (
-                    !string.IsNullOrEmpty(state)
-                    && c.State.Equals(state, StringComparison.OrdinalIgnoreCase)
-                )
-            )
+            bool found = false;
+            foreach (var c in contacts)
             {
-                Console.WriteLine(
-                    $"[{BookName}] {c.FirstName} {c.LastName} | {c.City}, {c.State} | {c.PhoneNumber}"
-                );
-                found = true;
+                if (
+                    (
+                        !string.IsNullOrEmpty(city)
+                        && c.City.Equals(city, StringComparison.OrdinalIgnoreCase)
+                    )
+                    || (
+                        !string.IsNullOrEmpty(state)
+                        && c.State.Equals(state, StringComparison.OrdinalIgnoreCase)
+                    )
+                )
+                {
+                    Console.WriteLine(
+                        $"[{BookName}] {c.FirstName} {c.LastName} | {c.City}, {c.State} | {c.PhoneNumber}"
+                    );
+                    found = true;
+                }
             }
+            return found;
         }
-        return found;
+        catch (Exception ex)
+        {
+            Console.WriteLine($"Error searching contacts: {ex.Message}");
+            return false;
+        }
     }
 
     public void ViewPersonsByCity(string city)
     {
-        bool found = false;
-        foreach (var c in contacts)
+        try
         {
-            if (c.City.Equals(city, StringComparison.OrdinalIgnoreCase))
+            bool found = false;
+            foreach (var c in contacts)
             {
-                Console.WriteLine($"[{BookName}] {c.FirstName} {c.LastName} | {c.PhoneNumber}");
-                found = true;
+                if (c.City.Equals(city, StringComparison.OrdinalIgnoreCase))
+                {
+                    Console.WriteLine($"[{BookName}] {c.FirstName} {c.LastName} | {c.PhoneNumber}");
+                    found = true;
+                }
             }
+            if (!found)
+                Console.WriteLine($"[{BookName}] No persons found in city: {city}");
         }
-        if (!found)
-            Console.WriteLine($"[{BookName}] No persons found in city: {city}");
+        catch (Exception ex)
+        {
+            Console.WriteLine($"Error viewing contacts by city: {ex.Message}");
+        }
     }
 
     public void ViewPersonsByState(string state)
     {
-        bool found = false;
-        foreach (var c in contacts)
+        try
         {
-            if (c.State.Equals(state, StringComparison.OrdinalIgnoreCase))
+            bool found = false;
+            foreach (var c in contacts)
             {
-                Console.WriteLine($"[{BookName}] {c.FirstName} {c.LastName} | {c.PhoneNumber}");
-                found = true;
+                if (c.State.Equals(state, StringComparison.OrdinalIgnoreCase))
+                {
+                    Console.WriteLine($"[{BookName}] {c.FirstName} {c.LastName} | {c.PhoneNumber}");
+                    found = true;
+                }
             }
+            if (!found)
+                Console.WriteLine($"[{BookName}] No persons found in state: {state}");
         }
-        if (!found)
-            Console.WriteLine($"[{BookName}] No persons found in state: {state}");
+        catch (Exception ex)
+        {
+            Console.WriteLine($"Error viewing contacts by state: {ex.Message}");
+        }
     }
 
     public int CountByCity(string city)
     {
-        int total = 0;
-        foreach (var c in contacts)
-            if (c.City.Equals(city, StringComparison.OrdinalIgnoreCase))
-                total++;
-        return total;
+        try
+        {
+            int total = 0;
+            foreach (var c in contacts)
+            {
+                if (c.City.Equals(city, StringComparison.OrdinalIgnoreCase))
+                    total++;
+            }
+            return total;
+        }
+        catch (Exception ex)
+        {
+            Console.WriteLine($"Error counting contacts by city: {ex.Message}");
+            return 0;
+        }
     }
 
     public int CountByState(string state)
     {
-        int total = 0;
-        foreach (var c in contacts)
-            if (c.State.Equals(state, StringComparison.OrdinalIgnoreCase))
-                total++;
-        return total;
+        try
+        {
+            int total = 0;
+            foreach (var c in contacts)
+            {
+                if (c.State.Equals(state, StringComparison.OrdinalIgnoreCase))
+                    total++;
+            }
+            return total;
+        }
+        catch (Exception ex)
+        {
+            Console.WriteLine($"Error counting contacts by state: {ex.Message}");
+            return 0;
+        }
     }
 
-    // ---------------- Sorting ----------------
+    // Sorting methods
     public void SortContactsByName()
     {
-        contacts.Sort(
-            (a, b) =>
-            {
-                int fn = string.Compare(
-                    a.FirstName,
-                    b.FirstName,
-                    StringComparison.OrdinalIgnoreCase
-                );
-                return fn != 0
-                    ? fn
-                    : string.Compare(a.LastName, b.LastName, StringComparison.OrdinalIgnoreCase);
-            }
-        );
-        Console.WriteLine("Contacts sorted by name.");
-        SaveToCSV();
+        try
+        {
+            contacts.Sort(
+                (a, b) =>
+                {
+                    int firstNameCompare = string.Compare(
+                        a.FirstName,
+                        b.FirstName,
+                        StringComparison.OrdinalIgnoreCase
+                    );
+                    return firstNameCompare != 0
+                        ? firstNameCompare
+                        : string.Compare(
+                            a.LastName,
+                            b.LastName,
+                            StringComparison.OrdinalIgnoreCase
+                        );
+                }
+            );
+            Console.WriteLine("Contacts sorted by name.");
+        }
+        catch (Exception ex)
+        {
+            Console.WriteLine($"Error sorting by name: {ex.Message}");
+        }
     }
 
     public void SortContactsByCity()
     {
-        contacts.Sort((a, b) => string.Compare(a.City, b.City, StringComparison.OrdinalIgnoreCase));
-        Console.WriteLine("Contacts sorted by city.");
-        SaveToCSV();
+        try
+        {
+            contacts.Sort(
+                (a, b) => string.Compare(a.City, b.City, StringComparison.OrdinalIgnoreCase)
+            );
+            Console.WriteLine("Contacts sorted by city.");
+        }
+        catch (Exception ex)
+        {
+            Console.WriteLine($"Error sorting by city: {ex.Message}");
+        }
     }
 
     public void SortContactsByState()
     {
-        contacts.Sort(
-            (a, b) => string.Compare(a.State, b.State, StringComparison.OrdinalIgnoreCase)
-        );
-        Console.WriteLine("Contacts sorted by state.");
-        SaveToCSV();
+        try
+        {
+            contacts.Sort(
+                (a, b) => string.Compare(a.State, b.State, StringComparison.OrdinalIgnoreCase)
+            );
+            Console.WriteLine("Contacts sorted by state.");
+        }
+        catch (Exception ex)
+        {
+            Console.WriteLine($"Error sorting by state: {ex.Message}");
+        }
     }
 
     public void SortContactsByZip()
     {
-        contacts.Sort((a, b) => string.Compare(a.Zip, b.Zip, StringComparison.OrdinalIgnoreCase));
-        Console.WriteLine("Contacts sorted by zip.");
-        SaveToCSV();
+        try
+        {
+            contacts.Sort(
+                (a, b) => string.Compare(a.Zip, b.Zip, StringComparison.OrdinalIgnoreCase)
+            );
+            Console.WriteLine("Contacts sorted by zip.");
+        }
+        catch (Exception ex)
+        {
+            Console.WriteLine($"Error sorting by zip: {ex.Message}");
+        }
     }
 }
