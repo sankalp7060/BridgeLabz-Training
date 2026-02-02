@@ -1,49 +1,51 @@
 using System;
 using System.Collections.Generic;
 
-class AddressBooks : IAddressBook
+class AddressBooks<T>
+    where T : IContactEntity
 {
-    private List<ContactUtility> books = new List<ContactUtility>(); // List instead of array
+    private List<ContactUtility<T>> books = new List<ContactUtility<T>>();
 
     public void AddBook()
     {
-        Console.Write("Enter new Address Book Name: ");
+        Console.Write("Enter the name for a new address book: ");
         string name = Console.ReadLine();
 
-        for (int i = 0; i < books.Count; i++)
+        if (books.Exists(b => b.BookName.Equals(name, StringComparison.OrdinalIgnoreCase)))
         {
-            if (books[i].BookName.Equals(name, StringComparison.OrdinalIgnoreCase))
-            {
-                Console.WriteLine("Address Book with this name already exists!");
-                return;
-            }
+            Console.WriteLine("Address Book with this name already exists.");
+            return;
         }
 
-        books.Add(new ContactUtility(name));
+        books.Add(new ContactUtility<T>(name));
         Console.WriteLine($"Address Book '{name}' added successfully!");
     }
 
     public void ListBook()
     {
         Console.WriteLine("All Address Books:");
-        for (int i = 0; i < books.Count; i++)
-        {
-            Console.WriteLine(books[i].BookName);
-        }
+        foreach (var b in books)
+            Console.WriteLine(b.BookName);
+    }
+
+    public ContactUtility<T> GetBookByName(string name)
+    {
+        return books.Find(b => b.BookName.Equals(name, StringComparison.OrdinalIgnoreCase));
     }
 
     public void SearchPersonAcrossBooks()
     {
-        Console.Write("Enter City (or leave blank): ");
+        Console.Write("Enter City (or leave empty): ");
         string city = Console.ReadLine();
-        Console.Write("Enter State (or leave blank): ");
+        Console.Write("Enter State (or leave empty): ");
         string state = Console.ReadLine();
 
+        Console.WriteLine("\nSearch Results:");
         bool found = false;
-        for (int i = 0; i < books.Count; i++)
-        {
-            found = books[i].SearchContact(city, state) || found;
-        }
+
+        foreach (var book in books)
+            found = book.SearchContact(city, state) || found;
+
         if (!found)
             Console.WriteLine("No matching person found.");
     }
@@ -57,15 +59,15 @@ class AddressBooks : IAddressBook
         {
             Console.Write("Enter City: ");
             string city = Console.ReadLine();
-            for (int i = 0; i < books.Count; i++)
-                books[i].ViewPersonsByCity(city);
+            foreach (var book in books)
+                book.ViewPersonsByCity(city);
         }
         else if (choice == "2")
         {
             Console.Write("Enter State: ");
             string state = Console.ReadLine();
-            for (int i = 0; i < books.Count; i++)
-                books[i].ViewPersonsByState(state);
+            foreach (var book in books)
+                book.ViewPersonsByState(state);
         }
         else
         {
@@ -75,41 +77,29 @@ class AddressBooks : IAddressBook
 
     public void CountPersonsAcrossBooks()
     {
-        Console.WriteLine("View by:\n1. City\n2. State");
+        Console.WriteLine("Count by:\n1. City\n2. State");
         string choice = Console.ReadLine();
+        int totalCount = 0;
 
-        int total = 0;
         if (choice == "1")
         {
             Console.Write("Enter City: ");
             string city = Console.ReadLine();
-            for (int i = 0; i < books.Count; i++)
-                total += books[i].CountByCity(city);
-
-            Console.WriteLine($"Total persons in city '{city}': {total}");
+            foreach (var book in books)
+                totalCount += book.CountByCity(city);
+            Console.WriteLine($"\nTotal persons in city '{city}': {totalCount}");
         }
         else if (choice == "2")
         {
             Console.Write("Enter State: ");
             string state = Console.ReadLine();
-            for (int i = 0; i < books.Count; i++)
-                total += books[i].CountByState(state);
-
-            Console.WriteLine($"Total persons in state '{state}': {total}");
+            foreach (var book in books)
+                totalCount += book.CountByState(state);
+            Console.WriteLine($"\nTotal persons in state '{state}': {totalCount}");
         }
         else
         {
             Console.WriteLine("Invalid choice!");
         }
-    }
-
-    public ContactUtility GetBookByName(string name)
-    {
-        for (int i = 0; i < books.Count; i++)
-        {
-            if (books[i].BookName.Equals(name, StringComparison.OrdinalIgnoreCase))
-                return books[i];
-        }
-        return null;
     }
 }

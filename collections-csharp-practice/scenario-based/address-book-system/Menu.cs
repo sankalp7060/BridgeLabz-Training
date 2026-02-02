@@ -6,7 +6,8 @@ sealed class Menu
     {
         Console.WriteLine("Welcome to Address Book Program\n");
 
-        AddressBooks system = new AddressBooks();
+        // Specify Contact as the type for generic classes
+        AddressBooks<Contact> system = new AddressBooks<Contact>();
 
         while (true)
         {
@@ -52,11 +53,11 @@ sealed class Menu
         }
     }
 
-    static void ManageAddressBook(AddressBooks system)
+    static void ManageAddressBook(AddressBooks<Contact> system)
     {
         Console.Write("Enter Address Book Name to manage: ");
         string name = Console.ReadLine();
-        ContactUtility book = system.GetBookByName(name);
+        ContactUtility<Contact> book = system.GetBookByName(name);
 
         if (book == null)
         {
@@ -81,16 +82,16 @@ sealed class Menu
             switch (choice)
             {
                 case "1":
-                    book.AddContact();
+                    book.AddContact(CreateContact);
                     break;
                 case "2":
-                    book.EditContact();
+                    book.EditContact(EditPredicate, EditAction);
                     break;
                 case "3":
-                    book.DeleteContact();
+                    book.DeleteContact(DeletePredicate);
                     break;
                 case "4":
-                    book.AddMultipleContact();
+                    book.AddMultipleContact(CreateContact);
                     break;
                 case "5":
                     SortMenu(book);
@@ -112,7 +113,7 @@ sealed class Menu
         }
     }
 
-    static void SortMenu(ContactUtility book)
+    static void SortMenu(ContactUtility<Contact> book)
     {
         Console.WriteLine("\n--- Sort Contacts ---");
         Console.WriteLine("1. By Name");
@@ -140,5 +141,71 @@ sealed class Menu
                 Console.WriteLine("Invalid choice!");
                 break;
         }
+    }
+
+    // ---------------- Generic Contact Methods ----------------
+
+    static Contact CreateContact()
+    {
+        Console.WriteLine("Creating a new contact...");
+
+        Console.Write("First Name: ");
+        string firstName = Console.ReadLine();
+        Console.Write("Last Name: ");
+        string lastName = Console.ReadLine();
+        Console.Write("Address: ");
+        string address = Console.ReadLine();
+        Console.Write("City: ");
+        string city = Console.ReadLine();
+        Console.Write("State: ");
+        string state = Console.ReadLine();
+        Console.Write("Zip: ");
+        string zip = Console.ReadLine();
+        Console.Write("Phone Number: ");
+        string phone = Console.ReadLine();
+        Console.Write("Email: ");
+        string email = Console.ReadLine();
+
+        return new Contact(firstName, lastName, address, city, state, zip, phone, email);
+    }
+
+    static bool EditPredicate(Contact c)
+    {
+        Console.Write("Enter First Name to edit: ");
+        string firstName = Console.ReadLine();
+        Console.Write("Enter Phone Number: ");
+        string phone = Console.ReadLine();
+
+        return c.FirstName.Equals(firstName, StringComparison.OrdinalIgnoreCase)
+            && c.PhoneNumber == phone;
+    }
+
+    static void EditAction(Contact c)
+    {
+        Console.Write("New Last Name: ");
+        c.LastName = Console.ReadLine();
+        Console.Write("New Address: ");
+        c.Address = Console.ReadLine();
+        Console.Write("New City: ");
+        c.City = Console.ReadLine();
+        Console.Write("New State: ");
+        c.State = Console.ReadLine();
+        Console.Write("New Zip: ");
+        c.Zip = Console.ReadLine();
+        Console.Write("New Phone Number: ");
+        c.PhoneNumber = Console.ReadLine();
+        Console.Write("New Email: ");
+        c.Email = Console.ReadLine();
+    }
+
+    static bool DeletePredicate(Contact c)
+    {
+        Console.Write("Enter First Name to delete: ");
+        string firstName = Console.ReadLine();
+        Console.Write("Enter Phone Number: ");
+        string phone = Console.ReadLine();
+
+        return c.FirstName.Equals(firstName, StringComparison.OrdinalIgnoreCase)
+            && c.PhoneNumber == phone;
     }
 }

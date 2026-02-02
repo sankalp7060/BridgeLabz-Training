@@ -1,4 +1,4 @@
-public class Contact
+public class Contact : IContactEntity
 {
     public string FirstName { get; set; }
     public string LastName { get; set; }
