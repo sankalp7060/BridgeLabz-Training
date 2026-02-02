@@ -1,14 +1,18 @@
 using System;
+using System.IO;
 
 class ContactUtility : IContact
 {
     private Contact[] contacts = new Contact[100];
     private int count = 0;
     public string BookName { get; private set; }
+    private string filePath;
 
     public ContactUtility(string bookName)
     {
         BookName = bookName;
+        filePath = $"{BookName}.txt"; // Each address book will have its own file
+        LoadFromFile(); // Load contacts from file on initialization
     }
 
     public void AddContact()
@@ -45,14 +49,12 @@ class ContactUtility : IContact
         Console.Write("Email: ");
         string email = Console.ReadLine();
 
-        // Check duplicate phone number
+        // Check for duplicate phone
         for (int i = 0; i < count; i++)
         {
             if (contacts[i].PhoneNumber == phone)
             {
-                Console.WriteLine(
-                    "Duplicate entry! Phone number already exists in this Address Book."
-                );
+                Console.WriteLine("Duplicate entry! Phone number already exists.");
                 return;
             }
         }
@@ -60,14 +62,14 @@ class ContactUtility : IContact
         contacts[count] = new Contact(firstName, lastName, address, city, state, zip, phone, email);
         count++;
         Console.WriteLine("Contact created successfully!");
+        SaveToFile(); // Save after adding
     }
 
     public void EditContact()
     {
-        Console.Write("Enter the First Name of the contact to edit: ");
+        Console.Write("Enter First Name to edit: ");
         string name = Console.ReadLine();
-
-        Console.Write("Enter the Phone Number of the contact: ");
+        Console.Write("Enter Phone Number: ");
         string phone = Console.ReadLine();
 
         for (int i = 0; i < count; i++)
@@ -77,30 +79,22 @@ class ContactUtility : IContact
                 && contacts[i].PhoneNumber == phone
             )
             {
-                Console.WriteLine("Editing contact...");
-
                 Console.Write("New Last Name: ");
                 contacts[i].LastName = Console.ReadLine();
-
                 Console.Write("New Address: ");
                 contacts[i].Address = Console.ReadLine();
-
                 Console.Write("New City: ");
                 contacts[i].City = Console.ReadLine();
-
                 Console.Write("New State: ");
                 contacts[i].State = Console.ReadLine();
-
                 Console.Write("New Zip: ");
                 contacts[i].Zip = Console.ReadLine();
-
                 Console.Write("New Phone Number: ");
                 contacts[i].PhoneNumber = Console.ReadLine();
-
                 Console.Write("New Email: ");
                 contacts[i].Email = Console.ReadLine();
-
                 Console.WriteLine("Contact updated successfully!");
+                SaveToFile();
                 return;
             }
         }
@@ -110,11 +104,11 @@ class ContactUtility : IContact
 
     public void DeleteContact()
     {
-        Console.Write("Enter the First Name of the contact to delete: ");
+        Console.Write("Enter First Name to delete: ");
         string name = Console.ReadLine();
-
-        Console.Write("Enter the Phone Number of the contact: ");
+        Console.Write("Enter Phone Number: ");
         string phone = Console.ReadLine();
+
         for (int i = 0; i < count; i++)
         {
             if (
@@ -123,19 +117,18 @@ class ContactUtility : IContact
             )
             {
                 for (int j = i; j < count - 1; j++)
-                {
                     contacts[j] = contacts[j + 1];
-                }
                 contacts[count - 1] = null;
                 count--;
                 Console.WriteLine("Contact deleted successfully!");
+                SaveToFile();
                 return;
             }
         }
-
         Console.WriteLine("Contact not found.");
     }
 
+    // Add Multiple Contacts
     public void AddMultipleContact()
     {
         while (true)
@@ -146,10 +139,47 @@ class ContactUtility : IContact
             );
             var key = Console.ReadKey();
             if (key.Key == ConsoleKey.Enter)
-            {
                 break;
-            }
             Console.WriteLine();
+        }
+    }
+
+    // File I/O Methods
+    private void SaveToFile()
+    {
+        using (StreamWriter sw = new StreamWriter(filePath))
+        {
+            for (int i = 0; i < count; i++)
+            {
+                sw.WriteLine(
+                    $"{contacts[i].FirstName}|{contacts[i].LastName}|{contacts[i].Address}|{contacts[i].City}|{contacts[i].State}|{contacts[i].Zip}|{contacts[i].PhoneNumber}|{contacts[i].Email}"
+                );
+            }
+        }
+    }
+
+    private void LoadFromFile()
+    {
+        if (!File.Exists(filePath))
+            return;
+
+        string[] lines = File.ReadAllLines(filePath);
+        foreach (var line in lines)
+        {
+            string[] parts = line.Split('|');
+            if (parts.Length == 8)
+            {
+                contacts[count++] = new Contact(
+                    parts[0],
+                    parts[1],
+                    parts[2],
+                    parts[3],
+                    parts[4],
+                    parts[5],
+                    parts[6],
+                    parts[7]
+                );
+            }
         }
     }
 
