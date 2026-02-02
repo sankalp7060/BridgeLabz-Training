@@ -1,29 +1,23 @@
 using System;
+using System.Collections.Generic;
 using System.IO;
 using System.Text;
 
 class ContactUtility : IContact
 {
-    private Contact[] contacts = new Contact[100];
-    private int count = 0;
+    private List<Contact> contacts = new List<Contact>(); // Changed to List
     public string BookName { get; private set; }
     private string filePath;
 
     public ContactUtility(string bookName)
     {
         BookName = bookName;
-        filePath = $"{BookName}.csv"; // CSV file for this Address Book
-        LoadFromCSV(); // Load contacts from CSV on initialization
+        filePath = $"{BookName}.csv";
+        LoadFromCSV();
     }
 
     public void AddContact()
     {
-        if (count >= contacts.Length)
-        {
-            Console.WriteLine("Address Book is full!");
-            return;
-        }
-
         Console.WriteLine("Creating a new contact...");
 
         Console.Write("First Name: ");
@@ -51,7 +45,7 @@ class ContactUtility : IContact
         string email = Console.ReadLine();
 
         // Check duplicate phone
-        for (int i = 0; i < count; i++)
+        for (int i = 0; i < contacts.Count; i++)
         {
             if (contacts[i].PhoneNumber == phone)
             {
@@ -60,10 +54,9 @@ class ContactUtility : IContact
             }
         }
 
-        contacts[count] = new Contact(firstName, lastName, address, city, state, zip, phone, email);
-        count++;
+        contacts.Add(new Contact(firstName, lastName, address, city, state, zip, phone, email));
         Console.WriteLine("Contact created successfully!");
-        SaveToCSV(); // Save immediately
+        SaveToCSV();
     }
 
     public void EditContact()
@@ -73,7 +66,7 @@ class ContactUtility : IContact
         Console.Write("Enter Phone Number: ");
         string phone = Console.ReadLine();
 
-        for (int i = 0; i < count; i++)
+        for (int i = 0; i < contacts.Count; i++)
         {
             if (
                 contacts[i].FirstName.Equals(name, StringComparison.OrdinalIgnoreCase)
@@ -110,17 +103,14 @@ class ContactUtility : IContact
         Console.Write("Enter Phone Number: ");
         string phone = Console.ReadLine();
 
-        for (int i = 0; i < count; i++)
+        for (int i = 0; i < contacts.Count; i++)
         {
             if (
                 contacts[i].FirstName.Equals(name, StringComparison.OrdinalIgnoreCase)
                 && contacts[i].PhoneNumber == phone
             )
             {
-                for (int j = i; j < count - 1; j++)
-                    contacts[j] = contacts[j + 1];
-                contacts[count - 1] = null;
-                count--;
+                contacts.RemoveAt(i);
                 Console.WriteLine("Contact deleted successfully!");
                 SaveToCSV();
                 return;
@@ -150,10 +140,8 @@ class ContactUtility : IContact
     {
         using (StreamWriter sw = new StreamWriter(filePath, false, Encoding.UTF8))
         {
-            // Write header
             sw.WriteLine("FirstName,LastName,Address,City,State,Zip,PhoneNumber,Email");
-
-            for (int i = 0; i < count; i++)
+            for (int i = 0; i < contacts.Count; i++)
             {
                 sw.WriteLine(
                     $"{contacts[i].FirstName},{contacts[i].LastName},{contacts[i].Address},{contacts[i].City},{contacts[i].State},{contacts[i].Zip},{contacts[i].PhoneNumber},{contacts[i].Email}"
@@ -168,29 +156,32 @@ class ContactUtility : IContact
             return;
 
         string[] lines = File.ReadAllLines(filePath);
-        for (int i = 1; i < lines.Length; i++) // skip header
+        for (int i = 1; i < lines.Length; i++) // Skip header
         {
             string[] parts = lines[i].Split(',');
             if (parts.Length == 8)
             {
-                contacts[count++] = new Contact(
-                    parts[0],
-                    parts[1],
-                    parts[2],
-                    parts[3],
-                    parts[4],
-                    parts[5],
-                    parts[6],
-                    parts[7]
+                contacts.Add(
+                    new Contact(
+                        parts[0],
+                        parts[1],
+                        parts[2],
+                        parts[3],
+                        parts[4],
+                        parts[5],
+                        parts[6],
+                        parts[7]
+                    )
                 );
             }
         }
     }
 
+    // ---------------- Existing Methods ----------------
     public bool SearchContact(string city, string state)
     {
         bool found = false;
-        for (int i = 0; i < count; i++)
+        for (int i = 0; i < contacts.Count; i++)
         {
             if (
                 (
@@ -215,7 +206,7 @@ class ContactUtility : IContact
     public void ViewPersonsByCity(string city)
     {
         bool found = false;
-        for (int i = 0; i < count; i++)
+        for (int i = 0; i < contacts.Count; i++)
         {
             if (contacts[i].City.Equals(city, StringComparison.OrdinalIgnoreCase))
             {
@@ -226,15 +217,13 @@ class ContactUtility : IContact
             }
         }
         if (!found)
-        {
             Console.WriteLine($"[{BookName}] No persons found in city: {city}");
-        }
     }
 
     public void ViewPersonsByState(string state)
     {
         bool found = false;
-        for (int i = 0; i < count; i++)
+        for (int i = 0; i < contacts.Count; i++)
         {
             if (contacts[i].State.Equals(state, StringComparison.OrdinalIgnoreCase))
             {
@@ -245,65 +234,67 @@ class ContactUtility : IContact
             }
         }
         if (!found)
-        {
             Console.WriteLine($"[{BookName}] No persons found in state: {state}");
-        }
     }
 
     public int CountByCity(string city)
     {
-        int cityCount = 0;
-        for (int i = 0; i < count; i++)
+        int total = 0;
+        for (int i = 0; i < contacts.Count; i++)
         {
             if (contacts[i].City.Equals(city, StringComparison.OrdinalIgnoreCase))
-                cityCount++;
+                total++;
         }
-        return cityCount;
+        return total;
     }
 
     public int CountByState(string state)
     {
-        int stateCount = 0;
-        for (int i = 0; i < count; i++)
+        int total = 0;
+        for (int i = 0; i < contacts.Count; i++)
         {
             if (contacts[i].State.Equals(state, StringComparison.OrdinalIgnoreCase))
-                stateCount++;
+                total++;
         }
-        return stateCount;
+        return total;
     }
 
     public void SortContactsByName()
     {
-        for (int i = 0; i < count - 1; i++)
+        if (contacts.Count <= 1)
+            return;
+
+        for (int i = 0; i < contacts.Count - 1; i++)
         {
-            for (int j = 0; j < count - i - 1; j++)
+            for (int j = 0; j < contacts.Count - i - 1; j++)
             {
-                int firstCompare = string.Compare(
+                int firstNameCompare = string.Compare(
                     contacts[j].FirstName,
                     contacts[j + 1].FirstName,
                     StringComparison.OrdinalIgnoreCase
                 );
-                int lastCompare = string.Compare(
+                int lastNameCompare = string.Compare(
                     contacts[j].LastName,
                     contacts[j + 1].LastName,
                     StringComparison.OrdinalIgnoreCase
                 );
-                if (firstCompare > 0 || (firstCompare == 0 && lastCompare > 0))
+
+                if (firstNameCompare > 0 || (firstNameCompare == 0 && lastNameCompare > 0))
                 {
-                    var temp = contacts[j];
+                    Contact temp = contacts[j];
                     contacts[j] = contacts[j + 1];
                     contacts[j + 1] = temp;
                 }
             }
         }
-        Console.WriteLine("Contacts sorted by Name.");
+        Console.WriteLine("Contacts sorted alphabetically by name.");
     }
 
     public void SortContactsByCity()
     {
-        for (int i = 0; i < count - 1; i++)
+        for (int i = 0; i < contacts.Count - 1; i++)
         {
-            for (int j = 0; j < count - i - 1; j++)
+            for (int j = 0; j < contacts.Count - i - 1; j++)
             {
                 if (
                     string.Compare(
@@ -313,20 +304,20 @@ class ContactUtility : IContact
                     ) > 0
                 )
                 {
-                    var temp = contacts[j];
+                    Contact temp = contacts[j];
                     contacts[j] = contacts[j + 1];
                     contacts[j + 1] = temp;
                 }
             }
         }
-        Console.WriteLine("Contacts sorted by City.");
+        Console.WriteLine("Contacts sorted by city.");
     }
 
     public void SortContactsByState()
     {
-        for (int i = 0; i < count - 1; i++)
+        for (int i = 0; i < contacts.Count - 1; i++)
         {
-            for (int j = 0; j < count - i - 1; j++)
+            for (int j = 0; j < contacts.Count - i - 1; j++)
             {
                 if (
                     string.Compare(
@@ -336,20 +327,20 @@ class ContactUtility : IContact
                     ) > 0
                 )
                 {
-                    var temp = contacts[j];
+                    Contact temp = contacts[j];
                     contacts[j] = contacts[j + 1];
                     contacts[j + 1] = temp;
                 }
             }
         }
-        Console.WriteLine("Contacts sorted by State.");
+        Console.WriteLine("Contacts sorted by state.");
     }
 
     public void SortContactsByZip()
     {
-        for (int i = 0; i < count - 1; i++)
+        for (int i = 0; i < contacts.Count - 1; i++)
         {
-            for (int j = 0; j < count - i - 1; j++)
+            for (int j = 0; j < contacts.Count - i - 1; j++)
             {
                 if (
                     string.Compare(
@@ -359,12 +350,12 @@ class ContactUtility : IContact
                     ) > 0
                 )
                 {
-                    var temp = contacts[j];
+                    Contact temp = contacts[j];
                     contacts[j] = contacts[j + 1];
                     contacts[j + 1] = temp;
                 }
             }
         }
-        Console.WriteLine("Contacts sorted by Zip.");
+        Console.WriteLine("Contacts sorted by zip.");
     }
 }
