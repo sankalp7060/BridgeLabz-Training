@@ -725,6 +725,52 @@
 
 ---
 
+## 📅 Day 40 – February 3, 2026
+
+### 🧩 Topics of the Day
+- 🖥️ **MSSQL Setup** – Installing and configuring SQL Server  
+- 📝 **SQL Queries** – Basic CRUD operations and query execution  
+
+### ✅ Today's Work
+- Set up **MSSQL Server** on the system  
+- Ran and practiced basic **SQL queries** including creating tables, inserting, updating, and retrieving data  
+
+### ⏭️ What's Next
+- Start exploring **DBMS concepts** and integrate database operations with projects  
+
+---
+
+## 📅 Day 41 – February 4, 2026
+
+### 🧩 Topics of the Day
+- 📚 **DBMS Concepts** – Introduction to Database Management Systems  
+- 📝 **SQL Queries** – Practicing queries in SQL Server  
+
+### ✅ Today's Work
+- Attended lecture on **DBMS fundamentals**  
+- Ran and practiced **SQL queries** to understand database operations  
+
+### ⏭️ What's Next
+- Learn and implement **stored procedures, triggers, joins**, and other advanced SQL concepts  
+
+---
+
+## 📅 Day 42 – February 5, 2026
+
+### 🧩 Topics of the Day
+- 🛠️ **Stored Procedures & Triggers** – Automating database tasks  
+- 🔗 **Joins in SQL** – Combining data from multiple tables  
+- 🗣️ **Mentor Meeting** – Discussion on Reflection, Annotations, and MSTest  
+
+### ✅ Today's Work
+- Learned about **stored procedures, triggers, and different types of joins** in SQL  
+- Participated in the **mentor meeting** and answered questions on **Reflection, Annotations, and MSTest**  
+
+### ⏭️ What's Next
+- Practice advanced **DBMS operations** and start working on **database-driven projects**
+
+---
+
 ## 📂 Folder Structure (Branch-wise)
 
 ```
