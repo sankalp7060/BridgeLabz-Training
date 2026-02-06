@@ -1,0 +1,174 @@
+CREATE DATABASE PracticeDB;
+GO
+USE PracticeDB;
+GO
+CREATE TABLE Students (
+    StudentId INT PRIMARY KEY IDENTITY(1,1),
+    Name VARCHAR(50),
+    Age INT,
+    City VARCHAR(50)
+);
+CREATE TABLE Courses (
+    CourseId INT PRIMARY KEY IDENTITY(1,1),
+    CourseName VARCHAR(50),
+    Fees INT
+);
+CREATE TABLE Enrollments (
+    EnrollmentId INT PRIMARY KEY IDENTITY(1,1),
+    StudentId INT,
+    CourseId INT,
+    FOREIGN KEY (StudentId) REFERENCES Students(StudentId),
+    FOREIGN KEY (CourseId) REFERENCES Courses(CourseId)
+);
+INSERT INTO Students (Name, Age, City)
+VALUES
+('Amit', 22, 'Delhi'),
+('Rohit', 24, 'Mumbai'),
+('Sneha', 21, 'Pune'),
+('Neha', 23, 'Delhi');
+INSERT INTO Courses (CourseName, Fees)
+VALUES
+('C#', 15000),
+('SQL', 8000),
+('Java', 12000);
+INSERT INTO Enrollments (StudentId, CourseId)
+VALUES
+(1, 1),
+(1, 2),
+(2, 3),
+(3, 2);
+SELECT * FROM Students;
+SELECT Name, City FROM Students;
+SELECT * FROM Students WHERE City = 'Delhi';
+SELECT * FROM Students WHERE City = 'Delhi' AND Age > 22;
+
+UPDATE Students
+SET City = 'Bangalore'
+WHERE Name = 'Rohit';
+
+DELETE FROM Students
+WHERE Name = 'Neha';
+
+SELECT * FROM Students ORDER BY Age DESC;
+SELECT DISTINCT City FROM Students;
+SELECT COUNT(*) as count FROM Students;
+SELECT AVG(Age) as avg FROM Students;
+SELECT MAX(Fees) as max FROM Courses;
+
+SELECT City, COUNT(*) AS TotalStudents
+FROM Students
+GROUP BY City;
+
+SELECT City, COUNT(*) AS Total
+FROM Students
+GROUP BY City
+HAVING COUNT(*) > 1;
+
+SELECT s.Name, c.CourseName
+FROM Students s
+INNER JOIN Enrollments e ON s.StudentId = e.StudentId
+INNER JOIN Courses c ON e.CourseId = c.CourseId;
+
+SELECT s.Name, c.CourseName
+FROM Students s
+LEFT JOIN Enrollments e ON s.StudentId = e.StudentId
+LEFT JOIN Courses c ON e.CourseId = c.CourseId;
+
+SELECT Name
+FROM Students
+WHERE StudentId IN (
+    SELECT StudentId FROM Enrollments
+);
+
+CREATE VIEW StudentCourses AS
+SELECT s.Name, c.CourseName
+FROM Students s
+JOIN Enrollments e ON s.StudentId = e.StudentId
+JOIN Courses c ON e.CourseId = c.CourseId;
+SELECT * FROM StudentCourses;
+
+CREATE PROCEDURE GetStudentsByCity
+    @City VARCHAR(50)
+AS
+BEGIN
+    SELECT * FROM Students WHERE City = @City;
+END;
+
+EXEC GetStudentsByCity 'Delhi';
+
+CREATE FUNCTION GetStudentCount()
+RETURNS INT
+AS
+BEGIN
+    RETURN (SELECT COUNT(*) FROM Students);
+END;
+
+SELECT dbo.GetStudentCount();
+
+CREATE INDEX idx_city ON Students(City);
+
+ALTER TABLE Students
+ADD CONSTRAINT UQ_Students_Name UNIQUE (Name);
+
+ALTER TABLE Students
+ADD CONSTRAINT CK_Students_Age CHECK (Age >= 18);
+
+ALTER TABLE Students
+ADD CreatedDate DATETIME DEFAULT GETDATE();
+
+INSERT INTO Students (Name, Age, City)
+VALUES ('Kid', 15, 'Delhi');
+
+INSERT INTO Students (Name, Age, City)
+VALUES ('Amit', 22, 'Pune');
+
+BEGIN TRANSACTION;
+
+BEGIN TRY
+    INSERT INTO Students (Name, Age, City)
+    VALUES ('Rahul', 25, 'Jaipur');
+
+    INSERT INTO Enrollments (StudentId, CourseId)
+    VALUES (SCOPE_IDENTITY(), 1);
+
+    COMMIT;
+END TRY
+BEGIN CATCH
+    ROLLBACK;
+    PRINT 'Transaction Failed';
+END CATCH;
+
+CREATE TABLE StudentAudit (
+    AuditId INT IDENTITY PRIMARY KEY,
+    StudentId INT,
+    ActionType VARCHAR(20),
+    ActionDate DATETIME DEFAULT GETDATE()
+);
+
+CREATE TRIGGER trg_StudentInsert
+ON Students
+AFTER INSERT
+AS
+BEGIN
+    INSERT INTO StudentAudit (StudentId, ActionType)
+    SELECT StudentId, 'INSERT'
+    FROM inserted;
+END;
+
+INSERT INTO Students (Name, Age, City)
+VALUES ('Karan', 26, 'Indore');
+
+SELECT * FROM StudentAudit;
+
+CREATE TABLE Cities (
+    CityId INT IDENTITY PRIMARY KEY,
+    CityName VARCHAR(50),
+    Pincode INT
+);
+ALTER TABLE Students
+ADD CityId INT;
+
+ALTER TABLE Students
+ADD CONSTRAINT FK_Students_City
+FOREIGN KEY (CityId) REFERENCES Cities(CityId);
+
