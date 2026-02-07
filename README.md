@@ -771,6 +771,37 @@
 
 ---
 
+## 📅 Day 43 – February 6, 2026
+
+### 🧩 Topics of the Day
+- 🧠 **Soft Skills Training** – Communication, professionalism, and workplace readiness  
+- 🛠️ **DBMS Concepts** – Triggers, Stored Procedures, and Cascading  
+
+### ✅ Today's Work
+- Attended a **4-hour soft skills session** focusing on communication and professional growth  
+- Learned about **triggers, stored procedures, and cascading** concepts in DBMS  
+
+### ⏭️ What's Next
+- Begin working on the **Healthcare Project** and apply DBMS concepts in a real-world application
+
+---
+
+## 📅 Day 44 – February 7, 2026
+
+### 🧩 Topics of the Day
+- 🔗 **DBMS Integration** – Connecting database with a C# console application  
+- 🗄️ **Database Schema Design** – Structuring tables for the healthcare system  
+- ✏️ **CRUD Operations** – Create, Read, Update, Delete operations  
+
+### ✅ Today's Work
+- Learned how to **connect DBMS with a C# console application**  
+- Designed the **database schema** for the Healthcare application  
+- Implemented **CRUD operations** to manage healthcare-related data  
+
+### ⏭️ What's Next
+- Enhance the Healthcare app with advanced queries, validations, and optimized database operations
+
+
 ## 📂 Folder Structure (Branch-wise)
 
 ```
@@ -820,16 +851,18 @@ BridgeLabz-SIPP-Training/
 │
 ├── dsa-csharp-practice/
 │ ├── gcr-codebase/
-│ │ ├── csharp-algorithms-runtime-analysis
-│ │ ├── csharp-linear-binary-search
+│ │ ├── csharp-algorithms-runtime-analysis/
+│ │ ├── csharp-linear-binary-search/
 │ │ ├── csharp-linkedlist/
 │ │ ├── csharp-sorting-algorithms/
 │ │ ├── csharp-stack-queue-hashmap/
 │ ├── leet-code-practice/
 │ ├── scenario-based/
 │ │ ├── aadhar-numbers-sorting/
+│ │ ├── ascii-string-tool/
 │ │ ├── delivery-chain-management/
 │ │ ├── digital-bookshelf-app/
+│ │ ├── factory-robot-hazard-analyzer/
 │ │ ├── fitness-tracker-app/
 │ │ ├── flash-dealz-app/
 │ │ ├── library-organiz-story/
@@ -870,5 +903,9 @@ BridgeLabz-SIPP-Training/
 │ │ ├── csharp-json/
 │ ├── leet-code-practice/
 │ ├── scenario-based/
+
+├── dbma-csharp-practice/
+│ ├── gcr-codebase/
+│ │ ├── Practice.pdf
 
 ```
