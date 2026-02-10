@@ -801,6 +801,36 @@
 ### ⏭️ What's Next
 - Enhance the Healthcare app with advanced queries, validations, and optimized database operations
 
+---
+
+## 📅 Day 45 – February 9, 2026
+
+### 🧩 Topics of the Day
+- 🔌 **ADO.NET** – Understanding data access and connectivity in C#  
+- 🗂️ **Database Schema Design** – Structuring tables for the Healthcare project  
+
+### ✅ Today's Work
+- Learned **ADO.NET concepts**, including connection, command, and data handling  
+- Designed and refined **database schemas** for the Healthcare application using ADO.NET  
+
+### ⏭️ What's Next
+- Prepare for the **mock test** covering all topics learned so far
+
+---
+
+## 📅 Day 46 – February 10, 2026
+
+### 🧩 Topics of the Day
+- 📝 **Mock Test** – Timed C# console application development  
+- ⚙️ **Application Design** – Applying end-to-end C# concepts  
+
+### ✅ Today's Work
+- Appeared for a **mock test** where a complete **C# console application** was designed and implemented within a fixed time duration, applying core C#, OOPs, and logical problem-solving skills  
+
+### ⏭️ What's Next
+- Practice **scenario-based problems** using **Database concepts and ADO.NET**
+
+---
 
 ## 📂 Folder Structure (Branch-wise)
 
