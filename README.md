@@ -907,6 +907,38 @@
 
 ---
 
+## 📅 Day 52 – February 16, 2026
+
+### 🧩 Topics of the Day
+- 📝 **M1 Test Revision** – Revising all topics for upcoming Module 1 test  
+- 🧠 **Concept Reinforcement** – Strengthening understanding of previously learned topics  
+
+### ✅ Today's Work
+- Thoroughly revised all topics that will appear in the **M1 Test**  
+- Practiced sample problems and clarified doubts to ensure readiness  
+
+### ⏭️ What's Next
+- Start learning **ASP.NET** and begin **Major Project – Quantity Management App** tomorrow  
+
+---
+
+## 📅 Day 53 – February 17, 2026
+
+### 🧩 Topics of the Day
+- 🌐 **ASP.NET Introduction** – Web development basics using ASP.NET  
+- 🏗️ **Major Project Kickoff** – Quantity Management App  
+
+### ✅ Today's Work
+- Started learning **ASP.NET**, its structure, controls, and event handling  
+- Initiated **Quantity Management App** project and set up initial project architecture  
+
+### ⏭️ What's Next
+- Continue development of the **Quantity Management App**  
+- Explore advanced ASP.NET features and integrate them into the project  
+
+---
+
+
 ## 📂 Folder Structure (Branch-wise)
 
 ```
@@ -924,6 +956,7 @@ BridgeLabz-SIPP-Training/
 │ │ ├── programming-elements/
 │ ├── leet-code-practice/
 │ └── scenario-based/
+│ │ ├── health-care
 │
 ├── oops-csharp-practice/
 │ ├── gcr-codebase/
@@ -947,6 +980,7 @@ BridgeLabz-SIPP-Training/
 │ │ ├── festival-lucky-draw/
 │ │ ├── fitness-tracker/
 │ │ ├── freelancers/
+│ │ ├── health-care
 │ │ ├── hospital-patient-management-system/
 │ │ ├── loan-approval-automation
 │ │ ├── mathematical-operations/
@@ -993,10 +1027,14 @@ BridgeLabz-SIPP-Training/
 │ ├── scenario-based/
 │ │ ├── address-book-system
 │ │ ├── aero-vigil/
+│ │ ├── bank-transaction-processing-system
+│ │ ├── email-validator
 │ │ ├── event-tracker/
 │ │ ├── future-logistics-billing-system/
+│ │ ├── health-care
 │ │ ├── health-check-pro/
 │ │ ├── lexical-twist/
+│ │ ├── notify-hub
 │ │ ├── ocean-fleet-app/
 │ │ ├── stream-buzz/
 │ │ ├── supermarket-billing-queue/
@@ -1008,9 +1046,13 @@ BridgeLabz-SIPP-Training/
 │ │ ├── csharp-json/
 │ ├── leet-code-practice/
 │ ├── scenario-based/
-
+│ │ ├── address-book-system
+│
 ├── dbma-csharp-practice/
 │ ├── gcr-codebase/
 │ │ ├── Practice.pdf
+│ ├── scenario-based/
+│ │ ├── address-book-system
+│ │ ├── health-care
 
 ```
