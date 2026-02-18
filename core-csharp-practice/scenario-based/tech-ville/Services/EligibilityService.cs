@@ -5,18 +5,26 @@ namespace TechVille.Core.Services
 {
     public class EligibilityService : IEligibilityService
     {
-        public ServicePackage CalculatePackage(Citizen citizen)
+        public double CalculateEligibility(Citizen c)
         {
-            if (citizen.Age > 60 && citizen.Income < 300000)
-                return ServicePackage.Platinum;
+            double score = 0;
 
-            if (citizen.Income > 1000000)
-                return ServicePackage.Gold;
+            score += c.Age * 0.3;
+            score += c.ResidencyYears * 5;
+            score += c.Income / 10000;
 
-            if (citizen.ResidencyYears > 5)
-                return ServicePackage.Silver;
+            return score;
+        }
 
-            return ServicePackage.Basic;
+        public ServicePackage GetPackage(double score)
+        {
+            return score switch
+            {
+                >= 80 => ServicePackage.Platinum,
+                >= 60 => ServicePackage.Gold,
+                >= 40 => ServicePackage.Silver,
+                _ => ServicePackage.Basic,
+            };
         }
     }
 }

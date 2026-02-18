@@ -1,25 +1,38 @@
-﻿using TechVille.Core.Interfaces;
+﻿using System;
 using TechVille.Core.Services;
-using TechVille.Core.View;
+using TechVille.Core.Views;
 
 namespace TechVille.Core
 {
     class Program
     {
-        static void Main(string[] args)
+        static void Main()
         {
-            IEligibilityService eligibilityService = new EligibilityService();
-            IValidationService validationService = new ValidationService();
-            ILoggerService loggerService = new LoggerService();
+            CitizenView view = new CitizenView();
+            CitizenService citizenService = new CitizenService();
+            EligibilityService eligibility = new EligibilityService();
 
-            ICitizenService citizenService = new CitizenService(
-                eligibilityService,
-                validationService,
-                loggerService
-            );
+            view.ShowWelcome();
 
-            ConsoleUI ui = new ConsoleUI(citizenService);
-            ui.Start();
+            bool running = true;
+
+            while (running)
+            {
+                var citizen = citizenService.RegisterCitizen();
+
+                citizen.EligibilityScore = eligibility.CalculateEligibility(citizen);
+
+                citizen.Package = eligibility.GetPackage(citizen.EligibilityScore);
+
+                citizenService.DisplayCitizen(citizen);
+
+                Console.WriteLine("\nRegister Another? (y/n)");
+                string choice = Console.ReadLine();
+
+                running = choice.ToLower() == "y";
+            }
+
+            view.ShowExit();
         }
     }
 }

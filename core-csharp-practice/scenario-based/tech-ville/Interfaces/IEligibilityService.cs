@@ -4,6 +4,7 @@ namespace TechVille.Core.Interfaces
 {
     public interface IEligibilityService
     {
-        ServicePackage CalculatePackage(Citizen citizen);
+        double CalculateEligibility(Citizen citizen);
+        ServicePackage GetPackage(double score);
     }
 }

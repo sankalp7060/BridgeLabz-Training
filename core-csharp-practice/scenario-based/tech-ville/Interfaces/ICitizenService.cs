@@ -4,7 +4,7 @@ namespace TechVille.Core.Interfaces
 {
     public interface ICitizenService
     {
-        RegistrationResult RegisterCitizen(Citizen citizen);
+        Citizen RegisterCitizen();
         void DisplayCitizen(Citizen citizen);
     }
 }

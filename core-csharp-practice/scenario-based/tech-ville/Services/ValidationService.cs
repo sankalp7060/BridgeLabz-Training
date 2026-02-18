@@ -1,15 +1,15 @@
-using TechVille.Core.Interfaces;
-
 namespace TechVille.Core.Services
 {
-    public class ValidationService : IValidationService
+    public class ValidationService
     {
-        public bool ValidateName(string name) => !string.IsNullOrWhiteSpace(name);
+        public bool ValidateAge(int age)
+        {
+            return age >= 0 && age <= 120;
+        }
 
-        public bool ValidateAge(int age) => age >= 18 && age <= 100;
-
-        public bool ValidateIncome(double income) => income >= 0;
-
-        public bool ValidateResidency(int years) => years >= 0;
+        public bool ValidateIncome(double income)
+        {
+            return income >= 0;
+        }
     }
 }
