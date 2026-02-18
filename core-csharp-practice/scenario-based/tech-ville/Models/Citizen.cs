@@ -1,34 +1,57 @@
-namespace Models
+namespace TechVille.Core.Models
 {
-    /// <summary>
-    /// Represents a citizen registering in TechVille system.
-    ///
-    /// CORE CONCEPTS USED:
-    /// - Variables
-    /// - Data Types
-    /// - Properties
-    ///
-    /// This model stores basic citizen information
-    /// required for service eligibility calculation.
-    /// </summary>
     public class Citizen
     {
-        // Citizen full name
-        public string Name { get; set; }
+        private string _name;
+        private int _age;
+        private double _income;
+        private int _residencyYears;
 
-        // Citizen age
-        public int Age { get; set; }
+        public Guid CitizenId { get; private set; }
 
-        // Annual income of citizen
-        public double Income { get; set; }
+        public string Name
+        {
+            get => _name;
+            set => _name = value?.Trim();
+        }
 
-        // Number of years citizen stayed in city
-        public int ResidencyYears { get; set; }
+        public int Age
+        {
+            get => _age;
+            set
+            {
+                if (value < 0)
+                    throw new ArgumentException("Age cannot be negative.");
+                _age = value;
+            }
+        }
 
-        // Calculated eligibility score
-        public double EligibilityScore { get; set; }
+        public double Income
+        {
+            get => _income;
+            set => _income = value;
+        }
 
-        // Service package assigned
-        public string ServicePackage { get; set; }
+        public int ResidencyYears
+        {
+            get => _residencyYears;
+            set => _residencyYears = value;
+        }
+
+        public ServicePackage Package { get; set; }
+
+        public Citizen(string name, int age, double income, int residencyYears)
+        {
+            CitizenId = Guid.NewGuid();
+            Name = name;
+            Age = age;
+            Income = income;
+            ResidencyYears = residencyYears;
+        }
+
+        public override string ToString()
+        {
+            return $"ID: {CitizenId}\nName: {Name}\nAge: {Age}\nIncome: {Income}\nResidency: {ResidencyYears} years\nPackage: {Package}";
+        }
     }
 }

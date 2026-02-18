@@ -1,12 +1,25 @@
-﻿using Views;
+﻿using TechVille.Core.Interfaces;
+using TechVille.Core.Services;
+using TechVille.Core.View;
 
-class Program
+namespace TechVille.Core
 {
-    /// <summary>
-    /// Application entry point.
-    /// </summary>
-    static void Main()
+    class Program
     {
-        AppMain.Start();
+        static void Main(string[] args)
+        {
+            IEligibilityService eligibilityService = new EligibilityService();
+            IValidationService validationService = new ValidationService();
+            ILoggerService loggerService = new LoggerService();
+
+            ICitizenService citizenService = new CitizenService(
+                eligibilityService,
+                validationService,
+                loggerService
+            );
+
+            ConsoleUI ui = new ConsoleUI(citizenService);
+            ui.Start();
+        }
     }
 }
