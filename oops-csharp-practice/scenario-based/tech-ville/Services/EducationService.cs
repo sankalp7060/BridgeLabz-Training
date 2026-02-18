@@ -1,23 +1,13 @@
-using Models;
-
-namespace Services
+namespace TechVille.OOPS.Services
 {
-    /// <summary>
-    /// Derived class representing Education Service.
-    /// Demonstrates runtime polymorphism.
-    /// </summary>
-    public class EducationService : BaseService
+    public class EducationService : Service
     {
         public EducationService()
-        {
-            ServiceName = "Education";
-        }
+            : base("Education Service") { }
 
-        public override void ProcessRequest(ServiceRequest request)
+        public override void ExecuteService()
         {
-            Console.WriteLine("Processing education request...");
-            Console.WriteLine("Course enrollment successful.");
-            request.Status = "COMPLETED";
+            System.Console.WriteLine("Providing education support.");
         }
     }
 }

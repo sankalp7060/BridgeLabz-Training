@@ -1,23 +1,21 @@
-using Models;
-
-namespace Services
+namespace TechVille.OOPS.Services
 {
-    /// <summary>
-    /// Derived class representing Healthcare Service.
-    /// Demonstrates inheritance and polymorphism.
-    /// </summary>
-    public class HealthcareService : BaseService
+    // Inheritance example
+    public class HealthcareService : Service
     {
         public HealthcareService()
+            : base("Healthcare Service") { }
+
+        // Overriding abstract method
+        public override void ExecuteService()
         {
-            ServiceName = "Healthcare";
+            System.Console.WriteLine("Providing healthcare facilities.");
         }
 
-        public override void ProcessRequest(ServiceRequest request)
+        // Method overloading example
+        public void ExecuteService(string department)
         {
-            Console.WriteLine("Processing healthcare request...");
-            Console.WriteLine("Doctor assigned.");
-            request.Status = "COMPLETED";
+            System.Console.WriteLine($"Providing healthcare in {department} department.");
         }
     }
 }

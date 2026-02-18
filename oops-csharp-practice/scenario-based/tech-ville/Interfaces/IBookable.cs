@@ -1,13 +1,8 @@
-using Models;
-
-namespace Interfaces
+namespace TechVille.OOPS.Interfaces
 {
-    /// <summary>
-    /// Interface for bookable services.
-    /// Demonstrates interface segregation.
-    /// </summary>
+    // Interface defines contract for booking functionality
     public interface IBookable
     {
-        void Book(ServiceRequest request);
+        void BookService();
     }
 }

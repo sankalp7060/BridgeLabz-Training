@@ -1,13 +1,8 @@
-using Models;
-
-namespace Interfaces
+namespace TechVille.OOPS.Interfaces
 {
-    /// <summary>
-    /// Interface for cancellable services.
-    /// Demonstrates multiple interface implementation.
-    /// </summary>
+    // Interface defines contract for cancellation functionality
     public interface ICancellable
     {
-        void Cancel(ServiceRequest request);
+        void CancelService();
     }
 }
