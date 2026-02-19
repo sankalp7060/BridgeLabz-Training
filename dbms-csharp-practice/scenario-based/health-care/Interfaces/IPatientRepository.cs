@@ -1,19 +1,17 @@
 using System.Collections.Generic;
-using Models;
+using HealthCareClinicSystem.Models;
 
-namespace Interfaces
+namespace HealthCareClinicSystem.Interfaces
 {
-    /// <summary>
-    /// Repository contract for patient database operations.
-    /// This interface abstracts ADO.NET operations for Patients table.
-    /// </summary>
     public interface IPatientRepository
     {
-        void InsertPatient(Patient patient);
-        void UpdatePatient(Patient patient);
-        Patient GetPatientById(int id);
-        List<Patient> GetAllPatients();
-        Patient GetPatientByPhoneOrEmail(string phone, string email);
-        List<Patient> SearchPatientsByName(string name);
+        int RegisterPatient(Patient patient);
+        bool UpdatePatient(Patient patient);
+        Patient GetPatientById(int patientId);
+        Patient GetPatientByPhone(string phone);
+        Patient GetPatientByEmail(string email);
+        List<Patient> SearchPatients(string searchTerm);
+        List<Visit> GetPatientVisitHistory(int patientId);
+        bool PatientExists(string phone, string email);
     }
 }

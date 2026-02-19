@@ -1,140 +1,70 @@
 using System;
 using System.Collections.Generic;
-using System.Linq;
-using Interfaces;
-using Models;
+using HealthCareClinicSystem.Interfaces;
+using HealthCareClinicSystem.Models;
 
-namespace Services
+namespace HealthCareClinicSystem.Services
 {
-    /// <summary>
-    /// Business layer implementing patient operations.
-    /// Uses repository to persist and retrieve patient data from SQL Server.
-    /// </summary>
     public class PatientService : IPatientService
     {
-        private readonly IPatientRepository repository;
+        private readonly IPatientRepository _patientRepository;
 
-        /// <summary>
-        /// Constructor injection of repository
-        /// </summary>
-        public PatientService(IPatientRepository repo)
+        public PatientService(IPatientRepository patientRepository)
         {
-            repository = repo;
+            _patientRepository = patientRepository;
         }
 
-        /// <summary>
-        /// Registers a patient
-        /// </summary>
-        public void RegisterPatient(Patient patient)
+        public int RegisterPatient(Patient patient)
         {
-            repository.InsertPatient(patient);
-            Console.WriteLine("Patient Registered Successfully!");
+            if (string.IsNullOrWhiteSpace(patient.FullName))
+                throw new ArgumentException("Patient name is required");
+
+            if (patient.DOB > DateTime.Today)
+                throw new ArgumentException("Date of birth cannot be in the future");
+
+            if (string.IsNullOrWhiteSpace(patient.Phone))
+                throw new ArgumentException("Phone number is required");
+
+            if (_patientRepository.PatientExists(patient.Phone, patient.Email))
+                return 0;
+
+            return _patientRepository.RegisterPatient(patient);
         }
 
-        /// <summary>
-        /// Updates patient details
-        /// </summary>
-        public void UpdatePatient(int patientId)
+        public bool UpdatePatient(Patient patient)
         {
-            Patient p = repository.GetPatientById(patientId);
-            if (p == null)
-            {
-                Console.WriteLine("Patient not found.");
-                return;
-            }
+            if (patient.PatientId <= 0)
+                throw new ArgumentException("Invalid patient ID");
 
-            Console.Write("Full Name: ");
-            p.FullName = Console.ReadLine();
-
-            Console.Write("DOB (yyyy-mm-dd): ");
-            p.DOB = Console.ReadLine();
-
-            Console.Write("Gender (M/F): ");
-            p.Gender = Console.ReadLine();
-
-            Console.Write("Phone: ");
-            p.Phone = Console.ReadLine();
-
-            Console.Write("Email: ");
-            p.Email = Console.ReadLine();
-
-            Console.Write("Address: ");
-            p.Address = Console.ReadLine();
-
-            Console.Write("Blood Group: ");
-            p.BloodGroup = Console.ReadLine();
-
-            repository.UpdatePatient(p);
-            Console.WriteLine("Patient Updated Successfully!");
+            return _patientRepository.UpdatePatient(patient);
         }
 
-        /// <summary>
-        /// Show patient by ID
-        /// </summary>
-        public void ShowPatientById(int patientId)
+        public Patient GetPatientById(int patientId)
         {
-            Patient p = repository.GetPatientById(patientId);
-            if (p == null)
-            {
-                Console.WriteLine("Patient not found.");
-                return;
-            }
-
-            PrintPatient(p);
+            return _patientRepository.GetPatientById(patientId);
         }
 
-        /// <summary>
-        /// Show all patients
-        /// </summary>
-        public void ShowAllPatients()
+        public Patient GetPatientByPhone(string phone)
         {
-            List<Patient> patients = repository.GetAllPatients();
-
-            if (!patients.Any())
-            {
-                Console.WriteLine("No patients found.");
-                return;
-            }
-
-            foreach (var p in patients)
-            {
-                PrintPatient(p);
-            }
+            return _patientRepository.GetPatientByPhone(phone);
         }
 
-        /// <summary>
-        /// Search patient by name (partial match)
-        /// </summary>
-        public void SearchPatientByName(string name)
+        public List<Patient> SearchPatients(string searchTerm)
         {
-            List<Patient> results = repository.SearchPatientsByName(name);
+            if (string.IsNullOrWhiteSpace(searchTerm))
+                return new List<Patient>();
 
-            if (!results.Any())
-            {
-                Console.WriteLine("No matching patients found.");
-                return;
-            }
-
-            foreach (var p in results)
-            {
-                PrintPatient(p);
-            }
+            return _patientRepository.SearchPatients(searchTerm);
         }
 
-        /// <summary>
-        /// Helper method to print patient details
-        /// </summary>
-        private void PrintPatient(Patient p)
+        public List<Visit> GetPatientVisitHistory(int patientId)
         {
-            Console.WriteLine("\n--- Patient Details ---");
-            Console.WriteLine($"ID: {p.PatientId}");
-            Console.WriteLine($"Name: {p.FullName}");
-            Console.WriteLine($"DOB: {p.DOB}");
-            Console.WriteLine($"Gender: {p.Gender}");
-            Console.WriteLine($"Phone: {p.Phone}");
-            Console.WriteLine($"Email: {p.Email}");
-            Console.WriteLine($"Address: {p.Address}");
-            Console.WriteLine($"Blood Group: {p.BloodGroup}");
+            return _patientRepository.GetPatientVisitHistory(patientId);
+        }
+
+        public List<Prescription> GetPrescriptionsByVisit(int visitId)
+        {
+            return new List<Prescription>();
         }
     }
 }
