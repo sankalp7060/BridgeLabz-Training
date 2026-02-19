@@ -16,6 +16,8 @@ namespace HealthCareClinicSystem.Services
 
         public int RegisterPatient(Patient patient)
         {
+            AuthService.CheckReceptionistAccess();
+
             if (string.IsNullOrWhiteSpace(patient.FullName))
                 throw new ArgumentException("Patient name is required");
 
@@ -33,6 +35,8 @@ namespace HealthCareClinicSystem.Services
 
         public bool UpdatePatient(Patient patient)
         {
+            AuthService.CheckReceptionistAccess();
+
             if (patient.PatientId <= 0)
                 throw new ArgumentException("Invalid patient ID");
 
@@ -41,16 +45,20 @@ namespace HealthCareClinicSystem.Services
 
         public Patient GetPatientById(int patientId)
         {
+            AuthService.CheckReceptionistAccess();
             return _patientRepository.GetPatientById(patientId);
         }
 
         public Patient GetPatientByPhone(string phone)
         {
+            AuthService.CheckReceptionistAccess();
             return _patientRepository.GetPatientByPhone(phone);
         }
 
         public List<Patient> SearchPatients(string searchTerm)
         {
+            AuthService.CheckReceptionistAccess();
+
             if (string.IsNullOrWhiteSpace(searchTerm))
                 return new List<Patient>();
 
@@ -59,11 +67,13 @@ namespace HealthCareClinicSystem.Services
 
         public List<Visit> GetPatientVisitHistory(int patientId)
         {
+            AuthService.CheckReceptionistAccess();
             return _patientRepository.GetPatientVisitHistory(patientId);
         }
 
         public List<Prescription> GetPrescriptionsByVisit(int visitId)
         {
+            AuthService.CheckReceptionistAccess();
             return new List<Prescription>();
         }
     }

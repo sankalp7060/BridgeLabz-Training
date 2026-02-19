@@ -2,6 +2,7 @@ using System;
 using System.Collections.Generic;
 using HealthCareClinicSystem.Interfaces;
 using HealthCareClinicSystem.Models;
+using HealthCareClinicSystem.Services;
 using HealthCareClinicSystem.Utilities;
 
 namespace HealthCareClinicSystem.Views
@@ -19,44 +20,83 @@ namespace HealthCareClinicSystem.Views
         {
             while (true)
             {
-                Console.Clear();
-                Console.WriteLine("========================================");
-                Console.WriteLine("        DOCTOR MANAGEMENT");
-                Console.WriteLine("========================================");
-                Console.WriteLine("\n1. Add Doctor Profile");
-                Console.WriteLine("2. Update Doctor Information");
-                Console.WriteLine("3. Assign/Update Doctor Specialty");
-                Console.WriteLine("4. View Doctors by Specialty");
-                Console.WriteLine("5. Deactivate Doctor Profile");
-                Console.WriteLine("6. Back to Main Menu");
-                Console.WriteLine("\n========================================");
-                Console.Write("Enter your choice: ");
-
-                string choice = Console.ReadLine();
-
-                switch (choice)
+                try
                 {
-                    case "1":
-                        AddDoctor();
-                        break;
-                    case "2":
-                        UpdateDoctor();
-                        break;
-                    case "3":
-                        UpdateDoctorSpecialty();
-                        break;
-                    case "4":
-                        ViewDoctorsBySpecialty();
-                        break;
-                    case "5":
-                        DeactivateDoctor();
-                        break;
-                    case "6":
-                        return;
-                    default:
-                        Console.WriteLine("Invalid option. Press any key...");
-                        Console.ReadKey();
-                        break;
+                    Console.Clear();
+                    Console.WriteLine("========================================");
+                    Console.WriteLine("        DOCTOR MANAGEMENT");
+                    Console.WriteLine("========================================");
+
+                    if (AuthService.IsAdmin())
+                    {
+                        // Admin - Full CRUD
+                        Console.WriteLine("\n1. Add Doctor Profile");
+                        Console.WriteLine("2. Update Doctor Information");
+                        Console.WriteLine("3. Assign/Update Doctor Specialty");
+                        Console.WriteLine("4. View Doctors by Specialty");
+                        Console.WriteLine("5. Deactivate Doctor Profile");
+                        Console.WriteLine("6. Back to Main Menu");
+                    }
+                    else
+                    {
+                        // Receptionist - View Only
+                        Console.WriteLine("\n1. View Doctors by Specialty");
+                        Console.WriteLine("2. Back to Main Menu");
+                    }
+
+                    Console.WriteLine("\n========================================");
+                    Console.Write("Enter your choice: ");
+
+                    string choice = Console.ReadLine();
+
+                    if (AuthService.IsAdmin())
+                    {
+                        switch (choice)
+                        {
+                            case "1":
+                                AddDoctor();
+                                break;
+                            case "2":
+                                UpdateDoctor();
+                                break;
+                            case "3":
+                                UpdateDoctorSpecialty();
+                                break;
+                            case "4":
+                                ViewDoctorsBySpecialty();
+                                break;
+                            case "5":
+                                DeactivateDoctor();
+                                break;
+                            case "6":
+                                return;
+                            default:
+                                Console.WriteLine("Invalid option. Press any key...");
+                                Console.ReadKey();
+                                break;
+                        }
+                    }
+                    else
+                    {
+                        switch (choice)
+                        {
+                            case "1":
+                                ViewDoctorsBySpecialty();
+                                break;
+                            case "2":
+                                return;
+                            default:
+                                Console.WriteLine("Invalid option. Press any key...");
+                                Console.ReadKey();
+                                break;
+                        }
+                    }
+                }
+                catch (UnauthorizedAccessException ex)
+                {
+                    Console.WriteLine($"\n✗ Access Denied: {ex.Message}");
+                    Console.WriteLine("Press any key to continue...");
+                    Console.ReadKey();
                 }
             }
         }

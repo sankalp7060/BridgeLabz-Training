@@ -16,6 +16,8 @@ namespace HealthCareClinicSystem.Services
 
         public int AddDoctor(Doctor doctor)
         {
+            AuthService.CheckAdminAccess();
+
             if (string.IsNullOrWhiteSpace(doctor.FullName))
                 throw new ArgumentException("Doctor name is required");
 
@@ -30,6 +32,8 @@ namespace HealthCareClinicSystem.Services
 
         public bool UpdateDoctor(Doctor doctor)
         {
+            AuthService.CheckAdminAccess();
+
             if (doctor.DoctorId <= 0)
                 throw new ArgumentException("Invalid doctor ID");
 
@@ -38,36 +42,43 @@ namespace HealthCareClinicSystem.Services
 
         public bool UpdateDoctorSpecialty(int doctorId, int specialtyId)
         {
+            AuthService.CheckAdminAccess();
             return _doctorRepository.UpdateDoctorSpecialty(doctorId, specialtyId);
         }
 
         public bool DeactivateDoctor(int doctorId)
         {
+            AuthService.CheckAdminAccess();
             return _doctorRepository.DeactivateDoctor(doctorId);
         }
 
         public Doctor GetDoctorById(int doctorId)
         {
+            AuthService.CheckReceptionistAccess();
             return _doctorRepository.GetDoctorById(doctorId);
         }
 
         public List<Doctor> GetDoctorsBySpecialty(string specialtyName)
         {
+            AuthService.CheckReceptionistAccess();
             return _doctorRepository.GetDoctorsBySpecialty(specialtyName);
         }
 
         public List<Doctor> GetAllActiveDoctors()
         {
+            AuthService.CheckReceptionistAccess();
             return _doctorRepository.GetAllActiveDoctors();
         }
 
         public List<Specialty> GetAllSpecialties()
         {
+            AuthService.CheckReceptionistAccess();
             return _doctorRepository.GetAllSpecialties();
         }
 
         public bool CanDeactivateDoctor(int doctorId)
         {
+            AuthService.CheckAdminAccess();
             return !_doctorRepository.HasFutureAppointments(doctorId);
         }
     }

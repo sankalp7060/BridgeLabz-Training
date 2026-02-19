@@ -1,5 +1,6 @@
 using System;
 using HealthCareClinicSystem.Interfaces;
+using HealthCareClinicSystem.Services;
 using HealthCareClinicSystem.Utilities;
 
 namespace HealthCareClinicSystem.Views
@@ -15,39 +16,50 @@ namespace HealthCareClinicSystem.Views
 
         public void Show()
         {
-            while (true)
+            try
             {
-                Console.Clear();
-                Console.WriteLine("========================================");
-                Console.WriteLine("        SYSTEM ADMINISTRATION");
-                Console.WriteLine("========================================");
-                Console.WriteLine("\n1. Manage Specialties");
-                Console.WriteLine("2. View Audit Logs");
-                Console.WriteLine("3. Perform Database Backup");
-                Console.WriteLine("4. Back to Main Menu");
-                Console.WriteLine("\n========================================");
-                Console.Write("Enter your choice: ");
+                AuthService.CheckAdminAccess(); // Only Admin can access this menu
 
-                string choice = Console.ReadLine();
-
-                switch (choice)
+                while (true)
                 {
-                    case "1":
-                        ManageSpecialties();
-                        break;
-                    case "2":
-                        ViewAuditLogs();
-                        break;
-                    case "3":
-                        PerformBackup();
-                        break;
-                    case "4":
-                        return;
-                    default:
-                        Console.WriteLine("Invalid option. Press any key...");
-                        Console.ReadKey();
-                        break;
+                    Console.Clear();
+                    Console.WriteLine("========================================");
+                    Console.WriteLine("        SYSTEM ADMINISTRATION");
+                    Console.WriteLine("========================================");
+                    Console.WriteLine("\n1. Manage Specialties");
+                    Console.WriteLine("2. View Audit Logs");
+                    Console.WriteLine("3. Perform Database Backup");
+                    Console.WriteLine("4. Back to Main Menu");
+                    Console.WriteLine("\n========================================");
+                    Console.Write("Enter your choice: ");
+
+                    string choice = Console.ReadLine();
+
+                    switch (choice)
+                    {
+                        case "1":
+                            ManageSpecialties();
+                            break;
+                        case "2":
+                            ViewAuditLogs();
+                            break;
+                        case "3":
+                            PerformBackup();
+                            break;
+                        case "4":
+                            return;
+                        default:
+                            Console.WriteLine("Invalid option. Press any key...");
+                            Console.ReadKey();
+                            break;
+                    }
                 }
+            }
+            catch (UnauthorizedAccessException ex)
+            {
+                Console.WriteLine($"\n✗ Access Denied: {ex.Message}");
+                Console.WriteLine("Press any key to continue...");
+                Console.ReadKey();
             }
         }
 

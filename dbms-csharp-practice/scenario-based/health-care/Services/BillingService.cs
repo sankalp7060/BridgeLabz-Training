@@ -21,22 +21,28 @@ namespace HealthCareClinicSystem.Services
 
         public int GenerateBill(int visitId, decimal additionalCharges)
         {
+            AuthService.CheckReceptionistAccess();
+
             decimal consultationFee = 500;
             return _billingRepository.GenerateBill(visitId, consultationFee, additionalCharges);
         }
 
         public bool RecordPayment(int billId, decimal amount, string paymentMode)
         {
+            AuthService.CheckReceptionistAccess();
             return _billingRepository.RecordPayment(billId, amount, paymentMode);
         }
 
         public List<Bill> GetOutstandingBills()
         {
+            AuthService.CheckReceptionistAccess();
             return _billingRepository.GetOutstandingBills();
         }
 
         public void DisplayRevenueReport(DateTime startDate, DateTime endDate, string groupBy)
         {
+            AuthService.CheckAdminAccess();
+
             var revenue = _billingRepository.GetRevenueReport(startDate, endDate, groupBy);
 
             Console.WriteLine($"\nRevenue Report ({startDate:yyyy-MM-dd} to {endDate:yyyy-MM-dd})");
@@ -56,6 +62,7 @@ namespace HealthCareClinicSystem.Services
 
         public Bill GetBillByVisitId(int visitId)
         {
+            AuthService.CheckReceptionistAccess();
             return _billingRepository.GetBillByVisitId(visitId);
         }
     }

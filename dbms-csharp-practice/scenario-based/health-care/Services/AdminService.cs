@@ -16,6 +16,8 @@ namespace HealthCareClinicSystem.Services
 
         public int AddSpecialty(string specialtyName, string description)
         {
+            AuthService.CheckAdminAccess();
+
             if (string.IsNullOrWhiteSpace(specialtyName))
                 throw new ArgumentException("Specialty name is required");
 
@@ -30,6 +32,8 @@ namespace HealthCareClinicSystem.Services
 
         public bool UpdateSpecialty(int specialtyId, string specialtyName, string description)
         {
+            AuthService.CheckAdminAccess();
+
             var specialty = new Specialty
             {
                 SpecialtyId = specialtyId,
@@ -42,16 +46,20 @@ namespace HealthCareClinicSystem.Services
 
         public bool DeleteSpecialty(int specialtyId)
         {
+            AuthService.CheckAdminAccess();
             return _adminRepository.DeleteSpecialty(specialtyId);
         }
 
         public List<Specialty> GetAllSpecialties()
         {
+            AuthService.CheckAdminAccess();
             return _adminRepository.GetAllSpecialties();
         }
 
         public void DisplayAllSpecialties()
         {
+            AuthService.CheckAdminAccess();
+
             var specialties = GetAllSpecialties();
 
             if (specialties.Count == 0)
@@ -74,11 +82,14 @@ namespace HealthCareClinicSystem.Services
 
         public List<AuditLog> GetAuditLogs(string tableName = null, string actionType = null)
         {
+            AuthService.CheckAdminAccess();
             return _adminRepository.GetAuditLogs(tableName, actionType);
         }
 
         public void DisplayAuditLogs(string tableName = null, string actionType = null)
         {
+            AuthService.CheckAdminAccess();
+
             var logs = GetAuditLogs(tableName, actionType);
 
             if (logs.Count == 0)
@@ -103,6 +114,7 @@ namespace HealthCareClinicSystem.Services
 
         public void PerformDatabaseBackup(string backupPath)
         {
+            AuthService.CheckAdminAccess();
             _adminRepository.PerformDatabaseBackup(backupPath);
             Console.WriteLine($"Database backup completed successfully at: {backupPath}");
         }

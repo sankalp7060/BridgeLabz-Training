@@ -32,6 +32,8 @@ namespace HealthCareClinicSystem.Services
             List<Prescription> prescriptions
         )
         {
+            AuthService.CheckReceptionistAccess();
+
             var appointment = _appointmentRepository.GetAppointmentById(appointmentId);
             if (appointment == null)
                 throw new ArgumentException("Appointment not found");
@@ -59,21 +61,26 @@ namespace HealthCareClinicSystem.Services
 
         public List<Visit> GetPatientMedicalHistory(int patientId)
         {
+            AuthService.CheckReceptionistAccess();
             return _visitRepository.GetPatientMedicalHistory(patientId);
         }
 
         public Visit GetVisitById(int visitId)
         {
+            AuthService.CheckReceptionistAccess();
             return _visitRepository.GetVisitById(visitId);
         }
 
         public List<Prescription> GetPrescriptionsByVisit(int visitId)
         {
+            AuthService.CheckReceptionistAccess();
             return _visitRepository.GetPrescriptionsByVisit(visitId);
         }
 
         public void DisplayVisitDetails(int visitId)
         {
+            AuthService.CheckReceptionistAccess();
+
             var visit = GetVisitById(visitId);
             if (visit == null)
             {
