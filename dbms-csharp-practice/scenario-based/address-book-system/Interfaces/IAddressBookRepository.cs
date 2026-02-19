@@ -1,11 +1,13 @@
 using System.Collections.Generic;
-using Models;
+using AddressBookSystem.Models;
 
-namespace Interfaces
+namespace AddressBookSystem.Interfaces
 {
     public interface IAddressBookRepository
     {
-        void AddAddressBook(string name);
+        int AddAddressBook(AddressBook addressBook);
+        AddressBook GetAddressBookByName(string name);
         List<AddressBook> GetAllAddressBooks();
+        bool AddressBookExists(string name);
     }
 }

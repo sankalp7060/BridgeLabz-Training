@@ -22,4 +22,3 @@ CREATE TABLE Contact (
 
 CREATE UNIQUE INDEX UQ_Person
 ON Contact(AddressBookId, FirstName, LastName);
-
