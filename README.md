@@ -954,6 +954,97 @@
 
 ---
 
+## 📅 Day 55 – February 19, 2026
+
+### 🧩 Topics of the Day
+- 🌐 **ASP.NET Introduction** – Project structure and fundamentals  
+
+### ✅ Today's Work
+- Officially started working with **ASP.NET** and explored its core components  
+
+### ⏭️ What's Next
+- Progress further in ASP.NET concepts and implementation  
+
+---
+
+## 📅 Day 56 – February 20, 2026
+
+### 🧩 Topics of the Day
+- 🏗️ **ASP.NET Layered Architecture** – Understanding separation of concerns  
+
+### ✅ Today's Work
+- Set up **ASP.NET layered architecture** for structured development  
+
+### ⏭️ What's Next
+- Start implementing the **Quantity Measurement App** using layered architecture  
+
+---
+
+## 📅 Day 57 – February 21, 2026
+
+### 🧩 Topics of the Day
+- 📦 **Quantity Measurement App Development** – Use Case Implementation  
+
+### ✅ Today's Work
+- Started working on the **Quantity Measurement App**  
+- Successfully completed **Use Cases 1 to 8**  
+
+### ⏭️ What's Next
+- Implement the remaining use cases  
+
+---
+
+## 📅 Day 58 – February 23, 2026
+
+### 🧩 Topics of the Day
+- 📦 **Quantity Measurement App Development** – Advanced Use Cases  
+
+### ✅ Today's Work
+- Completed **Use Cases 9 to 14** of the Quantity Measurement App  
+
+### ⏭️ What's Next
+- Optimize and improve the efficiency of the application  
+
+---
+
+## 📅 Day 59 – February 24, 2026
+
+### 🧩 Topics of the Day
+- ⚡ **Application Optimization** – Improving performance and structure  
+
+### ✅ Today's Work
+- Refactored and optimized the **Quantity Measurement App** to make it more efficient  
+
+### ⏭️ What's Next
+- Attempt the **Capgemini M1 Test** tomorrow  
+
+---
+
+## 📅 Day 60 – February 25, 2026
+
+### 🧩 Topics of the Day
+- 📝 **Capgemini M1 Test** – Module 1 Assessment  
+
+### ✅ Today's Work
+- Appeared for the **Capgemini M1 Test**  
+
+### ⏭️ What's Next
+- Continue progressing in **ASP.NET** and integrate it further into the application  
+
+---
+
+## 📅 Day 61 – February 26, 2026
+
+### 🧩 Topics of the Day
+- 🔄 **ASP.NET Revision** – Reviewing covered topics  
+
+### ✅ Today's Work
+- Revised all **ASP.NET concepts** covered so far to strengthen understanding  
+
+### ⏭️ What's Next
+- Integrate more **ASP.NET features** into the application
+
+---
 
 ## 📂 Folder Structure (Branch-wise)
 
