@@ -1,0 +1,6 @@
+Timestamp: 2026-02-18 20:07:02
+Source: CitizenService.GetCitizen()
+Exception Type: System.ArgumentException
+Message: Citizen ID cannot be empty (Parameter 'citizenId')
+Stack Trace:    at TechVilleSmartCity.Business.CitizenService.GetCitizen(String citizenId) in C:\BridgeLabz-Training\collections-csharp-practice\scenario-based\tech-ville\Business\CitizenService.cs:line 138
+--------------------------------------------------------------------------------

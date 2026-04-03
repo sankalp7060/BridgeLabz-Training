@@ -1,0 +1,15 @@
+C:\BridgeLabz-Training\collections-csharp-practice\scenario-based\future-logistics-billing-system\FutureLogisticsApp\obj\Debug\net10.0\FutureLogisticsApp.GeneratedMSBuildEditorConfig.editorconfig
+C:\BridgeLabz-Training\collections-csharp-practice\scenario-based\future-logistics-billing-system\FutureLogisticsApp\obj\Debug\net10.0\FutureLogisticsApp.AssemblyInfoInputs.cache
+C:\BridgeLabz-Training\collections-csharp-practice\scenario-based\future-logistics-billing-system\FutureLogisticsApp\obj\Debug\net10.0\FutureLogisticsApp.AssemblyInfo.cs
+C:\BridgeLabz-Training\collections-csharp-practice\scenario-based\future-logistics-billing-system\FutureLogisticsApp\obj\Debug\net10.0\FutureLogisticsApp.csproj.CoreCompileInputs.cache
+C:\BridgeLabz-Training\collections-csharp-practice\scenario-based\future-logistics-billing-system\FutureLogisticsApp\obj\Debug\net10.0\FutureLogisticsApp.sourcelink.json
+C:\BridgeLabz-Training\collections-csharp-practice\scenario-based\future-logistics-billing-system\FutureLogisticsApp\bin\Debug\net10.0\FutureLogisticsApp.exe
+C:\BridgeLabz-Training\collections-csharp-practice\scenario-based\future-logistics-billing-system\FutureLogisticsApp\bin\Debug\net10.0\FutureLogisticsApp.deps.json
+C:\BridgeLabz-Training\collections-csharp-practice\scenario-based\future-logistics-billing-system\FutureLogisticsApp\bin\Debug\net10.0\FutureLogisticsApp.runtimeconfig.json
+C:\BridgeLabz-Training\collections-csharp-practice\scenario-based\future-logistics-billing-system\FutureLogisticsApp\bin\Debug\net10.0\FutureLogisticsApp.dll
+C:\BridgeLabz-Training\collections-csharp-practice\scenario-based\future-logistics-billing-system\FutureLogisticsApp\bin\Debug\net10.0\FutureLogisticsApp.pdb
+C:\BridgeLabz-Training\collections-csharp-practice\scenario-based\future-logistics-billing-system\FutureLogisticsApp\obj\Debug\net10.0\FutureLogisticsApp.dll
+C:\BridgeLabz-Training\collections-csharp-practice\scenario-based\future-logistics-billing-system\FutureLogisticsApp\obj\Debug\net10.0\refint\FutureLogisticsApp.dll
+C:\BridgeLabz-Training\collections-csharp-practice\scenario-based\future-logistics-billing-system\FutureLogisticsApp\obj\Debug\net10.0\FutureLogisticsApp.pdb
+C:\BridgeLabz-Training\collections-csharp-practice\scenario-based\future-logistics-billing-system\FutureLogisticsApp\obj\Debug\net10.0\FutureLogisticsApp.genruntimeconfig.cache
+C:\BridgeLabz-Training\collections-csharp-practice\scenario-based\future-logistics-billing-system\FutureLogisticsApp\obj\Debug\net10.0\ref\FutureLogisticsApp.dll

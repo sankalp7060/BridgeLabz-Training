@@ -1,0 +1,734 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\BridgeLabz-Training\\collections-csharp-practice\\gcr-codebase\\csharp-nunit\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\BridgeLabz-Training\\collections-csharp-practice\\gcr-codebase\\csharp-nunit\\NUnitProject\\CalculatorTests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:NUnitProject\\CalculatorTests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\BridgeLabz-Training\\collections-csharp-practice\\gcr-codebase\\csharp-nunit\\Code\\NumberUtils.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Code\\NumberUtils.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\BridgeLabz-Training\\collections-csharp-practice\\gcr-codebase\\csharp-nunit\\Code\\UserRegistration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Code\\UserRegistration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\BridgeLabz-Training\\collections-csharp-practice\\gcr-codebase\\csharp-nunit\\Code\\DateFormatter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Code\\DateFormatter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\BridgeLabz-Training\\collections-csharp-practice\\gcr-codebase\\csharp-nunit\\Code\\TemperatureConverter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Code\\TemperatureConverter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\BridgeLabz-Training\\collections-csharp-practice\\gcr-codebase\\csharp-nunit\\Code\\PasswordValidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Code\\PasswordValidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\BridgeLabz-Training\\collections-csharp-practice\\gcr-codebase\\csharp-nunit\\Code\\BankAccount.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Code\\BankAccount.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\BridgeLabz-Training\\collections-csharp-practice\\gcr-codebase\\csharp-nunit\\Code\\FileProcessor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Code\\FileProcessor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\BridgeLabz-Training\\collections-csharp-practice\\gcr-codebase\\csharp-nunit\\Code\\PerformanceTasks.cs||{3B902123-F8A7-4915-9F01-361F908088D0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Code\\PerformanceTasks.cs||{3B902123-F8A7-4915-9F01-361F908088D0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\BridgeLabz-Training\\collections-csharp-practice\\gcr-codebase\\csharp-nunit\\Code\\DatabaseConnection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Code\\DatabaseConnection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\BridgeLabz-Training\\collections-csharp-practice\\gcr-codebase\\csharp-nunit\\Code\\ExceptionHandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Code\\ExceptionHandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\BridgeLabz-Training\\collections-csharp-practice\\gcr-codebase\\csharp-nunit\\Code\\ListManager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Code\\ListManager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\BridgeLabz-Training\\collections-csharp-practice\\gcr-codebase\\csharp-nunit\\Code\\StringUtils.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Code\\StringUtils.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\BridgeLabz-Training\\collections-csharp-practice\\gcr-codebase\\csharp-nunit\\Code\\Calculator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Code\\Calculator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\BridgeLabz-Training\\collections-csharp-practice\\gcr-codebase\\csharp-nunit\\NUnitProject\\PasswordValidatorTests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:NUnitProject\\PasswordValidatorTests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\BridgeLabz-Training\\collections-csharp-practice\\gcr-codebase\\csharp-nunit\\NUnitProject\\NUnitProject.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:NUnitProject\\NUnitProject.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\BridgeLabz-Training\\collections-csharp-practice\\gcr-codebase\\csharp-nunit\\NUnitProject\\PerformanceTasksTests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:NUnitProject\\PerformanceTasksTests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\BridgeLabz-Training\\collections-csharp-practice\\gcr-codebase\\csharp-nunit\\NUnitProject\\StringUtilsTests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:NUnitProject\\StringUtilsTests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\BridgeLabz-Training\\collections-csharp-practice\\gcr-codebase\\csharp-nunit\\NUnitProject\\TemperatureConverterTests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:NUnitProject\\TemperatureConverterTests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\BridgeLabz-Training\\collections-csharp-practice\\gcr-codebase\\csharp-nunit\\NUnitProject\\UnitTest1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:NUnitProject\\UnitTest1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\BridgeLabz-Training\\collections-csharp-practice\\gcr-codebase\\csharp-nunit\\NUnitProject\\UserRegistrationTests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:NUnitProject\\UserRegistrationTests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\BridgeLabz-Training\\collections-csharp-practice\\gcr-codebase\\csharp-nunit\\NUnitProject\\DateFormatterTests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:NUnitProject\\DateFormatterTests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\BridgeLabz-Training\\collections-csharp-practice\\gcr-codebase\\csharp-nunit\\NUnitProject\\BankAccountTests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:NUnitProject\\BankAccountTests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\BridgeLabz-Training\\collections-csharp-practice\\gcr-codebase\\csharp-nunit\\NUnitProject\\FileProcessorTests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:NUnitProject\\FileProcessorTests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\BridgeLabz-Training\\collections-csharp-practice\\gcr-codebase\\csharp-nunit\\NUnitProject\\NumberUtilsTests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:NUnitProject\\NumberUtilsTests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\BridgeLabz-Training\\collections-csharp-practice\\gcr-codebase\\csharp-nunit\\NUnitProject\\DatabaseConnectionTests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:NUnitProject\\DatabaseConnectionTests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\BridgeLabz-Training\\collections-csharp-practice\\gcr-codebase\\csharp-nunit\\NUnitProject\\ExceptionHandlerTests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:NUnitProject\\ExceptionHandlerTests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\BridgeLabz-Training\\collections-csharp-practice\\gcr-codebase\\csharp-nunit\\NUnitProject\\ListManagerTests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:NUnitProject\\ListManagerTests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\BridgeLabz-Training\\collections-csharp-practice\\gcr-codebase\\csharp-nunit\\MSTestProject\\StringUtilsTests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:MSTestProject\\StringUtilsTests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\BridgeLabz-Training\\collections-csharp-practice\\gcr-codebase\\csharp-nunit\\MSTestProject\\CalculatorTests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:MSTestProject\\CalculatorTests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\BridgeLabz-Training\\collections-csharp-practice\\gcr-codebase\\csharp-nunit\\MSTestProject\\ListManagerTests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:MSTestProject\\ListManagerTests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\BridgeLabz-Training\\collections-csharp-practice\\gcr-codebase\\csharp-nunit\\MSTestProject\\FileProcessorTests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:MSTestProject\\FileProcessorTests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\BridgeLabz-Training\\collections-csharp-practice\\gcr-codebase\\csharp-nunit\\MSTestProject\\ExceptionHandlerTests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:MSTestProject\\ExceptionHandlerTests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\BridgeLabz-Training\\collections-csharp-practice\\gcr-codebase\\csharp-nunit\\MSTestProject\\DateFormatterTests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:MSTestProject\\DateFormatterTests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\BridgeLabz-Training\\collections-csharp-practice\\gcr-codebase\\csharp-nunit\\MSTestProject\\DatabaseConnectionTests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:MSTestProject\\DatabaseConnectionTests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\BridgeLabz-Training\\collections-csharp-practice\\gcr-codebase\\csharp-nunit\\MSTestProject\\BankAccountTests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:MSTestProject\\BankAccountTests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\BridgeLabz-Training\\collections-csharp-practice\\gcr-codebase\\csharp-nunit\\MSTestProject\\UserRegistrationTests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:MSTestProject\\UserRegistrationTests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\BridgeLabz-Training\\collections-csharp-practice\\gcr-codebase\\csharp-nunit\\MSTestProject\\TemperatureConverterTests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:MSTestProject\\TemperatureConverterTests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\BridgeLabz-Training\\collections-csharp-practice\\gcr-codebase\\csharp-nunit\\MSTestProject\\PasswordValidatorTests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:MSTestProject\\PasswordValidatorTests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\BridgeLabz-Training\\collections-csharp-practice\\gcr-codebase\\csharp-nunit\\MSTestProject\\PerformanceTasksTests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:MSTestProject\\PerformanceTasksTests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\BridgeLabz-Training\\collections-csharp-practice\\gcr-codebase\\csharp-nunit\\MSTestProject\\NumberUtilsTests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:MSTestProject\\NumberUtilsTests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\BridgeLabz-Training\\collections-csharp-practice\\gcr-codebase\\csharp-nunit\\MSTestProject\\MSTestSettings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:MSTestProject\\MSTestSettings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 7,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "UserRegistration.cs",
+              "DocumentMoniker": "C:\\BridgeLabz-Training\\collections-csharp-practice\\gcr-codebase\\csharp-nunit\\Code\\UserRegistration.cs",
+              "RelativeDocumentMoniker": "Code\\UserRegistration.cs",
+              "ToolTip": "C:\\BridgeLabz-Training\\collections-csharp-practice\\gcr-codebase\\csharp-nunit\\Code\\UserRegistration.cs",
+              "RelativeToolTip": "Code\\UserRegistration.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-27T10:48:51.978Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "DateFormatter.cs",
+              "DocumentMoniker": "C:\\BridgeLabz-Training\\collections-csharp-practice\\gcr-codebase\\csharp-nunit\\Code\\DateFormatter.cs",
+              "RelativeDocumentMoniker": "Code\\DateFormatter.cs",
+              "ToolTip": "C:\\BridgeLabz-Training\\collections-csharp-practice\\gcr-codebase\\csharp-nunit\\Code\\DateFormatter.cs",
+              "RelativeToolTip": "Code\\DateFormatter.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-27T10:48:40.167Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "TemperatureConverter.cs",
+              "DocumentMoniker": "C:\\BridgeLabz-Training\\collections-csharp-practice\\gcr-codebase\\csharp-nunit\\Code\\TemperatureConverter.cs",
+              "RelativeDocumentMoniker": "Code\\TemperatureConverter.cs",
+              "ToolTip": "C:\\BridgeLabz-Training\\collections-csharp-practice\\gcr-codebase\\csharp-nunit\\Code\\TemperatureConverter.cs",
+              "RelativeToolTip": "Code\\TemperatureConverter.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-27T10:48:26.268Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "PasswordValidator.cs",
+              "DocumentMoniker": "C:\\BridgeLabz-Training\\collections-csharp-practice\\gcr-codebase\\csharp-nunit\\Code\\PasswordValidator.cs",
+              "RelativeDocumentMoniker": "Code\\PasswordValidator.cs",
+              "ToolTip": "C:\\BridgeLabz-Training\\collections-csharp-practice\\gcr-codebase\\csharp-nunit\\Code\\PasswordValidator.cs",
+              "RelativeToolTip": "Code\\PasswordValidator.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-27T10:48:14.131Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "BankAccount.cs",
+              "DocumentMoniker": "C:\\BridgeLabz-Training\\collections-csharp-practice\\gcr-codebase\\csharp-nunit\\Code\\BankAccount.cs",
+              "RelativeDocumentMoniker": "Code\\BankAccount.cs",
+              "ToolTip": "C:\\BridgeLabz-Training\\collections-csharp-practice\\gcr-codebase\\csharp-nunit\\Code\\BankAccount.cs",
+              "RelativeToolTip": "Code\\BankAccount.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-27T10:48:00.729Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "FileProcessor.cs",
+              "DocumentMoniker": "C:\\BridgeLabz-Training\\collections-csharp-practice\\gcr-codebase\\csharp-nunit\\Code\\FileProcessor.cs",
+              "RelativeDocumentMoniker": "Code\\FileProcessor.cs",
+              "ToolTip": "C:\\BridgeLabz-Training\\collections-csharp-practice\\gcr-codebase\\csharp-nunit\\Code\\FileProcessor.cs",
+              "RelativeToolTip": "Code\\FileProcessor.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-27T10:47:43.739Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "PerformanceTasks.cs",
+              "DocumentMoniker": "C:\\BridgeLabz-Training\\collections-csharp-practice\\gcr-codebase\\csharp-nunit\\Code\\PerformanceTasks.cs",
+              "RelativeDocumentMoniker": "Code\\PerformanceTasks.cs",
+              "ToolTip": "C:\\BridgeLabz-Training\\collections-csharp-practice\\gcr-codebase\\csharp-nunit\\Code\\PerformanceTasks.cs",
+              "RelativeToolTip": "Code\\PerformanceTasks.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-27T10:47:23.809Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "CalculatorTests.cs",
+              "DocumentMoniker": "C:\\BridgeLabz-Training\\collections-csharp-practice\\gcr-codebase\\csharp-nunit\\NUnitProject\\CalculatorTests.cs",
+              "RelativeDocumentMoniker": "NUnitProject\\CalculatorTests.cs",
+              "ToolTip": "C:\\BridgeLabz-Training\\collections-csharp-practice\\gcr-codebase\\csharp-nunit\\NUnitProject\\CalculatorTests.cs",
+              "RelativeToolTip": "NUnitProject\\CalculatorTests.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAB8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-27T10:40:24.781Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "NumberUtils.cs",
+              "DocumentMoniker": "C:\\BridgeLabz-Training\\collections-csharp-practice\\gcr-codebase\\csharp-nunit\\Code\\NumberUtils.cs",
+              "RelativeDocumentMoniker": "Code\\NumberUtils.cs",
+              "ToolTip": "C:\\BridgeLabz-Training\\collections-csharp-practice\\gcr-codebase\\csharp-nunit\\Code\\NumberUtils.cs",
+              "RelativeToolTip": "Code\\NumberUtils.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-27T10:47:05.436Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "DatabaseConnection.cs",
+              "DocumentMoniker": "C:\\BridgeLabz-Training\\collections-csharp-practice\\gcr-codebase\\csharp-nunit\\Code\\DatabaseConnection.cs",
+              "RelativeDocumentMoniker": "Code\\DatabaseConnection.cs",
+              "ToolTip": "C:\\BridgeLabz-Training\\collections-csharp-practice\\gcr-codebase\\csharp-nunit\\Code\\DatabaseConnection.cs",
+              "RelativeToolTip": "Code\\DatabaseConnection.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-27T10:45:50.693Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "ExceptionHandler.cs",
+              "DocumentMoniker": "C:\\BridgeLabz-Training\\collections-csharp-practice\\gcr-codebase\\csharp-nunit\\Code\\ExceptionHandler.cs",
+              "RelativeDocumentMoniker": "Code\\ExceptionHandler.cs",
+              "ToolTip": "C:\\BridgeLabz-Training\\collections-csharp-practice\\gcr-codebase\\csharp-nunit\\Code\\ExceptionHandler.cs",
+              "RelativeToolTip": "Code\\ExceptionHandler.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-27T10:45:37.807Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "ListManager.cs",
+              "DocumentMoniker": "C:\\BridgeLabz-Training\\collections-csharp-practice\\gcr-codebase\\csharp-nunit\\Code\\ListManager.cs",
+              "RelativeDocumentMoniker": "Code\\ListManager.cs",
+              "ToolTip": "C:\\BridgeLabz-Training\\collections-csharp-practice\\gcr-codebase\\csharp-nunit\\Code\\ListManager.cs",
+              "RelativeToolTip": "Code\\ListManager.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-27T10:45:24.55Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "StringUtils.cs",
+              "DocumentMoniker": "C:\\BridgeLabz-Training\\collections-csharp-practice\\gcr-codebase\\csharp-nunit\\Code\\StringUtils.cs",
+              "RelativeDocumentMoniker": "Code\\StringUtils.cs",
+              "ToolTip": "C:\\BridgeLabz-Training\\collections-csharp-practice\\gcr-codebase\\csharp-nunit\\Code\\StringUtils.cs",
+              "RelativeToolTip": "Code\\StringUtils.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-27T10:45:08.37Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "NUnitProject.csproj",
+              "DocumentMoniker": "C:\\BridgeLabz-Training\\collections-csharp-practice\\gcr-codebase\\csharp-nunit\\NUnitProject\\NUnitProject.csproj",
+              "RelativeDocumentMoniker": "NUnitProject\\NUnitProject.csproj",
+              "ToolTip": "C:\\BridgeLabz-Training\\collections-csharp-practice\\gcr-codebase\\csharp-nunit\\NUnitProject\\NUnitProject.csproj",
+              "RelativeToolTip": "NUnitProject\\NUnitProject.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2026-01-27T10:43:50.836Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "UnitTest1.cs",
+              "DocumentMoniker": "C:\\BridgeLabz-Training\\collections-csharp-practice\\gcr-codebase\\csharp-nunit\\NUnitProject\\UnitTest1.cs",
+              "RelativeDocumentMoniker": "NUnitProject\\UnitTest1.cs",
+              "ToolTip": "C:\\BridgeLabz-Training\\collections-csharp-practice\\gcr-codebase\\csharp-nunit\\NUnitProject\\UnitTest1.cs",
+              "RelativeToolTip": "NUnitProject\\UnitTest1.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-27T10:43:37.744Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "UserRegistrationTests.cs",
+              "DocumentMoniker": "C:\\BridgeLabz-Training\\collections-csharp-practice\\gcr-codebase\\csharp-nunit\\NUnitProject\\UserRegistrationTests.cs",
+              "RelativeDocumentMoniker": "NUnitProject\\UserRegistrationTests.cs",
+              "ToolTip": "C:\\BridgeLabz-Training\\collections-csharp-practice\\gcr-codebase\\csharp-nunit\\NUnitProject\\UserRegistrationTests.cs",
+              "RelativeToolTip": "NUnitProject\\UserRegistrationTests.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-27T10:43:32.95Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "TemperatureConverterTests.cs",
+              "DocumentMoniker": "C:\\BridgeLabz-Training\\collections-csharp-practice\\gcr-codebase\\csharp-nunit\\NUnitProject\\TemperatureConverterTests.cs",
+              "RelativeDocumentMoniker": "NUnitProject\\TemperatureConverterTests.cs",
+              "ToolTip": "C:\\BridgeLabz-Training\\collections-csharp-practice\\gcr-codebase\\csharp-nunit\\NUnitProject\\TemperatureConverterTests.cs",
+              "RelativeToolTip": "NUnitProject\\TemperatureConverterTests.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-27T10:43:21.444Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "PasswordValidatorTests.cs",
+              "DocumentMoniker": "C:\\BridgeLabz-Training\\collections-csharp-practice\\gcr-codebase\\csharp-nunit\\NUnitProject\\PasswordValidatorTests.cs",
+              "RelativeDocumentMoniker": "NUnitProject\\PasswordValidatorTests.cs",
+              "ToolTip": "C:\\BridgeLabz-Training\\collections-csharp-practice\\gcr-codebase\\csharp-nunit\\NUnitProject\\PasswordValidatorTests.cs",
+              "RelativeToolTip": "NUnitProject\\PasswordValidatorTests.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-27T10:43:15.827Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "StringUtilsTests.cs",
+              "DocumentMoniker": "C:\\BridgeLabz-Training\\collections-csharp-practice\\gcr-codebase\\csharp-nunit\\NUnitProject\\StringUtilsTests.cs",
+              "RelativeDocumentMoniker": "NUnitProject\\StringUtilsTests.cs",
+              "ToolTip": "C:\\BridgeLabz-Training\\collections-csharp-practice\\gcr-codebase\\csharp-nunit\\NUnitProject\\StringUtilsTests.cs",
+              "RelativeToolTip": "NUnitProject\\StringUtilsTests.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAABoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-27T10:41:01.159Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "PerformanceTasksTests.cs",
+              "DocumentMoniker": "C:\\BridgeLabz-Training\\collections-csharp-practice\\gcr-codebase\\csharp-nunit\\NUnitProject\\PerformanceTasksTests.cs",
+              "RelativeDocumentMoniker": "NUnitProject\\PerformanceTasksTests.cs",
+              "ToolTip": "C:\\BridgeLabz-Training\\collections-csharp-practice\\gcr-codebase\\csharp-nunit\\NUnitProject\\PerformanceTasksTests.cs",
+              "RelativeToolTip": "NUnitProject\\PerformanceTasksTests.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-27T10:42:55.836Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "Calculator.cs",
+              "DocumentMoniker": "C:\\BridgeLabz-Training\\collections-csharp-practice\\gcr-codebase\\csharp-nunit\\Code\\Calculator.cs",
+              "RelativeDocumentMoniker": "Code\\Calculator.cs",
+              "ToolTip": "C:\\BridgeLabz-Training\\collections-csharp-practice\\gcr-codebase\\csharp-nunit\\Code\\Calculator.cs",
+              "RelativeToolTip": "Code\\Calculator.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-27T10:32:38.531Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "DateFormatterTests.cs",
+              "DocumentMoniker": "C:\\BridgeLabz-Training\\collections-csharp-practice\\gcr-codebase\\csharp-nunit\\NUnitProject\\DateFormatterTests.cs",
+              "RelativeDocumentMoniker": "NUnitProject\\DateFormatterTests.cs",
+              "ToolTip": "C:\\BridgeLabz-Training\\collections-csharp-practice\\gcr-codebase\\csharp-nunit\\NUnitProject\\DateFormatterTests.cs",
+              "RelativeToolTip": "NUnitProject\\DateFormatterTests.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-27T10:43:26.638Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "BankAccountTests.cs",
+              "DocumentMoniker": "C:\\BridgeLabz-Training\\collections-csharp-practice\\gcr-codebase\\csharp-nunit\\NUnitProject\\BankAccountTests.cs",
+              "RelativeDocumentMoniker": "NUnitProject\\BankAccountTests.cs",
+              "ToolTip": "C:\\BridgeLabz-Training\\collections-csharp-practice\\gcr-codebase\\csharp-nunit\\NUnitProject\\BankAccountTests.cs",
+              "RelativeToolTip": "NUnitProject\\BankAccountTests.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-27T10:43:09.75Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "FileProcessorTests.cs",
+              "DocumentMoniker": "C:\\BridgeLabz-Training\\collections-csharp-practice\\gcr-codebase\\csharp-nunit\\NUnitProject\\FileProcessorTests.cs",
+              "RelativeDocumentMoniker": "NUnitProject\\FileProcessorTests.cs",
+              "ToolTip": "C:\\BridgeLabz-Training\\collections-csharp-practice\\gcr-codebase\\csharp-nunit\\NUnitProject\\FileProcessorTests.cs",
+              "RelativeToolTip": "NUnitProject\\FileProcessorTests.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-27T10:43:04.082Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "NumberUtilsTests.cs",
+              "DocumentMoniker": "C:\\BridgeLabz-Training\\collections-csharp-practice\\gcr-codebase\\csharp-nunit\\NUnitProject\\NumberUtilsTests.cs",
+              "RelativeDocumentMoniker": "NUnitProject\\NumberUtilsTests.cs",
+              "ToolTip": "C:\\BridgeLabz-Training\\collections-csharp-practice\\gcr-codebase\\csharp-nunit\\NUnitProject\\NumberUtilsTests.cs",
+              "RelativeToolTip": "NUnitProject\\NumberUtilsTests.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-27T10:42:49.116Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "DatabaseConnectionTests.cs",
+              "DocumentMoniker": "C:\\BridgeLabz-Training\\collections-csharp-practice\\gcr-codebase\\csharp-nunit\\NUnitProject\\DatabaseConnectionTests.cs",
+              "RelativeDocumentMoniker": "NUnitProject\\DatabaseConnectionTests.cs",
+              "ToolTip": "C:\\BridgeLabz-Training\\collections-csharp-practice\\gcr-codebase\\csharp-nunit\\NUnitProject\\DatabaseConnectionTests.cs",
+              "RelativeToolTip": "NUnitProject\\DatabaseConnectionTests.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-27T10:42:42.957Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "ExceptionHandlerTests.cs",
+              "DocumentMoniker": "C:\\BridgeLabz-Training\\collections-csharp-practice\\gcr-codebase\\csharp-nunit\\NUnitProject\\ExceptionHandlerTests.cs",
+              "RelativeDocumentMoniker": "NUnitProject\\ExceptionHandlerTests.cs",
+              "ToolTip": "C:\\BridgeLabz-Training\\collections-csharp-practice\\gcr-codebase\\csharp-nunit\\NUnitProject\\ExceptionHandlerTests.cs",
+              "RelativeToolTip": "NUnitProject\\ExceptionHandlerTests.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-27T10:42:34.857Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "ListManagerTests.cs",
+              "DocumentMoniker": "C:\\BridgeLabz-Training\\collections-csharp-practice\\gcr-codebase\\csharp-nunit\\NUnitProject\\ListManagerTests.cs",
+              "RelativeDocumentMoniker": "NUnitProject\\ListManagerTests.cs",
+              "ToolTip": "C:\\BridgeLabz-Training\\collections-csharp-practice\\gcr-codebase\\csharp-nunit\\NUnitProject\\ListManagerTests.cs",
+              "RelativeToolTip": "NUnitProject\\ListManagerTests.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAACsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-27T10:42:25.236Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 33,
+              "Title": "DateFormatterTests.cs",
+              "DocumentMoniker": "C:\\BridgeLabz-Training\\collections-csharp-practice\\gcr-codebase\\csharp-nunit\\MSTestProject\\DateFormatterTests.cs",
+              "RelativeDocumentMoniker": "MSTestProject\\DateFormatterTests.cs",
+              "ToolTip": "C:\\BridgeLabz-Training\\collections-csharp-practice\\gcr-codebase\\csharp-nunit\\MSTestProject\\DateFormatterTests.cs",
+              "RelativeToolTip": "MSTestProject\\DateFormatterTests.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-27T10:37:48.37Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "CalculatorTests.cs",
+              "DocumentMoniker": "C:\\BridgeLabz-Training\\collections-csharp-practice\\gcr-codebase\\csharp-nunit\\MSTestProject\\CalculatorTests.cs",
+              "RelativeDocumentMoniker": "MSTestProject\\CalculatorTests.cs",
+              "ToolTip": "C:\\BridgeLabz-Training\\collections-csharp-practice\\gcr-codebase\\csharp-nunit\\MSTestProject\\CalculatorTests.cs",
+              "RelativeToolTip": "MSTestProject\\CalculatorTests.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-27T10:32:56.45Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 34,
+              "Title": "DatabaseConnectionTests.cs",
+              "DocumentMoniker": "C:\\BridgeLabz-Training\\collections-csharp-practice\\gcr-codebase\\csharp-nunit\\MSTestProject\\DatabaseConnectionTests.cs",
+              "RelativeDocumentMoniker": "MSTestProject\\DatabaseConnectionTests.cs",
+              "ToolTip": "C:\\BridgeLabz-Training\\collections-csharp-practice\\gcr-codebase\\csharp-nunit\\MSTestProject\\DatabaseConnectionTests.cs",
+              "RelativeToolTip": "MSTestProject\\DatabaseConnectionTests.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-27T10:34:44.416Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
+              "Title": "ExceptionHandlerTests.cs",
+              "DocumentMoniker": "C:\\BridgeLabz-Training\\collections-csharp-practice\\gcr-codebase\\csharp-nunit\\MSTestProject\\ExceptionHandlerTests.cs",
+              "RelativeDocumentMoniker": "MSTestProject\\ExceptionHandlerTests.cs",
+              "ToolTip": "C:\\BridgeLabz-Training\\collections-csharp-practice\\gcr-codebase\\csharp-nunit\\MSTestProject\\ExceptionHandlerTests.cs",
+              "RelativeToolTip": "MSTestProject\\ExceptionHandlerTests.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-27T10:34:30.681Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "FileProcessorTests.cs",
+              "DocumentMoniker": "C:\\BridgeLabz-Training\\collections-csharp-practice\\gcr-codebase\\csharp-nunit\\MSTestProject\\FileProcessorTests.cs",
+              "RelativeDocumentMoniker": "MSTestProject\\FileProcessorTests.cs",
+              "ToolTip": "C:\\BridgeLabz-Training\\collections-csharp-practice\\gcr-codebase\\csharp-nunit\\MSTestProject\\FileProcessorTests.cs",
+              "RelativeToolTip": "MSTestProject\\FileProcessorTests.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-27T10:36:56.262Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "StringUtilsTests.cs",
+              "DocumentMoniker": "C:\\BridgeLabz-Training\\collections-csharp-practice\\gcr-codebase\\csharp-nunit\\MSTestProject\\StringUtilsTests.cs",
+              "RelativeDocumentMoniker": "MSTestProject\\StringUtilsTests.cs",
+              "ToolTip": "C:\\BridgeLabz-Training\\collections-csharp-practice\\gcr-codebase\\csharp-nunit\\MSTestProject\\StringUtilsTests.cs",
+              "RelativeToolTip": "MSTestProject\\StringUtilsTests.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-27T10:33:42.325Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 35,
+              "Title": "BankAccountTests.cs",
+              "DocumentMoniker": "C:\\BridgeLabz-Training\\collections-csharp-practice\\gcr-codebase\\csharp-nunit\\MSTestProject\\BankAccountTests.cs",
+              "RelativeDocumentMoniker": "MSTestProject\\BankAccountTests.cs",
+              "ToolTip": "C:\\BridgeLabz-Training\\collections-csharp-practice\\gcr-codebase\\csharp-nunit\\MSTestProject\\BankAccountTests.cs",
+              "RelativeToolTip": "MSTestProject\\BankAccountTests.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-27T10:37:10.225Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "ListManagerTests.cs",
+              "DocumentMoniker": "C:\\BridgeLabz-Training\\collections-csharp-practice\\gcr-codebase\\csharp-nunit\\MSTestProject\\ListManagerTests.cs",
+              "RelativeDocumentMoniker": "MSTestProject\\ListManagerTests.cs",
+              "ToolTip": "C:\\BridgeLabz-Training\\collections-csharp-practice\\gcr-codebase\\csharp-nunit\\MSTestProject\\ListManagerTests.cs",
+              "RelativeToolTip": "MSTestProject\\ListManagerTests.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAACsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-27T10:34:14.358Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 36,
+              "Title": "UserRegistrationTests.cs",
+              "DocumentMoniker": "C:\\BridgeLabz-Training\\collections-csharp-practice\\gcr-codebase\\csharp-nunit\\MSTestProject\\UserRegistrationTests.cs",
+              "RelativeDocumentMoniker": "MSTestProject\\UserRegistrationTests.cs",
+              "ToolTip": "C:\\BridgeLabz-Training\\collections-csharp-practice\\gcr-codebase\\csharp-nunit\\MSTestProject\\UserRegistrationTests.cs",
+              "RelativeToolTip": "MSTestProject\\UserRegistrationTests.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-27T10:38:03.274Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 37,
+              "Title": "TemperatureConverterTests.cs",
+              "DocumentMoniker": "C:\\BridgeLabz-Training\\collections-csharp-practice\\gcr-codebase\\csharp-nunit\\MSTestProject\\TemperatureConverterTests.cs",
+              "RelativeDocumentMoniker": "MSTestProject\\TemperatureConverterTests.cs",
+              "ToolTip": "C:\\BridgeLabz-Training\\collections-csharp-practice\\gcr-codebase\\csharp-nunit\\MSTestProject\\TemperatureConverterTests.cs",
+              "RelativeToolTip": "MSTestProject\\TemperatureConverterTests.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-27T10:37:36.63Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 38,
+              "Title": "PasswordValidatorTests.cs",
+              "DocumentMoniker": "C:\\BridgeLabz-Training\\collections-csharp-practice\\gcr-codebase\\csharp-nunit\\MSTestProject\\PasswordValidatorTests.cs",
+              "RelativeDocumentMoniker": "MSTestProject\\PasswordValidatorTests.cs",
+              "ToolTip": "C:\\BridgeLabz-Training\\collections-csharp-practice\\gcr-codebase\\csharp-nunit\\MSTestProject\\PasswordValidatorTests.cs",
+              "RelativeToolTip": "MSTestProject\\PasswordValidatorTests.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-27T10:37:23.997Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 39,
+              "Title": "PerformanceTasksTests.cs",
+              "DocumentMoniker": "C:\\BridgeLabz-Training\\collections-csharp-practice\\gcr-codebase\\csharp-nunit\\MSTestProject\\PerformanceTasksTests.cs",
+              "RelativeDocumentMoniker": "MSTestProject\\PerformanceTasksTests.cs",
+              "ToolTip": "C:\\BridgeLabz-Training\\collections-csharp-practice\\gcr-codebase\\csharp-nunit\\MSTestProject\\PerformanceTasksTests.cs",
+              "RelativeToolTip": "MSTestProject\\PerformanceTasksTests.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-27T10:35:16.34Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 40,
+              "Title": "NumberUtilsTests.cs",
+              "DocumentMoniker": "C:\\BridgeLabz-Training\\collections-csharp-practice\\gcr-codebase\\csharp-nunit\\MSTestProject\\NumberUtilsTests.cs",
+              "RelativeDocumentMoniker": "MSTestProject\\NumberUtilsTests.cs",
+              "ToolTip": "C:\\BridgeLabz-Training\\collections-csharp-practice\\gcr-codebase\\csharp-nunit\\MSTestProject\\NumberUtilsTests.cs",
+              "RelativeToolTip": "MSTestProject\\NumberUtilsTests.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-27T10:34:57.136Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 41,
+              "Title": "MSTestSettings.cs",
+              "DocumentMoniker": "C:\\BridgeLabz-Training\\collections-csharp-practice\\gcr-codebase\\csharp-nunit\\MSTestProject\\MSTestSettings.cs",
+              "RelativeDocumentMoniker": "MSTestProject\\MSTestSettings.cs",
+              "ToolTip": "C:\\BridgeLabz-Training\\collections-csharp-practice\\gcr-codebase\\csharp-nunit\\MSTestProject\\MSTestSettings.cs",
+              "RelativeToolTip": "MSTestProject\\MSTestSettings.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-27T10:32:58.551Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

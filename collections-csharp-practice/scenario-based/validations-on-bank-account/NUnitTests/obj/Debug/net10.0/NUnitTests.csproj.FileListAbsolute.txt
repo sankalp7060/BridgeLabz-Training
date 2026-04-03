@@ -1,0 +1,10 @@
+C:\BridgeLabz-Training\collections-csharp-practice\scenario-based\validations-on-bank-account\NUnitTests\bin\Debug\net10.0\.msCoverageSourceRootsMapping_NUnitTests
+C:\BridgeLabz-Training\collections-csharp-practice\scenario-based\validations-on-bank-account\NUnitTests\bin\Debug\net10.0\CoverletSourceRootsMapping_NUnitTests
+C:\BridgeLabz-Training\collections-csharp-practice\scenario-based\validations-on-bank-account\NUnitTests\obj\Debug\net10.0\NUnitTests.csproj.AssemblyReference.cache
+C:\BridgeLabz-Training\collections-csharp-practice\scenario-based\validations-on-bank-account\NUnitTests\obj\Debug\net10.0\NUnitTests.GeneratedMSBuildEditorConfig.editorconfig
+C:\BridgeLabz-Training\collections-csharp-practice\scenario-based\validations-on-bank-account\NUnitTests\obj\Debug\net10.0\NUnitTests.gentestingplatformentrypointinputcache.cache
+C:\BridgeLabz-Training\collections-csharp-practice\scenario-based\validations-on-bank-account\NUnitTests\obj\Debug\net10.0\NUnitTests.genautoregisteredextensionsinputcache.cache
+C:\BridgeLabz-Training\collections-csharp-practice\scenario-based\validations-on-bank-account\NUnitTests\obj\Debug\net10.0\NUnitTests.AssemblyInfoInputs.cache
+C:\BridgeLabz-Training\collections-csharp-practice\scenario-based\validations-on-bank-account\NUnitTests\obj\Debug\net10.0\NUnitTests.AssemblyInfo.cs
+C:\BridgeLabz-Training\collections-csharp-practice\scenario-based\validations-on-bank-account\NUnitTests\obj\Debug\net10.0\NUnitTests.csproj.CoreCompileInputs.cache
+C:\BridgeLabz-Training\collections-csharp-practice\scenario-based\validations-on-bank-account\NUnitTests\obj\Debug\net10.0\NUnitTests.sourcelink.json
