@@ -1,0 +1,275 @@
+using System;
+
+class ContactUtility : IContact
+{
+    private Contact[] contacts = new Contact[100];
+    private int count = 0;
+    public string BookName { get; private set; }
+
+    public ContactUtility(string bookName)
+    {
+        BookName = bookName;
+    }
+
+    public void AddContact()
+    {
+        if (count >= contacts.Length)
+        {
+            Console.WriteLine("Address Book is full!");
+            return;
+        }
+
+        Console.WriteLine("Creating a new contact...");
+
+        Console.Write("First Name: ");
+        string firstName = Console.ReadLine();
+
+        Console.Write("Last Name: ");
+        string lastName = Console.ReadLine();
+
+        Console.Write("Address: ");
+        string address = Console.ReadLine();
+
+        Console.Write("City: ");
+        string city = Console.ReadLine();
+
+        Console.Write("State: ");
+        string state = Console.ReadLine();
+
+        Console.Write("Zip: ");
+        string zip = Console.ReadLine();
+
+        Console.Write("Phone Number: ");
+        string phone = Console.ReadLine();
+
+        Console.Write("Email: ");
+        string email = Console.ReadLine();
+
+        for (int i = 0; i < count; i++)
+        {
+            if (contacts[i].PhoneNumber == phone)
+            {
+                Console.WriteLine(
+                    "Duplicate entry! Phone number already exists in this Address Book."
+                );
+                return;
+            }
+        }
+
+        contacts[count] = new Contact(firstName, lastName, address, city, state, zip, phone, email);
+        count++;
+        Console.WriteLine("Contact created successfully!");
+    }
+
+    public void EditContact()
+    {
+        Console.Write("Enter the First Name of the contact to edit: ");
+        string name = Console.ReadLine();
+
+        Console.Write("Enter the Phone Number of the contact: ");
+        string phone = Console.ReadLine();
+
+        for (int i = 0; i < count; i++)
+        {
+            if (
+                contacts[i].FirstName.Equals(name, StringComparison.OrdinalIgnoreCase)
+                && contacts[i].PhoneNumber == phone
+            )
+            {
+                Console.WriteLine("Editing contact...");
+
+                Console.Write("New Last Name: ");
+                contacts[i].LastName = Console.ReadLine();
+
+                Console.Write("New Address: ");
+                contacts[i].Address = Console.ReadLine();
+
+                Console.Write("New City: ");
+                contacts[i].City = Console.ReadLine();
+
+                Console.Write("New State: ");
+                contacts[i].State = Console.ReadLine();
+
+                Console.Write("New Zip: ");
+                contacts[i].Zip = Console.ReadLine();
+
+                Console.Write("New Phone Number: ");
+                contacts[i].PhoneNumber = Console.ReadLine();
+
+                Console.Write("New Email: ");
+                contacts[i].Email = Console.ReadLine();
+
+                Console.WriteLine("Contact updated successfully!");
+                return;
+            }
+        }
+
+        Console.WriteLine("Contact not found.");
+    }
+
+    public void DeleteContact()
+    {
+        Console.Write("Enter the First Name of the contact to delete: ");
+        string name = Console.ReadLine();
+
+        Console.Write("Enter the Phone Number of the contact: ");
+        string phone = Console.ReadLine();
+        for (int i = 0; i < count; i++)
+        {
+            if (
+                contacts[i].FirstName.Equals(name, StringComparison.OrdinalIgnoreCase)
+                && contacts[i].PhoneNumber == phone
+            )
+            {
+                for (int j = i; j < count - 1; j++)
+                {
+                    contacts[j] = contacts[j + 1];
+                }
+                contacts[count - 1] = null;
+                count--;
+                Console.WriteLine("Contact deleted successfully!");
+                return;
+            }
+        }
+    }
+
+    public void AddMultipleContact()
+    {
+        while (true)
+        {
+            AddContact();
+            Console.WriteLine("Press ENTER to exit");
+            var key = Console.ReadKey();
+            if (key.Key == ConsoleKey.Enter)
+            {
+                break;
+            }
+            Console.WriteLine();
+        }
+    }
+
+    public bool SearchContact(string city, string state)
+    {
+        bool found = false;
+        for (int i = 0; i < count; i++)
+        {
+            if (
+                (
+                    !string.IsNullOrEmpty(city)
+                    && contacts[i].City.Equals(city, StringComparison.OrdinalIgnoreCase)
+                )
+                || (
+                    !string.IsNullOrEmpty(state)
+                    && contacts[i].State.Equals(state, StringComparison.OrdinalIgnoreCase)
+                )
+            )
+            {
+                Console.WriteLine(
+                    $"[{BookName}] {contacts[i].FirstName} {contacts[i].LastName} | {contacts[i].City}, {contacts[i].State} | {contacts[i].PhoneNumber}"
+                );
+                found = true;
+            }
+        }
+        return found;
+    }
+
+    public void ViewPersonsByCity(string city)
+    {
+        bool found = false;
+
+        for (int i = 0; i < count; i++)
+        {
+            if (contacts[i].City.Equals(city, StringComparison.OrdinalIgnoreCase))
+            {
+                Console.WriteLine(
+                    $"[{BookName}] {contacts[i].FirstName} {contacts[i].LastName} | {contacts[i].PhoneNumber}"
+                );
+                found = true;
+            }
+        }
+
+        if (!found)
+        {
+            Console.WriteLine($"[{BookName}] No persons found in city: {city}");
+        }
+    }
+
+    public void ViewPersonsByState(string state)
+    {
+        bool found = false;
+
+        for (int i = 0; i < count; i++)
+        {
+            if (contacts[i].State.Equals(state, StringComparison.OrdinalIgnoreCase))
+            {
+                Console.WriteLine(
+                    $"[{BookName}] {contacts[i].FirstName} {contacts[i].LastName} | {contacts[i].PhoneNumber}"
+                );
+                found = true;
+            }
+        }
+
+        if (!found)
+        {
+            Console.WriteLine($"[{BookName}] No persons found in state: {state}");
+        }
+    }
+
+    public int CountByCity(string city)
+    {
+        int cityCount = 0;
+        for (int i = 0; i < count; i++)
+        {
+            if (contacts[i].City.Equals(city, StringComparison.OrdinalIgnoreCase))
+            {
+                cityCount++;
+            }
+        }
+        return cityCount;
+    }
+
+    public int CountByState(string state)
+    {
+        int stateCount = 0;
+        for (int i = 0; i < count; i++)
+        {
+            if (contacts[i].State.Equals(state, StringComparison.OrdinalIgnoreCase))
+            {
+                stateCount++;
+            }
+        }
+        return stateCount;
+    }
+
+    public void SortContactsByName()
+    {
+        if (count <= 1)
+        {
+            Console.WriteLine("Not enough contacts to sort.");
+            return;
+        }
+        for (int i = 0; i < count - 1; i++)
+        {
+            for (int j = 0; j < count - i - 1; j++)
+            {
+                int firstNameCompare = string.Compare(
+                    contacts[j].FirstName,
+                    contacts[j + 1].FirstName,
+                    StringComparison.OrdinalIgnoreCase
+                );
+                int lastNameCompare = string.Compare(
+                    contacts[j].LastName,
+                    contacts[j + 1].LastName,
+                    StringComparison.OrdinalIgnoreCase
+                );
+                if (firstNameCompare > 0 || (firstNameCompare == 0 && lastNameCompare > 0))
+                {
+                    Contact t = contacts[j];
+                    contacts[j] = contacts[j + 1];
+                    contacts[j + 1] = t;
+                }
+            }
+        }
+        Console.WriteLine("Contacts sorted alphabetically by name.");
+    }
+}
