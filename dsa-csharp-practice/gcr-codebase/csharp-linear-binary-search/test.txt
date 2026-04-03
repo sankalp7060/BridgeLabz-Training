@@ -1,0 +1,5 @@
+Context: Maximize revenue from cutting metal rods of different sizes and values.
+Scenario A: Given a rod of length 8 and price chart for different lengths, find best
+cuts.
+Scenario B: Add a custom-length order and check impact on revenue.
+Scenario C: Visualize revenue if cut strategy is not optimized.

@@ -1,0 +1,15 @@
+CinemaTime – Movie Schedule Manager
+Story: A cinema manager wants a tool to store and update a list of movie showtimes and titles.
+Users should be able to add, view, and search movies.
+Requirements:
+● Use a List for movie titles and List for showtimes.
+● Method to:
+○ addMovie(String title, String time)
+○ searchMovie(String keyword) – use String.contains()
+○ displayAllMovies()
+● Combine titles and times into a formatted string using .format() or concatenation.
+● Use Exception Handling:
+○ Handle IndexOutOfBoundsException for invalid search indices.
+○ Throw InvalidTimeFormatException for improperly formatted showtimes
+(e.g., "25:99").
+● Convert list to array when generating printable reports.
