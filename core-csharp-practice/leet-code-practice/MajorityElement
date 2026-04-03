@@ -1,0 +1,16 @@
+class MajorityElement {
+    public int MajorityElement(int[] nums) {
+        int val=1,c1=nums[0];
+        for(int i=1;i<nums.Length;i++){
+            if(nums[i]==c1) val++;
+            else{
+                val--;
+                if(val==0){
+                    c1=nums[i];
+                    val=1;
+                }
+            }
+        }
+        return c1;
+    }
+}
